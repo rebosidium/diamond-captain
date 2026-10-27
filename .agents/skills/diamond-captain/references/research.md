@@ -2,6 +2,8 @@
 
 **Method choice starts with a decision, not a tool.** Ask which conclusion or action would change based on the answer. Reuse credible existing evidence first; new research is optional when it would not alter the decision.
 
+For a concrete user study, read the relevant part of the [UXR guide](uxr.md): study decisions, method choice, recruitment, session protocols, analysis and research handoff. Keep it conditional; do not load or perform every method for an ordinary task.
+
 ## Choose evidence suited to the question
 
 | Need | Qualitative options | Quantitative options | Limitations |

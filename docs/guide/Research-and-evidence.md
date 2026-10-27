@@ -1,5 +1,7 @@
 Choose research from the decision it needs to inform. Scale depth to uncertainty, consequences and reversibility, and reuse credible existing evidence first.
 
+For a concrete study, use the relevant part of the [UXR guide](../../.agents/skills/diamond-captain/references/uxr.md). If choosing a tool is still necessary, open the [category index](../../.agents/skills/diamond-captain/references/tool-options.md) and the linked category. An [office workflow](../../.agents/skills/diamond-captain/references/office-tools.md) may help prepare a readout or handoff; it does not establish research evidence or authority to send invitations.
+
 ## Plan the smallest useful investigation
 
 Record this chain in the existing task or brief:

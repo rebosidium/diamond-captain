@@ -1,5 +1,7 @@
 # Diamond Captain — Agent Skill
 
+The full SKILL.md holds shared operating rules. Open phase, dialogue, research and optional tool guidance for the next decision. Tool indexes link to category files; preserve every supporting directory when installing. This source layout may contain unreleased changes; use the installed package receipt to identify its exact files and version.
+
 A **task-running** skill for product and service designers. The agent can start with an ambiguous task, figure out the current Triple Diamond phase, find gaps, use available integrations, execute the next step, loop back on new evidence, and follow the task through real-world outcome review.
 
 This is separate from the explanatory [six-stage process](https://github.com/rebosidium/diamond-captain/blob/main/docs/process.md): it tells an agent **how to operate**, not just what the model means.
@@ -52,7 +54,9 @@ The skill **does not modify the model's system prompt**. It cannot run asynchron
 - [references/phases.md](references/phases.md) — six phase inputs, outputs and readiness tests
 - [references/dialogue-and-gates.md](references/dialogue-and-gates.md) — intake, frequent questions, phase decisions, Design DoR/DoD
 - [references/research.md](references/research.md) — qualitative/quantitative methods, depth and stop rules
+- [references/uxr.md](references/uxr.md) — conditional study planning, recruitment, sessions, synthesis and research handoff
 - [references/tool-options.md](references/tool-options.md) — ten *optional* tool candidates per category across an expanded task catalog
+- [references/office-tools.md](references/office-tools.md) — email, calendars, files, presentations, approvals and connector/MCP limits
 - [assets/TASK-STATE.md](assets/TASK-STATE.md) — persistent task state template
 - [assets/AGENTS-snippet.md](assets/AGENTS-snippet.md) — copy/paste project bootstrap
 - [tests/scenarios.md](tests/scenarios.md) — behavioral acceptance scenarios

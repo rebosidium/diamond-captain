@@ -10,7 +10,9 @@ Use one active installation and verify its scope, path, version and supporting f
 | Cursor | Native `.cursor/skills/diamond-captain/` where supported, or a supported plugin route | Check the actual active source and packaged references |
 | Gemini CLI | Its supported workspace/user native-skill install mechanism | Verify its skill inventory and the selected source; do not assume Codex precedence |
 | Grok Build | A [Claude-compatible package route](../distributions/grok-build/README.md), where supported | Validate/install/discover this exact new archive before claiming runtime compatibility |
-| Perplexity Computer | Supported Skills import, or complete skill ZIP/plugin upload where the account supports it | Confirm supporting-file preservation and account scope; a text attachment alone is not proof of a complete install |
+| Perplexity Computer | [Pinned Claude ZIP import candidate](../distributions/perplexity/README.md), where supported | Offline verification preserves the complete released core; real-client tests for Diamond Captain remain pending. Confirm supporting files, account scope and the actual selected source. |
+
+When a previous skill identity is already active, use the [migration procedure](migration.md) rather than adding a second copy. Verify project/user scope and the actual selected source; a local path or invocation valid for one host does not establish another host's installation.
 
 When a previous skill identity is already active, use the [migration procedure](migration.md) rather than adding a second copy. Verify project/user scope and the actual selected source; a local path or invocation valid for one host does not establish another host's installation.
 

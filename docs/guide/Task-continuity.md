@@ -8,6 +8,8 @@ For multiple tasks, use the actual recorded paths, such as `.product-task/invoic
 
 The state should retain the current phase and scope, evidence and artifact links, settled and pending decisions, acceptance and delegated authority, and the next action. Dated records identify who did what, sources, confidence and limitations. Earlier decisions remain traceable after a loop.
 
+Keep the current checkpoint concise and link larger artifacts instead of duplicating their contents. Preserve decision records, critical constraints and unknown legacy fields. A shorter summary must not replace newer evidence or erase pending acceptance. The Markdown state format and default path remain unchanged; no separate event-store migration is required.
+
 ## Resume in a new chat
 
 Open the correct project and provide the actual state path:

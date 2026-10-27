@@ -29,6 +29,8 @@ changes. I will accept the final deliverable.
 
 Delegation should state its scope. Silence and a preselected answer do not grant authority. Existing authorization remains valid; routine work should not require repeated permission.
 
+Delegating analysis or phase choices does not also accept the final handoff unless that scope is explicit. The agent records pending acceptance separately and follows your requested question cadence.
+
 ## Expect an actionable handoff
 
 A useful handoff gives the result and status, artifact links, actual checks and their limits, unresolved decisions with owners or proposed owners, and the next action. It ends with a copyable resume line. If live evidence is missing, an evidence-gap assessment can still be useful without claiming verified impact.

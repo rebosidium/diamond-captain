@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Consolidate shared operating instructions and link tool indexes to individual categories, preserving candidate entries and previous category anchors. Keep the Markdown task-state format and host identities unchanged.
+- Add optional user-research and office-tool guidance while retaining explicit handoff acceptance and task-specific tool selection.
+- Initialize new task checkpoints from intake only, with an optional Python helper and an explicit manual fallback; keep phase, diamond and arrow consistent after recovery.
+- Add offline Perplexity import preparation and committed-source preview export. Real-client verification of the Diamond Captain import remains pending.
+- Clarify published-package installation, existing-name migration, installation-record privacy and guide entry points.
+
 ## 0.3.0
 
 - Introduce Diamond Captain with the native skill name `diamond-captain`, new source/update links and a fresh public product repository.
