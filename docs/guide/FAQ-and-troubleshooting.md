@@ -10,6 +10,10 @@ A link asks the agent to read files; it does not prove native installation or su
 
 An install request authorizes a new workspace installation, rather than an automatic upgrade. `OUTDATED` means an update is available; `ALREADY_CURRENT` means no update is needed. Give explicit update authority for the intended copy when you want replacement. See [Installation](https://github.com/rebosidium/diamond-captain/blob/main/docs/guide/Installation.md).
 
+## I already use the previous skill name. Should I install both?
+
+Use the [migration guide](../migration.md). The previous installation does not become Diamond Captain automatically. Check which skill/plugin source is active before changing it, preserve task state and artifacts, and migrate the intended installation and routing only when authorized. Avoid leaving both names active in the same discovery scope. For Codex native use, the new invocation is `$diamond-captain`; plugin invocations depend on the selected host route.
+
 ## Why does setup report SOURCE_TREE in a QA project?
 
 The agent identified maintained source or a pinned comparison fixture. Setup preserves its skill files, task state and evidence, including receipts and routing notes. Use a separate product workspace. A temporary directory, bundled tests or a receipt alone does not make an ordinary installation a protected fixture.

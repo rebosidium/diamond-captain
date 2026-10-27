@@ -27,11 +27,47 @@ builder = load("build_distribution")
 installer = load("install_distribution")
 
 
+def fixture_git(root: Path, *args: str) -> str:
+    return subprocess.check_output([
+        "git", "-C", str(root), "-c", "core.hooksPath=/dev/null",
+        "-c", "commit.gpgSign=false", "-c", "tag.gpgSign=false",
+        "-c", "user.name=Distribution fixture",
+        "-c", "user.email=fixture@users.noreply.github.com", *args,
+    ], text=True, stderr=subprocess.PIPE).strip()
+
+
+def pinned_repository(root: Path, service: str) -> dict[str, bytes]:
+    """Build a disposable Git fixture from the adapter's real tagged dependency.
+
+    Keep current adapter/installer code, unchanged pins and exact tagged core
+    bytes. Only this temporary repository receives fixture commits/tags; no
+    production builder checks are mocked and no working history is imported.
+    """
+    adapter = ROOT / "distributions" / service
+    config = json.loads((adapter / "distribution.json").read_text())
+    core = builder.source_at_commit(ROOT, f"v{config['core_version']}")
+    for name, data in core.items():
+        path = root / builder.SOURCE / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(data)
+    shutil.copytree(adapter, root / "distributions" / service)
+    (root / "scripts").mkdir()
+    shutil.copyfile(ROOT / "scripts/install_distribution.py", root / "scripts/install_distribution.py")
+    fixture_git(root, "init", "-q")
+    fixture_git(root, "add", ".")
+    fixture_git(root, "commit", "-qm", "fixture: pinned canonical dependency")
+    fixture_git(root, "tag", "-a", f"v{config['core_version']}", "-m", "fixture core tag")
+    return core
+
+
 class DistributionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.stem, cls.manifest, cls.archive = builder.build(ROOT, "opencode")
-        cls.core, _ = builder.pinned_core(ROOT, cls.manifest["distribution"], False)
+        temporary = tempfile.TemporaryDirectory()
+        cls.addClassCleanup(temporary.cleanup)
+        cls.repository = Path(temporary.name)
+        cls.core = pinned_repository(cls.repository, "opencode")
+        cls.stem, cls.manifest, cls.archive = builder.build(cls.repository, "opencode")
 
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory()
@@ -49,7 +85,7 @@ class DistributionTests(unittest.TestCase):
         self.addCleanup(quiet.__exit__, None, None, None)
 
     def test_reproducible_archive_and_exact_core_bytes(self):
-        self.assertEqual(self.archive, builder.build(ROOT, "opencode")[2])
+        self.assertEqual(self.archive, builder.build(self.repository, "opencode")[2])
         source = self.core
         packaged = self.package / self.manifest["distribution"]["skill_root"]
         self.assertEqual(set(source), set(self.manifest["core"]["files"]))
@@ -195,11 +231,13 @@ class DistributionTests(unittest.TestCase):
 
     def test_same_version_content_drift_is_rejected(self):
         root = self.root / "drifted-source"
-        shutil.copytree(self.source, root / builder.SOURCE)
-        shutil.copytree(ROOT / "distributions/opencode", root / "distributions/opencode")
+        core = pinned_repository(root, "opencode")
         (root / builder.SOURCE / "LICENSE").write_text("changed without a version bump")
-        with self.assertRaisesRegex(ValueError, "pinned dependency"):
-            builder.build(root, "opencode")
+        for release in (False, True):
+            with self.subTest(release=release), self.assertRaisesRegex(ValueError, "pinned dependency"):
+                builder.build(root, "opencode", release=release)
+        version = self.manifest["core"]["version"]
+        self.assertEqual(core, builder.source_at_commit(root, f"v{version}"))
 
     def test_failed_replacement_restores_previous_installation(self):
         self.destination.mkdir(parents=True)
@@ -217,29 +255,30 @@ class DistributionTests(unittest.TestCase):
         self.assertEqual([], list(self.project.rglob("installed-*.json")))
 
     def test_release_build_rejects_uncommitted_work(self):
-        with patch.object(builder, "git", return_value="?? uncommitted-file"), \
-                self.assertRaisesRegex(ValueError, "clean, committed"):
-            builder.build(ROOT, "opencode", release=True)
+        root = self.root / "dirty-source"
+        pinned_repository(root, "opencode")
+        (root / "uncommitted-file").write_text("Uncommitted fixture change")
+        with self.assertRaisesRegex(ValueError, "clean, committed"):
+            builder.build(root, "opencode", release=True)
 
     def test_tagged_version_cannot_be_rebuilt_at_another_commit(self):
-        real_git = builder.git
-        real_tag_commit = builder.tag_commit
-
-        def clean_git(root, *args):
-            return "" if args[0] == "status" else real_git(root, *args)
-
-        with patch.object(builder, "git", clean_git), \
-                patch.object(builder, "tag_commit", side_effect=lambda root, tag:
-                             "0" * 40 if tag.startswith("opencode-") else real_tag_commit(root, tag)), \
-                self.assertRaisesRegex(ValueError, "already tagged"):
-            builder.build(ROOT, "opencode", release=True)
+        root = self.root / "tagged-source"
+        pinned_repository(root, "opencode")
+        version = self.manifest["distribution"]["version"]
+        fixture_git(root, "tag", "-a", f"opencode-v{version}", "-m", "fixture distribution tag")
+        (root / "README.md").write_text("A later committed change")
+        fixture_git(root, "add", ".")
+        fixture_git(root, "commit", "-qm", "fixture: subsequent source revision")
+        with self.assertRaisesRegex(ValueError, "already tagged"):
+            builder.build(root, "opencode", release=True)
 
     def test_every_service_bundles_the_same_complete_core(self):
         for config_path in sorted((ROOT / "distributions").glob("*/distribution.json")):
             service = config_path.parent.name
             with self.subTest(service=service):
-                _, manifest, data = builder.build(ROOT, service)
-                core, _ = builder.pinned_core(ROOT, manifest["distribution"], False)
+                root = self.root / service
+                core = pinned_repository(root, service)
+                _, manifest, data = builder.build(root, service)
                 with zipfile.ZipFile(io.BytesIO(data)) as bundle:
                     prefix = manifest["distribution"]["skill_root"] + "/"
                     actual = {name[len(prefix):]: bundle.read(name) for name in bundle.namelist()

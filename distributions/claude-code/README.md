@@ -2,6 +2,8 @@
 
 Distribution **0.2.0**, containing complete core **0.3.0**.
 
+Keep the complete packaged skill tree, including any nested references and scripts. See [package contents and source versions](https://github.com/rebosidium/diamond-captain/blob/main/docs/distributions.md); current development source does not update an installed release.
+
 Download the ZIP, JSON receipt and matching checksums from [claude-code-v0.2.0](https://github.com/rebosidium/diamond-captain/releases/tag/claude-code-v0.2.0). Verify SHA-256 and extract into a new version-specific directory.
 
 ## Load for a session

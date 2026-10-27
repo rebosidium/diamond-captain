@@ -2,17 +2,20 @@ Choose one installation route for your host. The skill is an instruction package
 
 For agent-assisted setup, share [Install for agents](https://github.com/rebosidium/diamond-captain/blob/main/INSTALL-FOR-AGENTS.md) with your agent and ask it to set up this workspace.
 
+If the previous skill name is already active, follow [migration](../migration.md). Its installed files and project routing do not change just because the product has a new name; check them before adding a new copy.
+
 ## Choose a route
 
 | Your environment | Route and authoritative instructions |
 | --- | --- |
-| Codex or supported ChatGPT plugin tooling | [OpenAI distribution](https://github.com/rebosidium/diamond-captain/blob/main/distributions/openai/README.md); check the documented installation limits |
+| Codex workspace | [Native skill installation](../../START-HERE.md#install-in-a-product-workspace); use `$diamond-captain` |
+| Supported OpenAI plugin tooling | [OpenAI distribution](https://github.com/rebosidium/diamond-captain/blob/main/distributions/openai/README.md); use the supported picker for `diamond-captain:diamond-captain` and check installation limits |
 | Claude Code | [Claude Code distribution](https://github.com/rebosidium/diamond-captain/blob/main/distributions/claude-code/README.md) |
 | OpenCode | [OpenCode distribution](https://github.com/rebosidium/diamond-captain/blob/main/distributions/opencode/README.md) |
 | Manual native skill installation | [Agent setup guide](https://github.com/rebosidium/diamond-captain/blob/main/START-HERE.md) and [skill guide](https://github.com/rebosidium/diamond-captain/blob/main/.agents/skills/diamond-captain/README.md) |
 | Agent with browsing or attached-file support | [Getting started](https://github.com/rebosidium/diamond-captain/blob/main/docs/guide/Getting-started.md); confirm the agent actually reads the skill |
 
-Use the [repository release table](https://github.com/rebosidium/diamond-captain#install) for current package versions and release downloads. Core and service-distribution version numbers are independent; the distribution identifies its pinned core version and content hash.
+Use [host installation routes](../host-installation-routes.md) for Cursor, Gemini CLI, Grok Build and Perplexity Computer, including their scope and discovery checks. Use the [repository release table](https://github.com/rebosidium/diamond-captain#install) for current package versions and release downloads. Core and service-distribution version numbers are independent; the distribution identifies its pinned core version and content hash.
 
 ## Understand the setup result
 

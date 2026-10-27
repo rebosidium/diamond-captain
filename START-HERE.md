@@ -1,8 +1,10 @@
 # Install Diamond Captain
 
+For agent-assisted setup, give your agent [INSTALL-FOR-AGENTS.md](INSTALL-FOR-AGENTS.md). It checks the host, scope and existing installations before writing. If you use the previous skill name, follow [migration](docs/migration.md) rather than installing a second active copy.
+
 ## Install in a product workspace
 
-Choose a published version from the [release table](README.md#install), verify the matching archive checksum, and copy the complete `.agents/skills/diamond-captain/` directory from that release into your agent's supported skill directory. Preserve its README, references, templates, tests and license. A development checkout is not a released package. For Codex, use `.agents/skills/diamond-captain/` inside the target workspace; change a user-scope installation only when that scope is authorized.
+Choose a published version from the [release table](README.md#install), such as the [core 0.3.0 release](https://github.com/rebosidium/diamond-captain/releases/tag/v0.3.0), and verify its matching archive checksum. Copy the complete `diamond-captain` skill folder from that release into your agent's supported skill directory. In a tagged source checkout, that folder is `.agents/skills/diamond-captain/`. Preserve its README, references, templates, tests and license. A development checkout is not a released package. For Codex, use `.agents/skills/diamond-captain/` inside the target workspace; change a user-scope installation only when that scope is authorized.
 
 Open the agent in that workspace and explicitly request `diamond-captain`. In Codex, `$diamond-captain` is the native skill invocation. Ask the agent to report the active skill path/version and verify supporting files; seeing a repository link alone is not proof of installation.
 

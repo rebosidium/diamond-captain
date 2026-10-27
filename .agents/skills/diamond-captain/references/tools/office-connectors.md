@@ -1,0 +1,10 @@
+# Connector and MCP entry points
+
+| Workspace / route | What to investigate | Limits to retain |
+| --- | --- | --- |
+| [Atlassian platform / Rovo MCP](https://developer.atlassian.com/cloud/rovo-mcp/) | Jira work, Confluence evidence, Loom recordings and linked cross-app context | The platform is broader than Jira. Inspect current [supported tools](https://developer.atlassian.com/cloud/rovo-mcp/guides/supported-tools/), exact scopes and live operations; do not substitute a Jira query for a Confluence or Loom lookup. Some search/context calls consume credits. |
+| [Microsoft 365 / Agent 365 MCP](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/mcp-authentication) | Mail, calendar, Teams, Word and SharePoint/OneDrive routes relevant to the task | The reviewed documentation restricts Agent 365 MCP to eligible Frontier tenants. Verify current availability, tenant/admin approval and per-service permissions; an Outlook connection does not establish access to all Microsoft 365 content. |
+| [Google Drive MCP](https://developers.google.com/workspace/drive/api/guides/configure-mcp-server) | Search/read/create/download file operations, or an already connected host app | The reviewed server is a Developer Preview with program/project setup requirements. It does not establish Gmail, Calendar or Slides tool coverage. Prefer an existing authorized connector; do not configure a new cloud project just for this menu. |
+| [MCP Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) | Supplied files and local outputs when no cloud workspace is needed | Limit roots to intended folders. Availability and permitted file operations must be checked; listing it does not authorize installation or broader filesystem access. |
+
+Authentication and product access are separate from authorization for a specific action. Draft before sending; preserve file provenance and sharing scope. Never copy private interviews into a new service or schedule participants solely because an integration is available. Use the existing [UXR guide](../uxr.md) for research-specific collection decisions.
