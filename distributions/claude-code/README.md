@@ -4,10 +4,23 @@ Distribution **0.2.0**, containing complete core **0.3.0**.
 
 Download the ZIP, JSON receipt and matching checksums from [claude-code-v0.2.0](https://github.com/rebosidium/diamond-captain/releases/tag/claude-code-v0.2.0). Verify SHA-256 and extract into a new version-specific directory.
 
-Load the extracted plugin with `claude --plugin-dir /absolute/path/to/plugin` and invoke `/diamond-captain:diamond-captain`. Verify plugin/skill discovery in your installed Claude Code version.
+## Load for a session
 
-Keep one active installation and verify the selected path/version and packaged references/templates. A plugin must not be treated as a universal UI import or marketplace listing. The first renamed packages have automated source/package checks; host-specific runtime checks remain limited to what the release notes actually record.
+Use the installed Claude Code executable to validate and load the extracted plugin:
 
-To update or roll back, preserve task state and artifacts, back up the complete previous installation outside discovery roots, and restore or replace the intended package. For a plugin, use the host's supported uninstall or previous-package selection mechanism. Do not erase project state or unrelated settings.
+```sh
+claude plugin validate /absolute/path/to/extracted-plugin --strict
+claude --plugin-dir /absolute/path/to/extracted-plugin
+```
 
-See [all host routes](../../docs/host-installation-routes.md), [verification scope](../../docs/validation.md), [migration](../../docs/migration.md) and [releases](../../docs/releases.md).
+In that session invoke `/diamond-captain:diamond-captain`, then describe your task. Verify the loaded plugin/skill source, version and supporting files in your installed CLI. Session loading does not register a permanent marketplace installation; start the next session without `--plugin-dir` to stop loading it.
+
+A standalone native skill is an alternative: copy the complete released skill to `.claude/skills/diamond-captain/` and invoke `/diamond-captain`. Choose one route and inspect existing project/user installations before adding a copy. A plugin's namespaced command differs from the native skill command. See the official [plugin guide](https://code.claude.com/docs/en/plugins/create) and [skill locations](https://code.claude.com/docs/en/skills). Do not assume these local CLI steps apply to Cowork or claude.ai.
+
+This archive does not create or submit a marketplace listing. Package checks, validation, discovery and actual agent execution are separate results; the first renamed packages do not inherit runtime claims from an older package identity.
+
+## Update and rollback
+
+For an authorized update, preserve task state, artifacts and unrelated settings. Keep the complete previous plugin directory outside discovery roots, then load the intended version in a fresh session and verify its source. To roll back, load the saved previous package; to stop this session-loading route, restart without the flag. A previous skill name requires the explicit [migration procedure](https://github.com/rebosidium/diamond-captain/blob/main/docs/migration.md), including routing/invocation changes.
+
+[All host routes](https://github.com/rebosidium/diamond-captain/blob/main/docs/host-installation-routes.md) · [Verification scope](https://github.com/rebosidium/diamond-captain/blob/main/docs/validation.md) · [Releases](https://github.com/rebosidium/diamond-captain/blob/main/docs/releases.md)

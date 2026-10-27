@@ -5,12 +5,14 @@ Use one active installation and verify its scope, path, version and supporting f
 | Host | Route | Verify |
 | --- | --- | --- |
 | Codex | Native `.agents/skills/diamond-captain/`, or the [OpenAI plugin](../distributions/openai/README.md) | Request `$diamond-captain` for native use, or the namespaced plugin skill; inspect the selected source |
-| Claude Code | [Claude plugin](../distributions/claude-code/README.md) | Load the package, verify discovery and invoke `/diamond-captain:diamond-captain` |
+| Claude Code | [Claude plugin](../distributions/claude-code/README.md), or native `.claude/skills/diamond-captain/` | Plugin: `/diamond-captain:diamond-captain`; native: `/diamond-captain`. Check the selected source; plugin session loading is not persistent installation |
 | OpenCode | [Native distribution](../distributions/opencode/README.md) | Dry-run/install in the chosen workspace and verify one discovered skill |
 | Cursor | Native `.cursor/skills/diamond-captain/` where supported, or a supported plugin route | Check the actual active source and packaged references |
 | Gemini CLI | Its supported workspace/user native-skill install mechanism | Verify its skill inventory and the selected source; do not assume Codex precedence |
 | Grok Build | A [Claude-compatible package route](../distributions/grok-build/README.md), where supported | Validate/install/discover this exact new archive before claiming runtime compatibility |
 | Perplexity Computer | Supported Skills import, or complete skill ZIP/plugin upload where the account supports it | Confirm supporting-file preservation and account scope; a text attachment alone is not proof of a complete install |
+
+When a previous skill identity is already active, use the [migration procedure](migration.md) rather than adding a second copy. Verify project/user scope and the actual selected source; a local path or invocation valid for one host does not establish another host's installation.
 
 The native core is [released separately](https://github.com/rebosidium/diamond-captain/releases/tag/v0.3.0). Do not copy SKILL.md alone. Preserve references, templates and the included license.
 

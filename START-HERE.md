@@ -2,9 +2,11 @@
 
 ## Install in a product workspace
 
-Copy the complete `.agents/skills/diamond-captain/` directory into your agent's supported skill directory. Preserve its README, references, templates, tests and license. For Codex, use `.agents/skills/diamond-captain/` inside the target workspace, or the host's supported user-scope skill directory.
+Choose a published version from the [release table](README.md#install), verify the matching archive checksum, and copy the complete `.agents/skills/diamond-captain/` directory from that release into your agent's supported skill directory. Preserve its README, references, templates, tests and license. A development checkout is not a released package. For Codex, use `.agents/skills/diamond-captain/` inside the target workspace; change a user-scope installation only when that scope is authorized.
 
 Open the agent in that workspace and explicitly request `diamond-captain`. In Codex, `$diamond-captain` is the native skill invocation. Ask the agent to report the active skill path/version and verify supporting files; seeing a repository link alone is not proof of installation.
+
+If an active copy already exists, preserve it until an update or [migration](docs/migration.md) is authorized. The absence of the new directory name does not mean an older-name skill is absent. Use [INSTALL-FOR-AGENTS.md](INSTALL-FOR-AGENTS.md) to detect the actual route and installation state before writing.
 
 ## Service packages
 
