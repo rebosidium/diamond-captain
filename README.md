@@ -2,12 +2,12 @@
 
 # Diamond Captain
 
-**Give your AI agent a design process.**
+**Your Triple Diamond needs a captain!**
 
 [![Repository checks](https://github.com/rebosidium/diamond-captain/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/rebosidium/diamond-captain/actions/workflows/checks.yml)
 [MIT license](LICENSE)
 
-Diamond Captain is an open-source skill for product and service design. It helps your agent investigate a problem, compare solutions, deliver a useful change and review what happens next. You choose the direction and keep control of decisions.
+Diamond Captain is an open-source skill that guides your AI agent through product and service design — from problem discovery to solution delivery and outcome review. You choose the direction and keep control of decisions.
 
 Start at any phase, skip ahead or loop back. The agent keeps a checkpoint, distinguishes evidence from assumptions and asks whether to accept, revise or reopen a handoff. It works with UI and non-UI tasks, using the tools and evidence you actually have.
 
