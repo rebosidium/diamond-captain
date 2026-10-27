@@ -2,12 +2,24 @@
 
 Distribution **0.2.0**, containing complete core **0.3.0**.
 
-Download the ZIP, JSON receipt and matching checksums from [openai-v0.2.0](https://github.com/rebosidium/diamond-captain/releases/tag/openai-v0.2.0). Verify SHA-256 and extract into a new version-specific directory.
+Download the ZIP, JSON receipt and matching checksums from [openai-v0.2.0](https://github.com/rebosidium/diamond-captain/releases/tag/openai-v0.2.0). Verify SHA-256 and extract into a new version-specific directory. Keep that directory as the local marketplace source.
 
-Select `diamond-captain:diamond-captain` in the supported plugin/skill picker. The packaged marketplace uses the local extracted directory; client-specific import support must be verified.
+## Register and install
 
-Keep one active installation and verify the selected path/version and packaged references/templates. A plugin must not be treated as a universal UI import or marketplace listing. The first renamed packages have automated source/package checks; host-specific runtime checks remain limited to what the release notes actually record.
+The archive includes `.agents/plugins/marketplace.json`, named `diamond-captain-openai`, pointing to the plugin in the extracted root. In a supported Codex client, register that root:
 
-To update or roll back, preserve task state and artifacts, back up the complete previous installation outside discovery roots, and restore or replace the intended package. For a plugin, use the host's supported uninstall or previous-package selection mechanism. Do not erase project state or unrelated settings.
+```sh
+codex plugin marketplace add /absolute/path/to/extracted-plugin
+```
 
-See [all host routes](../../docs/host-installation-routes.md), [verification scope](../../docs/validation.md), [migration](../../docs/migration.md) and [releases](../../docs/releases.md).
+Registration makes the source discoverable; it does not establish that the plugin is installed and enabled. Follow the client's local plugin installation flow, find **Diamond Captain — local release**, and install **Diamond Captain** in the requested profile/scope. Where the supported CLI provides plugin installation, the package identity is `diamond-captain@diamond-captain-openai`. Follow the official [local marketplace guide](https://developers.openai.com/plugins/build/plugins) for your client; local sources and UI availability vary by surface. These steps are not an installation procedure for ordinary ChatGPT web chat.
+
+Start a fresh relevant session, select `diamond-captain:diamond-captain` in the plugin/skill picker or request it explicitly, and verify its installed source/version and supporting files. The client can load an installed cache rather than the extracted source; use its refresh/update mechanism for an authorized update. Editing the extracted directory alone does not prove the active installation changed.
+
+Keep one active route. The standalone `$diamond-captain` native skill is an alternative, not a second required installation. Existing legacy installations require an explicit migration decision. This package does not create or submit a public marketplace listing. Automated source/package checks are distinct from UI installation and design-task execution; see the release's actual verification limits.
+
+## Update and rollback
+
+For an authorized update, preserve task state and artifacts and keep the complete prior package outside discovery roots. Use the host's supported previous-package selection or uninstall/reinstall mechanism, restart the relevant session and verify the active source. Preserve unrelated plugins and settings. If moving from the previous skill name, follow the [migration guide](https://github.com/rebosidium/diamond-captain/blob/main/docs/migration.md); no legacy copy is automatically upgraded.
+
+[All host routes](https://github.com/rebosidium/diamond-captain/blob/main/docs/host-installation-routes.md) · [Verification scope](https://github.com/rebosidium/diamond-captain/blob/main/docs/validation.md) · [Releases](https://github.com/rebosidium/diamond-captain/blob/main/docs/releases.md)

@@ -22,7 +22,7 @@ Then describe your task. [Manual installation](START-HERE.md) · [User guide](do
 
 ## Install
 
-Choose one active installation to avoid duplicate skill entries. Download the ZIP and matching checksums from the selected release.
+Choose one active installation to avoid duplicate skill entries. Download the ZIP and matching checksums from the selected release. If you already use the previous skill name, follow the [migration guide](docs/migration.md) before adding a new copy; existing installations and user-profile settings are not automatically upgraded.
 
 | Host | Package and instructions | Invocation |
 | --- | --- | --- |
@@ -30,7 +30,7 @@ Choose one active installation to avoid duplicate skill entries. Download the ZI
 | Claude Code | [Claude Code 0.2.0](https://github.com/rebosidium/diamond-captain/releases/tag/claude-code-v0.2.0) · [Guide](distributions/claude-code/README.md) | `/diamond-captain:diamond-captain` |
 | OpenCode | [OpenCode 0.2.0](https://github.com/rebosidium/diamond-captain/releases/tag/opencode-v0.2.0) · [Guide](distributions/opencode/README.md) | Ask the agent to use `diamond-captain` |
 | Cursor, Gemini CLI, Grok Build, Perplexity Computer | [Host installation routes](docs/host-installation-routes.md) | Use the host's supported native/plugin/import route and verify discovery |
-| Manual | [Core 0.3.0](https://github.com/rebosidium/diamond-captain/releases/tag/v0.3.0) or the complete [.agents/skills/diamond-captain/](.agents/skills/diamond-captain/) folder | Follow the selected host's skill mechanism |
+| Manual | [Core 0.3.0](https://github.com/rebosidium/diamond-captain/releases/tag/v0.3.0) or the [complete core folder at v0.3.0](https://github.com/rebosidium/diamond-captain/tree/v0.3.0/.agents/skills/diamond-captain) | Follow the selected host's skill mechanism |
 
 The packages contain the complete pinned core, including references and templates. Downloadable archives do not imply a marketplace listing or that every host/import surface has been runtime-tested.
 

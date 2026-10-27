@@ -8,6 +8,8 @@ Identify the host, active profile and product workspace. Read applicable project
 
 If this workspace is the skill's source checkout, a plugin/marketplace source, or a pinned QA/comparison fixture, classify it as `SOURCE_TREE` and make **no setup writes**, including receipts or routing notes. The same protection applies when the proposed target resolves into such a tree. Establish the repository's role from origin, authoring/build metadata or fixture documentation. A Git checkout, temporary directory, bundled tests or a receipt with a source pin alone is not proof of that role. If its role is unclear, inspect the evidence or ask before dependent writes. An install/update request does not authorize altering maintained source or test evidence; use a separate product workspace.
 
+A setup request covers installing the selected released package in the requested scope. It does not authorize publishing a new package, submitting a marketplace listing or sharing private task records.
+
 An installation request authorizes a new installation in the requested workspace. It does **not** authorize upgrading/replacing an existing copy, changing global settings or adding connectors, credentials or background jobs. Honor any explicit update authorization already given.
 
 ## 2. Detect and decide
@@ -20,6 +22,8 @@ Before classifying installation state, select the route using [host installation
 4. Inspect the active source, host-specific precedence and disabled registrations before adding anything. Same-name folders may be shadowed, separately selectable or namespaced; do not apply one host's duplicate rules to another. Do not change another tool's shared skill or configuration to resolve a conflict.
 
 Use [START-HERE.md](START-HERE.md) and the selected host's section in [host installation routes](docs/host-installation-routes.md) to choose this host's route. Check active native discovery and plugin registrations as applicable, rather than just searching for a folder. For example, Claude Code workspace marketplace installs may be registered through `extraKnownMarketplaces` and `enabledPlugins` in `.claude/settings.json`; follow the host guide for other scopes. A physically present copy outside the active profile is not automatically an active duplicate.
+
+Inspect any active legacy installation as well as the new skill name. Do not classify the environment as `ABSENT` merely because the Diamond Captain directory is missing. Moving an existing skill to the new identity is an update: follow [migration](docs/migration.md) only when that change is authorized, preserving the old complete package, routing and task state until the intended replacement is verified.
 
 Read the actual `SKILL.md`, available receipts and the selected route's metadata. Choose a published release from the [README release table](README.md#install), unless the user selected another version. Core and service-distribution versions are independent; compare each with its own release and declared dependency/hash, never require both numbers to match.
 
@@ -46,6 +50,8 @@ For an authorized update, back up the old directory and its receipt outside skil
 ### Provenance for a manual workspace copy
 
 After a successful manual copy, save `.diamond-captain-installations/<host-id>/manual.json` in the product workspace, using the host's lowercase identifier, such as `codex` or `claude-code`. Keep this receipt **outside** the skill payload and scanned skill roots. This convention is for manual workspace copies; retain existing `DISTRIBUTION.json` and installer-generated receipts for service packages rather than replacing their formats.
+
+This runtime receipt contains private installation details. Keep it local and outside tracked project files and public attachments; do not include it in a shared skill/archive or report. Existing receipts are not moved or rewritten without authorization. This is distinct from the public `DISTRIBUTION.json` supplied with a release.
 
 Record actual values, not example placeholders:
 
