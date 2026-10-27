@@ -1,0 +1,11 @@
+{
+  "name": "diamond-captain",
+  "description": "Diamond Captain: a shared skill for product and service design from intake to outcome review.",
+  "author": {
+    "name": "rebosidium",
+    "url": "https://github.com/rebosidium"
+  },
+  "homepage": "https://github.com/rebosidium/diamond-captain",
+  "repository": "https://github.com/rebosidium/diamond-captain",
+  "license": "MIT"
+}

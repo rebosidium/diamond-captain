@@ -1,0 +1,9 @@
+{
+  "service": "opencode",
+  "version": "0.2.0",
+  "core_version": "0.3.0",
+  "core_sha256": "19dcae76459f5b9bc393edb527105e88c388a24ea52bf111607fd1f5ff0c7126",
+  "kind": "native-skill",
+  "skill_root": ".opencode/skills/diamond-captain",
+  "documentation": "https://docs.opencode.ai/docs/skills/"
+}

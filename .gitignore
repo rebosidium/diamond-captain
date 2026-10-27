@@ -1,0 +1,32 @@
+/dist/
+
+# Local credentials and private keys. Examples must contain placeholders only.
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+.secrets/
+
+# Private working evidence belongs outside the public source checkout.
+/docs/audits/
+/private-archives/
+/private-cleanup/
+/.local-publication/
+/comparisons/
+/.product-task/
+*.jsonl
+*.log
+*.bundle
+*token-usage*
+*TOKEN-USAGE*
+
+# Local Python and OS output.
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+
+/.diamond-captain-installations/
+/.diamond-captain-backups/

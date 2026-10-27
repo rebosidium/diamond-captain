@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="72" viewBox="0 0 180 72" fill="none" role="img" aria-label="Three diamonds: Problem, Solution, Outcome">
+  <path d="M8 36 36 8l28 28-28 28Z" fill="#388BFD"/>
+  <path d="m36 8 28 28-28 28Z" fill="#1F6FEB"/>
+  <path d="m36 8 28 28H8Z" fill="#79B8FF" fill-opacity=".5"/>
+  <path d="m62 36 28-28 28 28-28 28Z" fill="#A371F7"/>
+  <path d="m90 8 28 28-28 28Z" fill="#8250DF"/>
+  <path d="m90 8 28 28H62Z" fill="#D2A8FF" fill-opacity=".5"/>
+  <path d="m116 36 28-28 28 28-28 28Z" fill="#F0883E"/>
+  <path d="m144 8 28 28-28 28Z" fill="#D65B16"/>
+  <path d="m144 8 28 28h-56Z" fill="#FFBC80" fill-opacity=".5"/>
+</svg>

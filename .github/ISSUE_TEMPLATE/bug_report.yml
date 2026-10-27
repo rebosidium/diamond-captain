@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a reproducible problem with a released skill version.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Include the version from SKILL.md metadata or the release/tag you installed. "Unknown" is fine if you cannot find it.
+        Use anonymized examples; omit credentials and private customer/research data.
+  - type: input
+    id: skill-version
+    attributes:
+      label: Skill version or commit
+      placeholder: v0.2.0, a commit SHA, or unknown
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Agent, model and environment
+      description: Agent/app and version, model if known, OS, and repo/user/chat-only installation.
+      placeholder: Codex / Claude Code / Cursor; model and app version if known
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Task and steps to reproduce
+      description: Minimal prompt/input, current phase, and whether this was a new task or a resumed checkpoint.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+      description: What should have happened, what happened instead, and relevant anonymized output/state excerpts.
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Other versions or workaround
+      description: If checked, note the last working version and whether the latest release behaves differently.
+    validations:
+      required: false

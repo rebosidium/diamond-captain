@@ -1,0 +1,15 @@
+# Skill and host packages
+
+The canonical product is `.agents/skills/diamond-captain/`. Host adapters contain metadata and installation instructions; the builder bundles the complete pinned core without maintaining a second authored SKILL.md.
+
+Current core: **0.3.0**. OpenAI, Claude Code and OpenCode packages: **0.2.0** each. Core and service versions are independent. Each service pins both the core version and its aggregate SHA-256; mismatched source fails the build.
+
+Receipts identify the public source/build commit and per-file hashes. ZIPs and JSON receipts have matching checksum assets. Release builds require a clean committed product checkout and the core release tag.
+
+```sh
+python3 .agents/skills/diamond-captain/tests/check_package.py
+python3 -m unittest discover -s tests -v
+python3 scripts/build_distribution.py opencode --release
+```
+
+Use the selected [service guide](../README.md#install) for installation. Standalone downloadable packages do not imply a marketplace listing, UI import or end-to-end model execution in every host. See [verification](validation.md) and [release/rollback](releases.md).
