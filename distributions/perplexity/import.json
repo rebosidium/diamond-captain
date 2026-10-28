@@ -1,10 +1,10 @@
 {
   "route": "claude-plugin-upload",
-  "archive_name": "diamond-captain-claude-code-0.2.0-core-0.3.0.zip",
-  "archive_url": "https://github.com/rebosidium/diamond-captain/releases/download/claude-code-v0.2.0/diamond-captain-claude-code-0.2.0-core-0.3.0.zip",
-  "archive_sha256": "5620ab99aa94693fadbea38320aadb0a57d72d7c262b18cf68da8907e6cb776a",
-  "package_commit": "174c82267b81f2ed8fa089cf88698564092969ef",
-  "distribution_version": "0.2.0",
-  "core_version": "0.3.0",
-  "core_sha256": "19dcae76459f5b9bc393edb527105e88c388a24ea52bf111607fd1f5ff0c7126"
+  "archive_name": "diamond-captain-claude-code-0.3.0-core-0.4.0.zip",
+  "archive_url": "https://github.com/rebosidium/diamond-captain/releases/download/claude-code-v0.3.0/diamond-captain-claude-code-0.3.0-core-0.4.0.zip",
+  "archive_sha256": "adf3222eee410257ea6c8ef94fb4aa02e83c42e5b05e2e0d52c8475a81c33b2a",
+  "package_commit": "d6c6e5e22341ee360133b1d0673f1f6ac6e21965",
+  "distribution_version": "0.3.0",
+  "core_version": "0.4.0",
+  "core_sha256": "9bbfdb3eb01ba3f6dd6bfb4ea79a6da1833063736f4c04710361fd7c0dfe06d0"
 }
