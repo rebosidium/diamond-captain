@@ -11,7 +11,9 @@ python3 .agents/skills/diamond-captain/tests/check_package.py
 python3 scripts/check_docs.py
 python3 scripts/check_public_content.py --history HEAD
 python3 -m unittest discover -s tests -v
-python3 -m compileall -q .agents/skills/diamond-captain/tests scripts tests
+python3 -Wall -Werror -m compileall -f -q .agents/skills/diamond-captain/tests .agents/skills/diamond-captain/scripts scripts tests
 ```
+
+Add automated tests for significant new executable functionality and useful regression tests for fixes. Run the strict compiler check above and address every warning before proposing a change. These checks complement review of the skill instructions and do not certify agent behavior.
 
 Explain the user-facing change and concise checks/limits. CI is a second barrier after upload; review the full outgoing history and files before pushing any public branch. Maintainers merge through protected main after checks. Core and host versions remain independent; new public packages must preserve their declared source/hash pins and include checksums.
