@@ -14,6 +14,12 @@ Turn the requested task into a usable, assessed result. The user's priorities, s
 
 Load this full skill, through the host's loading tool or by reading SKILL.md; a description or picker entry alone is insufficient. Reuse instructions already present in the conversation. Resolve supporting paths from this installed skill, and task paths from the actual product workspace.
 
+**Choose the entry from the user's actual request:**
+
+- **Only activating the skill, no task established:** give a brief greeting in the user's language and ask one question about the task. Stop there: no phase/status, onboarding lecture, tool inventory, state creation, task-reference reads or resume line. Do not select an unrelated saved task just because its file exists. An explicit help, setup or resume request keeps its own purpose.
+- **A task is already supplied or established in context:** reuse it immediately. Infer an initial working phase from the request where possible, keeping it provisional unless chosen/delegated; initialize the intake checkpoint below before dependent reads, then do the first useful authorized action. Do not ask the user to restate the task or choose a phase before independent work can start. If evidence is still needed to locate the phase, record that uncertainty and refine it after reading the material. Ask only for a missing decision that actually blocks the dependent action.
+- **Explicitly resuming a task:** recover its active state below, preserving history, answers, permissions and pending acceptance; do not restart the welcome or create a new state.
+
 1. **Initialize before dependent reads.** For a new task, read [the template](assets/TASK-STATE.md), then create `.product-task/TASK-STATE.md` or the user's task-specific path. Record intake only: supplied facts, scope, permissions, known decisions, unknowns and next action. Confirm the write before reading references, research/data or doing analysis; do not batch them with initialization or pre-fill future findings, checks or acceptance.
 
    With Python and file access, use the bundled initializer; supply the original request on stdin:
@@ -28,12 +34,12 @@ Load this full skill, through the host's loading tool or by reading SKILL.md; a 
 
    Mandatory host planning/review prerequisites retain precedence. Record the actual sequence and limitation; this exception does not permit task-reference reads or invented results before initialization.
 2. **Recover before continuing.** Read the active state on resume; keep other tasks separate and never overwrite them. Reconcile stale summaries with newer records, the latest user input and relevant artifact versions. Restore the agreement and next decision without repeating onboarding or settled questions. At phase changes reopen state and relevant phase guidance; after context loss reload this skill too. A saved “loaded” note does not guarantee current context or memory across chats.
-3. **Locate and do the next useful work.** Identify selected phase, evidence maturity, last accepted decision, critical gap and smallest useful action. For a new task, briefly explain collaboration, storage and final handoff; agree scope and relevant DoR/DoD through [dialogue and gates](references/dialogue-and-gates.md). Reuse supplied answers. Follow an explicit phase choice after explaining concrete gaps once; record skips as incomplete. Otherwise obtain the needed phase decision; readiness never advances a phase automatically. Continue independent authorized work while a decision is pending.
+3. **Locate and do the next useful work.** Identify selected/provisional phase, evidence maturity, last accepted decision, critical gap and smallest useful action. Reuse supplied scope and answers; use [dialogue and gates](references/dialogue-and-gates.md) to resolve only consequential unknowns and relevant DoR/DoD. Keep any first-task orientation to one or two contextual sentences, then work; explain storage, tools and handoff details when useful or requested. Follow an explicit phase choice after explaining concrete gaps once; record skips as incomplete. An inferred initial phase is a working proposal, not an accepted transition. Obtain consequential transition decisions unless already chosen/delegated; readiness never advances a phase automatically. Continue independent authorized work while a decision is pending.
 4. **Checkpoint material changes.** Save dated intake, findings, decisions, artifacts, checks and loops with stable IDs, actual performer/source, confidence and limits. Preserve failed/superseded records, unknown legacy fields, unanswered questions and deferred owner/trigger. Keep a short current checkpoint and link large artifacts instead of copying their contents into the journal or reply. Before handoff reconcile checkpoint, phase index and next action with the latest records: delivered work cannot remain a future action.
 
 ## Keep the user involved
 
-Use the user's language. Default to frequent, focused questions at intake, consequential findings/trade-offs, transitions, loops and acceptance: 1–3 short questions with a recommendation/reason, using the available UI or plain text. Record the actual channel and response; dispatch, silence, elapsed time, a preselection or a named owner is not an answer or acceptance.
+Use the user's language. During an active task, default to frequent, focused questions at consequential findings/trade-offs, transitions, loops and acceptance: 1–3 short unanswered questions with a recommendation/reason, using the available UI or plain text. Intake questions resolve actual gaps; they are not a questionnaire before useful work on an already supplied task. Record the actual channel and response; dispatch, silence, elapsed time, a preselection or a named owner is not an answer or acceptance.
 
 Keep readiness, phase decision, handoff acceptance and action permission separate. Preserve scoped delegation and its source; newer instructions can change it. Do not reapprove granted authority or repeat settled/still-pending questions. Analysis or phase delegation does not include handoff acceptance unless explicit. Before ending a material response, ask the next consequential unanswered decision unless delegated or already pending; respect the user's requested cadence without inventing assent.
 
@@ -50,7 +56,7 @@ Use authorized tools within scope. A product decision or available account does 
 
 ## Show a compact compass
 
-In material replies use `<Diamond> / <Phase> <↗/↘> · <n>/6 | <status>` with relevant evidence, critical gap, next action and decision basis. Derive diamond/arrow from phase number, including on resume; translate labels consistently:
+During active design work, in material replies use `<Diamond> / <Phase> <↗/↘> · <n>/6 | <status>` with relevant evidence, critical gap, next action and decision basis. Derive diamond/arrow from phase number, including on resume; translate labels consistently:
 
 | Phase | Diamond (English / Russian) |
 | --- | --- |
@@ -69,7 +75,7 @@ Complete only the agreed scope with evidenced DoD and valid explicit or delegate
 
 At completion, pause or blocker leave result/scope/status, artifact links, actual checks/limits, open decisions/risks with owner/review trigger and next action in reply and state. Mark proposed/unassigned owners honestly. Ask accept/revise/reopen for pending handoff separately from phase choice unless already pending or settled by valid delegation. Do not promise unarranged monitoring or future work.
 
-End with: `Resume: Read <state path>; phase <n/status>; next decision/action <...>`.
+For an active task, end with: `Resume: Read <state path>; phase <n/status>; next decision/action <...>`. A taskless activation has no resume line.
 
 ## Source, updates and license
 
