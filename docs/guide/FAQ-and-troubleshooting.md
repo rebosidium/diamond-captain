@@ -1,6 +1,6 @@
 ## The agent cannot find the skill
 
-Check the host's installation route, the current workspace and whether the complete skill folder is present. Invoke it explicitly using the host's supported form. A copy in a different checkout may not be discoverable here. Avoid duplicate installs with the same name. Follow [Installation](https://github.com/rebosidium/diamond-captain/blob/main/docs/guide/Installation.md).
+Check the selected agent/profile, installation coverage and complete skill folder. Invoke it explicitly using the host's supported form. A project-only copy in another project is not available here; a personal copy should be discoverable across local projects unless the host's profile, overrides or permissions prevent it. Avoid duplicate installs with the same name. Follow [Installation](https://github.com/rebosidium/diamond-captain/blob/main/docs/guide/Installation.md).
 
 ## I gave it a GitHub link. Is it installed?
 
@@ -8,7 +8,7 @@ A link asks the agent to read files; it does not prove native installation or su
 
 ## Setup found an old version and left it unchanged
 
-An install request authorizes a new workspace installation, rather than an automatic upgrade. `OUTDATED` means an update is available; `ALREADY_CURRENT` means no update is needed. Give explicit update authority for the intended copy when you want replacement. See [Installation](https://github.com/rebosidium/diamond-captain/blob/main/docs/guide/Installation.md).
+An install request under this guide selects a new personal installation for all local projects, rather than an automatic upgrade. `OUTDATED` means an update is available; `ALREADY_CURRENT` means no update is needed. Give explicit update authority for the intended copy when you want replacement. See [Installation](https://github.com/rebosidium/diamond-captain/blob/main/docs/guide/Installation.md).
 
 ## I already use the previous skill name. Should I install both?
 
@@ -16,11 +16,11 @@ Use the [migration guide](../migration.md). The previous installation does not b
 
 ## Why does setup report SOURCE_TREE in a QA project?
 
-The agent identified maintained source or a pinned comparison fixture. Setup preserves its skill files, task state and evidence, including receipts and routing notes. If you already supplied a separate safe authorized product workspace, setup continues there; otherwise the agent asks for the missing target once. A temporary directory, bundled tests or a receipt alone does not make an ordinary installation protected. See [role and target decisions](../installation-decisions.md#establish-workspace-role). Disabling a host plugin does not authorize deleting this fixture's tracked payload.
+The agent identified maintained source or a pinned comparison fixture. Setup preserves its skill files, task state and evidence, including receipts and routing notes. A verified separate personal destination can still be used. If this is an isolated test profile, setup establishes the intended normal profile and access; it asks for a project path only when you explicitly requested project-only installation. A temporary directory, bundled tests or a receipt alone does not make an ordinary installation protected. See [role and target decisions](../installation-decisions.md#protect-source-and-test-files). Disabling a host plugin does not authorize deleting this fixture's tracked payload.
 
 ## Where can I check what was installed?
 
-For a new manual workspace copy, inspect `.diamond-captain-installations/<host-id>/manual.json`. Service packages use their existing distribution and installer receipts. Compare the recorded source with actual payload hashes and host discovery; a Markdown-link check alone does not establish completeness. See [Installation](https://github.com/rebosidium/diamond-captain/blob/main/docs/guide/Installation.md).
+For a new manual personal copy, inspect `~/.diamond-captain-installations/<host-id>/manual.json` in that profile; project-only copies use the relative path inside their project. Service packages use their existing distribution and installer receipts. Compare the recorded source with actual payload hashes and host discovery; a Markdown-link check alone does not establish completeness. See [Installation](https://github.com/rebosidium/diamond-captain/blob/main/docs/guide/Installation.md).
 
 ## Should repeating setup change any files?
 

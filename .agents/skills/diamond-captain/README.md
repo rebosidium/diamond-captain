@@ -20,7 +20,13 @@ Every material response contains a short compass: `Problem / Discover ↗ · 1/6
 
 For other hosts and a GitHub-link entry, see the [cross-agent start guide](https://github.com/rebosidium/diamond-captain/blob/main/START-HERE.md). The package does not pin a model or depend on a particular connector.
 
+## Install for all your local Codex projects
+
+Copy the complete released skill folder to `~/.agents/skills/diamond-captain/` by default. Preserve existing copies until an update or migration is authorized; do not add a duplicate. Open Codex in the project you want to work on and request `$diamond-captain`. The skill is shared across projects; each task keeps its own checkpoint in the actual task project. See [setup and verification](https://github.com/rebosidium/diamond-captain/blob/main/INSTALL-FOR-AGENTS.md).
+
 ## Install in a Codex project
+
+Use this alternative only when a one-project installation is explicitly wanted.
 
 1. Copy the entire `.agents/skills/diamond-captain/` directory into your product project's `.agents/skills/`. Codex discovers repository-local skills there.
 2. Merge the section in [assets/AGENTS-snippet.md](assets/AGENTS-snippet.md) into the product project's root `AGENTS.md` (optional, but recommended for reliable re-entry).
@@ -30,7 +36,7 @@ For other hosts and a GitHub-link entry, see the [cross-agent start guide](https
 
 To use in a generic chat without repo skill discovery, supply the complete skill folder or archive and verify that the agent can read [SKILL.md](SKILL.md) and its supporting files. SKILL.md alone omits the templates and phase guidance. Recover existing task state, or create an intake-only checkpoint before reading task materials and conditional references. Without file access, keep a pasteable checkpoint and provide the supporting files needed for the next step. Carry the checkpoint/state forward when switching chats. This is **not** an always-on installed integration for arbitrary conversations.
 
-Codex discovers repo skills from the current directory up to the Git root. For a personal install, the current documented location is `~/.agents/skills/diamond-captain/`; do not install a duplicate with the same name unnecessarily. Verify the host's actual discovery and precedence before adding a second installation; keep an existing working source rather than duplicating it. Codex detects skill-file changes; if an update is missing, restart the client. Already loaded conversation context may still contain an earlier version. See [official skill documentation](https://learn.chatgpt.com/docs/build-skills).
+Codex discovers repo skills from the current directory up to the Git root. Personal installation is the default above; project installation is the explicit alternative. Verify the host's actual discovery and precedence before adding a second installation; keep an existing working source rather than duplicating it. Codex detects skill-file changes; if an update is missing, restart the client. Already loaded conversation context may still contain an earlier version. See [official skill documentation](https://learn.chatgpt.com/docs/build-skills).
 
 ## Collaboration and acceptance
 

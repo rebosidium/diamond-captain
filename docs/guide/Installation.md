@@ -1,6 +1,6 @@
 Choose one installation route for your host. The skill is an instruction package: it does not select a model, grant tool permissions or install product integrations.
 
-For agent-assisted setup, share [Install for agents](https://github.com/rebosidium/diamond-captain/blob/main/INSTALL-FOR-AGENTS.md) with your agent and ask it to set up this workspace.
+For agent-assisted setup, share [Install for agents](https://github.com/rebosidium/diamond-captain/blob/main/INSTALL-FOR-AGENTS.md) with your agent and ask it to install Diamond Captain for all your projects. This defaults to a personal installation for that agent on this computer; request one-project setup explicitly.
 
 If the previous skill name is already active, follow [migration](../migration.md). Its installed files and project routing do not change just because the product has a new name; check them before adding a new copy.
 
@@ -8,7 +8,7 @@ If the previous skill name is already active, follow [migration](../migration.md
 
 | Your environment | Route and authoritative instructions |
 | --- | --- |
-| Codex workspace | [Native skill installation](../../START-HERE.md#install-in-a-product-workspace); use `$diamond-captain` |
+| Codex | [Personal native skill installation](../../START-HERE.md#install-for-all-your-projects); use `$diamond-captain` |
 | Supported OpenAI plugin tooling | [OpenAI distribution](https://github.com/rebosidium/diamond-captain/blob/main/distributions/openai/README.md); use the supported picker for `diamond-captain:diamond-captain` and check installation limits |
 | Claude Code | [Claude Code distribution](https://github.com/rebosidium/diamond-captain/blob/main/distributions/claude-code/README.md) |
 | OpenCode | [OpenCode distribution](https://github.com/rebosidium/diamond-captain/blob/main/distributions/opencode/README.md) |
@@ -19,31 +19,31 @@ Use [host installation routes](../host-installation-routes.md) for Cursor, Gemin
 
 ## Understand the setup result
 
-The agent checks the workspace and relevant installation, then gives a short result: what changed, the version, where it is available and how to invoke it. If a decision is missing, expect one concrete question, such as the actual project-folder path. Technical details stay in private installation records; material errors and unavailable checks remain explicit.
+The agent checks the intended user profile and relevant installation, then gives a short result: what changed, the version, where it is available and how to invoke it. If a decision is missing, expect one concrete question, such as which normal agent profile to use when the current one is an isolated test profile. Technical details stay in private installation records; material errors and unavailable checks remain explicit.
 
 The following labels explain possible states; a normal setup reply does not need to print the table or an environment audit:
 
 | Detected state | What to expect |
 | --- | --- |
-| `SOURCE_TREE` | Source/fixture stays unchanged. Setup continues in an already supplied safe authorized product workspace, or asks for its actual path and stops further diagnosis. |
+| `SOURCE_TREE` | Source/fixture stays unchanged. Setup can continue in a verified separate personal location; an unresolved test/normal-profile choice needs one question, not a new project folder. |
 | `CONFLICT` | Multiple active copies or an unrelated occupied target need a choice of installation route. |
 | `UNVERIFIED` | Missing provenance or modified/incomplete files are reported; the agent preserves the copy. |
-| `ABSENT` | The agent installs in the requested workspace. |
+| `ABSENT` | The agent installs for all your local projects by default, or in the one project explicitly requested. |
 | `ALREADY_CURRENT` | The matching usable installation, receipt and original installation time stay unchanged. |
 | `OUTDATED` | The agent reports the available update and keeps the existing copy until an update is authorized. |
 | `BLOCKED` | A host permission/capability is missing; the agent uses the normal permission mechanism or explains the supported fallback. |
 
-An install request permits a new workspace installation; an existing copy needs update authority before replacement. Reuse authority already given. Files in another inactive profile are not automatically an active duplicate. A fallback loading route is reported separately from a persistent native installation. [Install for agents](../../INSTALL-FOR-AGENTS.md) routes to the relevant [decision rules](../installation-decisions.md) and [verification/receipt details](../installation-verification.md).
+An install request under this guide selects a new personal installation; an existing copy needs update authority before replacement. Reuse authority already given. Files in another inactive profile are not automatically an active duplicate. A fallback loading route is reported separately from a persistent native installation. [Install for agents](../../INSTALL-FOR-AGENTS.md) routes to the relevant [decision rules](../installation-decisions.md) and [verification/receipt details](../installation-verification.md).
 
 ## Preserve the complete package
 
-For manual installation, copy the entire `diamond-captain` skill folder with its references, assets and license. A lone `SKILL.md` is incomplete. Use the host-specific path in the setup guide and open the agent in the workspace where the skill is discoverable.
+For manual installation, copy the entire `diamond-captain` skill folder with its references, assets and license. A lone `SKILL.md` is incomplete. Use the host-specific path in the setup guide and open the agent in the project where you want to work. A personal installation shares the skill, while task checkpoints remain separate in their actual projects.
 
 Avoid installing two copies with the same skill name. During an update, preserve project task state and follow the relevant distribution's replacement or rollback instructions. A working checkout, an installed copy and a published release may contain different revisions.
 
 ## Find the installation receipt
 
-A new manual workspace copy records its provenance in `.diamond-captain-installations/<host-id>/manual.json`, for example `.diamond-captain-installations/codex/manual.json`. This file is outside the skill payload and discovery roots. It identifies the target, core version, published tag/commit, every payload file's SHA-256 and actual installation time. Archive fields are `null` when the copy came from a pinned Git tree instead of a release archive.
+A new manual personal copy records provenance in `~/.diamond-captain-installations/<host-id>/manual.json` in that user profile. For explicitly project-only copies, the same relative path without `~/` lives in the selected project. This file is outside the skill payload and discovery roots. It identifies the target, core version, published tag/commit, every payload file's SHA-256 and actual installation time. Archive fields are `null` when the copy came from a pinned Git tree instead of a release archive.
 
 Service packages retain their existing `DISTRIBUTION.json` and installer-generated receipts. A receipt records origin; rechecking current files establishes integrity. Rerunning setup on a current installation does not rewrite its receipt or timestamp. A legacy copy without a receipt is reported honestly rather than given an invented installation history.
 

@@ -20,11 +20,11 @@ Keep checks distinct:
 - Payload hashes establish identity/integrity. A receipt records provenance but cannot prove current files unchanged.
 - Discovery establishes that the host finds the selected skill; it does not prove activation, task execution or live outcomes.
 
-Record the actual result: `INSTALLED`, `UPDATED`, `UNCHANGED`, `FALLBACK` or `INCOMPLETE`. Keep provenance/check details private; give a short result in the user's language: action, relevant version(s), project/scope, invocation and material limits/next step. Use exact paths only when useful; explain blocking failures without manifest, hash or registry dumps. Unavailable checks stay unverified, and a fallback is not persistent installation. No changed installation means no new receipt or invented time.
+Record the actual result: `INSTALLED`, `UPDATED`, `UNCHANGED`, `FALLBACK` or `INCOMPLETE`. Keep provenance/check details private; give a short result in the user's language: action, relevant version(s), availability (all local projects / one project / this session), invocation and material limits/next step. Use exact paths only when useful; explain blocking failures without manifest, hash or registry dumps. Unavailable checks stay unverified, and a fallback is not persistent installation. No changed installation means no new receipt or invented time.
 
-## Manual workspace receipt
+## Manual installation receipt
 
-For a successful new manual workspace copy, save `.diamond-captain-installations/<host-id>/manual.json`, using a lowercase host ID such as `codex` or `claude-code`. Keep it outside the payload and discovery roots. For explicitly authorized non-workspace installs, use that route's receipt convention and report its location.
+For a successful new manual personal copy, save `~/.diamond-captain-installations/<host-id>/manual.json` in the same user profile, using a lowercase host ID such as `codex` or `claude-code`. For an explicitly project-only copy, use `.diamond-captain-installations/<host-id>/manual.json` in that project. Keep receipts outside payload/discovery roots. Use a managed route's existing receipt convention when it provides one; do not put a global installation receipt into an arbitrary project.
 
 This runtime receipt contains private installation details. Keep it local and outside tracked files, shared archives and public attachments, even when the skill itself is public. Do not modify or relocate existing receipts without authority. Public `DISTRIBUTION.json` supplied with a service release is different: retain service packages' distribution and installer-generated formats. Legacy fixture receipts are historical records, not templates to normalize or rewrite.
 
@@ -33,7 +33,7 @@ Record actual values:
 | JSON field | Value |
 | --- | --- |
 | `schema_version`, `route`, `host` | Integer `1`, string `manual-copy`, actual host identifier |
-| `target`, `resolved_target` | Workspace-relative install path and resolved absolute path |
+| `target`, `resolved_target` | Actual install path (personal absolute path or project-relative path) and resolved absolute path |
 | `source_repository`, `source_tag`, `source_commit` | Repository URL, selected published tag and resolved full commit SHA |
 | `core_version` | Version read from installed SKILL.md |
 | `artifact_url`, `artifact_sha256` | Downloaded archive URL and verified SHA-256; JSON `null` for both when copied from a pinned Git tree |
@@ -42,4 +42,4 @@ Record actual values:
 
 Do not substitute moving `main` for the selected release commit. For unchanged legacy copies without receipts, report verified provenance and unknowns rather than inventing history. Current usable installations keep their receipts and original times unchanged.
 
-After usable setup, invite the user's task. If one was supplied, load the installed skill and recover its state or initialize it in the actual product workspace. Setup alone creates no product task and requires no six-phase execution.
+After usable setup, invite the user's task. If one was supplied, load the installed skill and recover its state or initialize it in the actual task project. Setup alone creates no product task and requires no six-phase execution.

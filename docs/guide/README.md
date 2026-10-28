@@ -7,7 +7,7 @@ Work with your agent to understand a problem, compare solutions and review the r
 Copy this into your agent:
 
 ```text
-Set up Diamond Captain for this workspace:
+Install Diamond Captain for all my projects:
 https://github.com/rebosidium/diamond-captain/blob/main/INSTALL-FOR-AGENTS.md
 ```
 

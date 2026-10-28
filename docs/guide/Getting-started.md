@@ -2,7 +2,7 @@ Start with a decision or a problem from your actual work. A rough request is eno
 
 ## 1. Give the agent a task and access to the skill
 
-If the skill is installed in the current workspace:
+If the skill is available to your agent through a personal or project installation:
 
 ```text
 Use $diamond-captain to start this task:
