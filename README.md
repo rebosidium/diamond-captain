@@ -28,6 +28,17 @@ Already using the previous skill name? Follow the [migration guide](docs/migrati
 
 ## Install
 
+[![Support AI: Codex](https://img.shields.io/badge/Support_AI-Codex-2563EB?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIzIiBkPSJNMTggNUg5YTQgNCAwIDAgMC00IDR2NmE0IDQgMCAwIDAgNCA0aDkiLz48L3N2Zz4%3D)](distributions/openai/README.md)
+[![Support AI: Claude Code](https://img.shields.io/badge/Support_AI-Claude_Code-2563EB?logo=claudecode&logoColor=white)](distributions/claude-code/README.md)
+[![Support AI: OpenCode](https://img.shields.io/badge/Support_AI-OpenCode-2563EB?logo=opencode&logoColor=white)](distributions/opencode/README.md)
+
+[![Install route: Cursor](https://img.shields.io/badge/Install_route-Cursor-64748B?logo=cursor&logoColor=white)](docs/host-installation-routes.md)
+[![Install route: Gemini CLI](https://img.shields.io/badge/Install_route-Gemini_CLI-64748B?logo=googlegemini&logoColor=white)](docs/host-installation-routes.md)
+[![Compatibility route: Grok Build](https://img.shields.io/badge/Compatibility_route-Grok_Build-64748B?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIzIiBkPSJNMTggNUg5YTQgNCAwIDAgMC00IDR2NmE0IDQgMCAwIDAgNCA0aDl2LTdoLTYiLz48L3N2Zz4%3D)](distributions/grok-build/README.md)
+[![Import candidate: Perplexity Computer](https://img.shields.io/badge/Import_candidate-Perplexity_Computer-D97706?logo=perplexity&logoColor=white)](distributions/perplexity/README.md)
+
+Package badges link to published distributions; route badges link to setup guidance. Perplexity client verification is pending.
+
 Choose one active installation to avoid duplicate skill entries. Download the ZIP and matching checksums from the selected release. If you already use the previous skill name, follow the [migration guide](docs/migration.md) before adding a new copy; existing installations and user-profile settings are not automatically upgraded. Changes to user-profile installations require authorization for that scope.
 
 | Host | Package and instructions | Invocation |
