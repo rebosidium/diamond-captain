@@ -1,5 +1,10 @@
 # Host package changes
 
+## OpenAI, Claude Code and OpenCode 0.3.1
+
+- Pin the complete core 0.4.1 dependency and refresh installation/rollback links.
+- Preserve the existing workflow, skill identity, host invocation and task-state format.
+
 ## OpenAI, Claude Code and OpenCode 0.3.0
 
 - Bundle the complete modular core 0.4.0 with its exact SHA-256 dependency pin.
