@@ -8,3 +8,8 @@ updates:
       time: "06:00"
       timezone: UTC
     open-pull-requests-limit: 5
+  - package-ecosystem: pip
+    directory: /fuzz
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 3

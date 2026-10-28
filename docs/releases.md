@@ -19,3 +19,5 @@ The first Diamond Captain release does not import previous repositories' tags, P
 ## Coordinate a core and host release
 
 Accept and tag the core before updating host dependency pins: packaging tests resolve the exact core release tag. Then accept the host version/hash changes and build from their clean public commit. Update an import route only after its referenced archive is published and its digest verified. Finish core edits before its tag; later core byte changes need a new core version. Never repin an old host version to new core bytes.
+
+Future releases can use the reviewed [provenance workflow](release-provenance.md) to rebuild and attest the exact accepted tag without a maintainer's personal signing key. It stores Actions artifacts and attestations; publishing release assets remains a separate release-owner action.
