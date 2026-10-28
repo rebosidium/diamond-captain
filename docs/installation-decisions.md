@@ -2,13 +2,15 @@
 
 Use the sections relevant to what [agent setup](../INSTALL-FOR-AGENTS.md) found. Resolve protection before choosing an action. Read the selected [host route](host-installation-routes.md), rather than every host guide.
 
-## Establish workspace role
+## Protect source and test files
+
+The default is a personal installation for all local projects in the selected agent. A project-only request overrides it. Current project, package source and installation destination are different locations; protect source without forcing a new project folder.
 
 Identify the actual host/surface, profile and requested scope; read applicable project instructions and resolve source/target symlinks before writes. Different surfaces can expose different installation mechanisms.
 
 Use enough relevant origin, authoring/build metadata or fixture documentation to establish the role. Git, tests, a receipt or a temporary path alone do not prove protected source. Stop once the evidence settles the action; no history reconstruction, old-payload hashing or raw experiment records are needed to reinforce it. Clarify an unresolved role before dependent writes.
 
-For `SOURCE_TREE`, preserve source/fixture, unfinished edits, evidence, receipts and routing. A target resolving into it is protected too; ordinary install/update authority does not permit rewriting it. Continue in a supplied safe authorized workspace, or briefly explain protection, ask for its actual path and wait. No release lookup/downloads or further fixture diagnosis is needed before that answer. Keep role evidence and any already known pin private. Do not offer fixture migration as routine setup or switch to global/profile scope without authority.
+For `SOURCE_TREE`, preserve source/fixture, unfinished edits, evidence, receipts and routing. A target resolving into it is protected too; ordinary install/update authority does not permit rewriting it. Continue into the verified personal installation without changing the fixture. If the active profile is isolated for tests, establish the intended normal profile and access first; do not silently install into a test profile or cross into another profile. Ask for a project path only for an explicitly project-only install whose destination is missing. Stop dependent downloads and further fixture diagnosis while a necessary choice is unresolved. Keep role evidence and any already known pin private; fixture migration is not routine setup.
 
 ## Find the active installation
 
@@ -16,13 +18,13 @@ Inspect native discovery, registrations, disabled entries, precedence and resolv
 
 For Claude Code, inspect project `.claude/settings.json` and relevant user/profile settings: `extraKnownMarketplaces` identifies sources and `enabledPlugins` identifies enabled entries. An empty personal `installed_plugins.json` does not negate a project-local registration. Establish the selected payload before calling a plugin absent, current or upgraded. For hosts using installed caches, changing a marketplace source alone does not prove the active cached installation changed.
 
-Preserve a usable route. Otherwise recommend native workspace setup for one project, a supported published plugin for managed distribution, or an honest import/link fallback. Ask only about a material scope/behavior/access choice. Session loading is not permanent installation; user-scope defaults still need authority. Reuse successful checks for unchanged source/files/profile/target.
+Preserve a usable route that satisfies the requested availability; a project-only copy does not satisfy all-project availability. Prefer the agent's personal native skill or persistent user plugin route. A project-only or session-loading route is an explicit alternative, not a silent fallback. If personal installation is unsupported or inaccessible, explain that limit and ask before changing coverage. An install request under this guide selects a new personal copy; existing copies still need update/migration authority. Reuse successful checks for unchanged source/files/profile/target.
 
 ## Choose an action
 
 | Detected state | Action |
 | --- | --- |
-| `SOURCE_TREE` | Protect source/fixture; continue in a supplied safe authorized target, or ask for its actual path and stop further diagnosis. |
+| `SOURCE_TREE` | Protect source/fixture; use a verified separate personal location. Resolve an unknown profile/access first; ask for a project path only for an explicitly project-only request. |
 | `CONFLICT` | Multiple active routes or an unrelated occupied target need a choice; do not delete, disable, overwrite or add another copy without that decision. |
 | `UNVERIFIED` | Preserve modified/incomplete copies or unresolved provenance; report the gap without replacing them or inventing a source. |
 | `ABSENT` | Install into the verified vacant target within the requested scope. |

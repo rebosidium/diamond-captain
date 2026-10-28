@@ -1,12 +1,12 @@
 # Install Diamond Captain
 
-For agent-assisted setup, give your agent [INSTALL-FOR-AGENTS.md](INSTALL-FOR-AGENTS.md). It checks the host, scope and existing installations before writing. If you use the previous skill name, follow [migration](docs/migration.md) rather than installing a second active copy.
+For agent-assisted setup, give your agent [INSTALL-FOR-AGENTS.md](INSTALL-FOR-AGENTS.md). It defaults to all your local projects for the selected agent, checks the actual profile and existing installations, and preserves protected source/test files. If you use the previous skill name, follow [migration](docs/migration.md) rather than installing a second active copy.
 
-## Install in a product workspace
+## Install for all your projects
 
-Choose a published version from the [release table](README.md#install), such as the [core 0.4.1 release](https://github.com/rebosidium/diamond-captain/releases/tag/v0.4.1), and verify its matching archive checksum. Copy the complete `diamond-captain` skill folder from that release into your agent's supported skill directory. In a tagged source checkout, that folder is `.agents/skills/diamond-captain/`. Preserve its README, references, templates, tests and license. A development checkout is not a released package. For Codex, use `.agents/skills/diamond-captain/` inside the target workspace; change a user-scope installation only when that scope is authorized.
+Choose a published version from the [release table](README.md#install), such as the [core 0.4.1 release](https://github.com/rebosidium/diamond-captain/releases/tag/v0.4.1), and verify its matching archive checksum. Copy the complete `diamond-captain` skill folder from that release into your agent's supported skill directory. In a tagged source checkout, that folder is `.agents/skills/diamond-captain/`. Preserve its README, references, templates, tests and license. A development checkout is not a released package. Use the selected agent's supported personal location by default. For Codex, this is `~/.agents/skills/diamond-captain/`; for Claude Code, `~/.claude/skills/diamond-captain/`. Install for just one project only when explicitly requested; use its project-local skill directory. See [host routes](docs/host-installation-routes.md) for other agents and profile differences.
 
-Open the agent in that workspace and explicitly request `diamond-captain`. In Codex, `$diamond-captain` is the native skill invocation. Ask the agent to report the active skill path/version and verify supporting files; seeing a repository link alone is not proof of installation.
+Open the agent in the project you want to work on and explicitly request `diamond-captain`. In Codex, `$diamond-captain` is the native skill invocation. Ask the agent to report the active skill path/version and verify supporting files; seeing a repository link alone is not proof of installation.
 
 If an active copy already exists, preserve it until an update or [migration](docs/migration.md) is authorized. The absence of the new directory name does not mean an older-name skill is absent. Use [INSTALL-FOR-AGENTS.md](INSTALL-FOR-AGENTS.md) to detect the actual route and installation state before writing.
 

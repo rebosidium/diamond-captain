@@ -28,10 +28,10 @@ Start at any phase, skip ahead or loop back. The agent keeps a checkpoint and di
 
 ## Start with your agent
 
-For agents with access to your project files, including **Gemini CLI**:
+Use this with a local agent such as Claude Code, Codex or **Gemini CLI**. Installation defaults to all your projects on this computer:
 
 ```text
-Set up Diamond Captain for this workspace:
+Install Diamond Captain for all my projects:
 https://github.com/rebosidium/diamond-captain/blob/main/INSTALL-FOR-AGENTS.md
 ```
 
@@ -49,14 +49,14 @@ You set the goal, scope and decision authority; the agent investigates, compares
 
 Package badges link to published distributions; route badges link to setup guidance. Perplexity client verification is pending.
 
-Choose one active installation to avoid duplicate skill entries. Download the ZIP and matching checksums from the selected release. If you already use the previous skill name, follow the [migration guide](docs/migration.md) before adding a new copy; existing installations and user-profile settings are not automatically upgraded. Changes to user-profile installations require authorization for that scope.
+Choose one active installation to avoid duplicate skill entries. Download the ZIP and matching checksums from the selected release. If you already use the previous skill name, follow the [migration guide](docs/migration.md) before adding a new copy; existing installations and user-profile settings are not automatically upgraded. The default is a personal installation for all your local projects in the selected agent; choose project-only setup explicitly. Existing copies still need update or migration authority.
 
 | Host | Package and instructions | Invocation |
 | --- | --- | --- |
 | Codex / compatible OpenAI plugin tooling | [OpenAI 0.3.1](https://github.com/rebosidium/diamond-captain/releases/tag/openai-v0.3.1) · [Guide](distributions/openai/README.md) | `diamond-captain:diamond-captain`, or `$diamond-captain` for a native skill |
-| Claude Code | [Claude Code 0.3.1](https://github.com/rebosidium/diamond-captain/releases/tag/claude-code-v0.3.1) · [Guide](distributions/claude-code/README.md) | `/diamond-captain:diamond-captain` |
+| Claude Code | [Claude Code 0.3.1](https://github.com/rebosidium/diamond-captain/releases/tag/claude-code-v0.3.1) · [Guide](distributions/claude-code/README.md) | `/diamond-captain` for a native skill, or `/diamond-captain:diamond-captain` for the plugin |
 | OpenCode | [OpenCode 0.3.1](https://github.com/rebosidium/diamond-captain/releases/tag/opencode-v0.3.1) · [Guide](distributions/opencode/README.md) | Ask the agent to use `diamond-captain` |
-| Gemini CLI (terminal) | Install the complete native skill in your workspace. [Setup guide](docs/host-installation-routes.md) | Request `diamond-captain`; verify with `/skills list` |
+| Gemini CLI (terminal) | Install the complete native skill for your user account (all local projects). [Setup guide](docs/host-installation-routes.md) | Request `diamond-captain`; verify with `/skills list` |
 | Web-Gemini (browser) | Add this repository through **+ → Import code → GitHub**, where available. [Google's import guide](https://support.google.com/gemini/answer/14903178?hl=en) | Ask Gemini to use Diamond Captain for your task. This provides chat context; it does not install a CLI skill. |
 | Cursor, Grok Build, Perplexity Computer | [Host installation routes](docs/host-installation-routes.md) | Use the host's supported native/plugin/import route and verify discovery |
 | Manual | [Core 0.4.1](https://github.com/rebosidium/diamond-captain/releases/tag/v0.4.1) or the [complete core folder at v0.4.1](https://github.com/rebosidium/diamond-captain/tree/v0.4.1/.agents/skills/diamond-captain) | Follow the selected host's skill mechanism |
