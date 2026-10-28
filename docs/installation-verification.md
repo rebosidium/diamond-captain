@@ -1,6 +1,6 @@
 # Verify installation and record provenance
 
-Read when checking an installation or recording a new copy. [Agent setup](../INSTALL-FOR-AGENTS.md) and relevant [decision rules](installation-decisions.md) establish role, scope and authority first. Setup authority does not grant publication, marketplace submissions, sharing private records, connectors, credentials or background jobs.
+Read after the target and action are settled, when checking an installation or recording a new copy. [Agent setup](../INSTALL-FOR-AGENTS.md) and relevant [decision rules](installation-decisions.md) establish role, scope and authority first. Setup authority does not grant publication, marketplace submissions, sharing private records, connectors, credentials or background jobs.
 
 ## Install or replace safely
 
@@ -12,7 +12,7 @@ If copying, receipt recording or verification fails, report `INCOMPLETE` with ac
 
 ## Check actual results
 
-Check complete membership and every payload byte against selected published source, read the installed name/version, and inspect actual host discovery where available. Verify supporting reference/template access and the selected source/cache in a fresh relevant session. Existing conversations can retain previously loaded instructions.
+Check complete membership and every payload byte against selected published source, read the installed name/version, and inspect actual host discovery where available. Verify supporting reference/template access and the selected source/cache in a fresh relevant session. Existing conversations can retain previously loaded instructions. Reuse successful checks for unchanged source/files/profile/target; recheck affected inputs if freshness is uncertain. Setup needs no unrelated-fixture audit or design-task experiment.
 
 Keep checks distinct:
 
@@ -20,7 +20,7 @@ Keep checks distinct:
 - Payload hashes establish identity/integrity. A receipt records provenance but cannot prove current files unchanged.
 - Discovery establishes that the host finds the selected skill; it does not prove activation, task execution or live outcomes.
 
-Label unavailable checks unverified. Report `INSTALLED`, `UPDATED`, `UNCHANGED`, `FALLBACK` or `INCOMPLETE` according to what happened; a link/attachment fallback is not persistent native installation. Include detected state, host/surface/profile, route/scope, active path, core and host-package versions separately, source tag/commit, receipt or why none, actual checks/limits, next step and invocation. If no installation changed, create no receipt implying a new installation or invented earlier time.
+Record the actual result: `INSTALLED`, `UPDATED`, `UNCHANGED`, `FALLBACK` or `INCOMPLETE`. Keep provenance/check details private; give a short result in the user's language: action, relevant version(s), project/scope, invocation and material limits/next step. Use exact paths only when useful; explain blocking failures without manifest, hash or registry dumps. Unavailable checks stay unverified, and a fallback is not persistent installation. No changed installation means no new receipt or invented time.
 
 ## Manual workspace receipt
 
