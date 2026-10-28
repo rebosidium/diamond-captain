@@ -4,6 +4,13 @@
 
 No changes pending.
 
+## 0.5.0
+
+- Add optional method menus for all six thinking modes and 60 concise qualitative, quantitative, design and delivery procedures, with selection conditions, outputs and limits. Load only the relevant guidance.
+- Finish loading the skill separately, then save intake before opening task files, including file-only requests. Preserve the original checkpoint and append later evidence.
+- Keep taskless activation brief and start supplied tasks with useful independent work. Make unsettled problem frames, evidence, unknowns and recommendations inspectable while the human retains product choices and acceptance.
+- Preserve task-state format, phase checkpoints, loop history, permission boundaries and existing scoped decisions.
+
 ## 0.4.1
 
 - Shorten the agent installation entrypoint and route detailed installation decisions, verification and receipts to focused guides. Preserve source/fixture protections and continue in an already authorized safe target; distinguish host removal from deleting versioned payloads.

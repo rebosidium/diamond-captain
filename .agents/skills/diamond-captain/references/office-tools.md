@@ -2,6 +2,8 @@
 
 Five additional categories, **ten optional candidates each**. Start with the team's existing workspace; this is a menu, not a ranking or installation checklist. Documents, meetings and spreadsheets are already covered in [categories 3, 4 and 24](tool-options.md#category-index). Read only the category needed for the next action.
 
+Choose the evidence or artifact needed before the office tool; use the [phase method menus](methods/README.md) only if that choice is unresolved. A calendar event or polished deck does not itself validate a research or design conclusion.
+
 Routes use the [main catalog legend and boundaries](tool-options.md#read-only-what-the-next-decision-needs): B = browser/app, F = compatible files, L = installed runtime, A? = inspect the current API. Discover actual connector/MCP operations first. A row is not proof of a connected account, MCP support for every operation, export compatibility or permission to write.
 
 ## Connector and MCP entry points

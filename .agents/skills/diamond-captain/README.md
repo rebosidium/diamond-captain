@@ -61,6 +61,7 @@ The skill **does not modify the model's system prompt**. It cannot run asynchron
 - [references/dialogue-and-gates.md](references/dialogue-and-gates.md) — intake, frequent questions, phase decisions, Design DoR/DoD
 - [references/research.md](references/research.md) — qualitative/quantitative methods, depth and stop rules
 - [references/uxr.md](references/uxr.md) — conditional study planning, recruitment, sessions, synthesis and research handoff
+- [references/methods/README.md](references/methods/README.md) — six phase menus and 60 optional method cards: when, procedure, output and limits
 - [references/tool-options.md](references/tool-options.md) — ten *optional* tool candidates per category across an expanded task catalog
 - [references/office-tools.md](references/office-tools.md) — email, calendars, files, presentations, approvals and connector/MCP limits
 - [assets/TASK-STATE.md](assets/TASK-STATE.md) — persistent task state template

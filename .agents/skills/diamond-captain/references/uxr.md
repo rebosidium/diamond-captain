@@ -4,6 +4,8 @@ Read the relevant section when planning, conducting or analysing user research. 
 
 UXR can expand or narrow **any** diamond: investigate alternative causes in Discover, justify a framing in Define, compare mechanisms in Develop/Deliver, and investigate real use or unintended effects in Deploy/Digest. A session count or polished report is not a phase gate.
 
+For concrete procedures beyond interviews, use the [method menus](methods/README.md): [qualitative cards](methods/qualitative.md) include diaries, contextual observation, comprehension and collaborative-use studies; [quantitative cards](methods/quantitative.md) cover measurement, sampling, benchmarks and effect estimation. Read the cards relevant to the decision, then adapt the protocol below.
+
 ## Frame the study and its decision
 
 Reuse the brief, state and existing evidence. Make the smallest study plan that names:

@@ -4,6 +4,8 @@
 
 For a concrete user study, read the relevant part of the [UXR guide](uxr.md): study decisions, method choice, recruitment, session protocols, analysis and research handoff. Keep it conditional; do not load or perform every method for an ordinary task.
 
+When the procedure is unclear, use the [current phase's method menu](methods/README.md) and selected [qualitative](methods/qualitative.md) or [quantitative](methods/quantitative.md) cards for when to use it, steps, output and limits. Existing evidence may instead need a [synthesis/design method](methods/design-and-delivery.md); no new study is implied.
+
 ## Choose evidence suited to the question
 
 | Need | Qualitative options | Quantitative options | Limitations |
