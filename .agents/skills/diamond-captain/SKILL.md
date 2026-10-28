@@ -1,9 +1,9 @@
 ---
 name: diamond-captain
-description: Run product and service design from intake to outcome review. Start or resume a task, locate its Triple Diamond phase, assess readiness and execute the next useful step. Load the full skill and recover or initialize state before task guidance or substantive work, respecting mandatory host prerequisites. Supports UI and non-UI work; excludes skill maintenance and unrelated code or documentation edits.
+description: Run product and service design from intake to outcome review. Start or resume a task, locate its Triple Diamond phase, assess readiness and execute the next useful step. Finish loading this full skill in a separate call; recover or initialize state before reading task files or guidance. Respect mandatory host prerequisites. Supports UI and non-UI work; excludes skill maintenance and unrelated code or documentation edits.
 license: MIT
 metadata:
-  version: "0.4.1"
+  version: "0.5.0"
 ---
 
 # Diamond Captain
@@ -12,7 +12,7 @@ Turn the requested task into a usable, assessed result. The user's priorities, s
 
 ## Start, resume and act
 
-Load this full skill, through the host's loading tool or by reading SKILL.md; a description or picker entry alone is insufficient. Reuse instructions already present in the conversation. Resolve supporting paths from this installed skill, and task paths from the actual product workspace.
+Load this full skill, through the host's loading tool or by reading SKILL.md, in a separate call before scheduling task-file reads. Do not combine this load with task briefs, attachments, evidence or conditional references in a shell command, batch, parallel call or delegated read. A description or picker entry alone is insufficient; reuse a full skill already loaded in context. Mandatory host instructions retain precedence. Resolve supporting paths from this installed skill, and task paths from the actual product workspace.
 
 **Choose the entry from the user's actual request:**
 
@@ -20,13 +20,13 @@ Load this full skill, through the host's loading tool or by reading SKILL.md; a 
 - **A task is already supplied or established in context:** reuse it immediately. Infer an initial working phase from the request where possible, keeping it provisional unless chosen/delegated; initialize the intake checkpoint below before dependent reads, then do the first useful authorized action. Do not ask the user to restate the task or choose a phase before independent work can start. If evidence is still needed to locate the phase, record that uncertainty and refine it after reading the material. Ask only for a missing decision that actually blocks the dependent action.
 - **Explicitly resuming a task:** recover its active state below, preserving history, answers, permissions and pending acceptance; do not restart the welcome or create a new state.
 
-1. **Initialize before dependent reads.** For a new task, read [the template](assets/TASK-STATE.md), then create `.product-task/TASK-STATE.md` or the user's task-specific path. Record intake only: supplied facts, scope, permissions, known decisions, unknowns and next action. Confirm the write before reading references, research/data or doing analysis; do not batch them with initialization or pre-fill future findings, checks or acceptance.
+1. **Initialize before dependent reads.** For a new task, read [the template](assets/TASK-STATE.md), then create `.product-task/TASK-STATE.md` or the user's task-specific path from facts and paths already in the conversation. If the request is in an unopened file, record its path and unknown contents at intake; read it only after the checkpoint, then append the request and actual findings without rewriting the intake history. Confirm the successful write before opening task files or conditional references, even for a quick preview; do not batch those reads with skill loading or initialization, or pre-fill future findings, checks or acceptance.
 
-   With Python and file access, use the bundled initializer; supply the original request on stdin:
+   With Python and file access, use the bundled initializer; supply the request already available in the conversation on stdin, including a file-only request's path without first opening it:
 
    ```sh
    python3 <skill-dir>/scripts/init_task_state.py --state <state-path> --task-id <task-id> <<'REQUEST'
-   <original request>
+   <request already supplied, or its unopened file path>
    REQUEST
    ```
 
@@ -43,12 +43,15 @@ Use the user's language. During an active task, default to frequent, focused que
 
 Keep readiness, phase decision, handoff acceptance and action permission separate. Preserve scoped delegation and its source; newer instructions can change it. Do not reapprove granted authority or repeat settled/still-pending questions. Analysis or phase delegation does not include handoff acceptance unless explicit. Before ending a material response, ask the next consequential unanswered decision unless delegated or already pending; respect the user's requested cadence without inventing assent.
 
+The human owns problem framing, priorities, solution selection and acceptance. Authority to analyse or draft does not delegate those decisions. A requested solution is a candidate or explicit constraint, not evidence for its assumed cause. When an unsettled framing changes the next work, show plausible frames, their evidence and unknowns, and a recommendation for the human's choice; continue independent analysis. Preserve choices already made and any specific delegation within its stated scope.
+
 ## Apply only the detail needed
 
 Open relevant sections when their decision arises; reuse unchanged guidance still in context:
 
 - **Phase/readiness/loop:** [phases](references/phases.md). Compare relevant DoR/DoD with evidence as met/unmet/unknown/not applicable. Gates support a decision, not a checklist count. Preserve upstream evidence; record what a contradiction invalidates, retains and reopens, target phase, revised criteria and next action/owner.
 - **Research/data/uncertain claims:** [research](references/research.md), then relevant UXR guidance if needed. Scale work to uncertainty, consequences and reversibility. Discover compares causes; Develop compares mechanisms, including non-UI. Qual/quant can serve either mode; interviews do not prove prevalence and metric changes do not prove causality. Broaden only while evidence could change the decision; bounded research, pilot, stop or loop are valid.
+- **Unresolved method choice:** [methods by phase](references/methods/README.md), then the current phase menu and selected method cards. Use when a concrete research, synthesis, design or delivery procedure would resolve the next uncertainty; skip the catalog when the method is already clear. Read only relevant cards, with their inputs and limits; the menu is not a quota or an additional phase gate.
 - **Unresolved tool choice:** [tool index](references/tool-options.md), then only the relevant linked category. Skip catalogs when supplied files or known local tools suffice. Discover actual capabilities/access first; named providers are candidates, not dependencies or proof of integration. Without access, use files, a protocol or honest handoff.
 - **Skill revision only:** [evaluation scenarios](tests/scenarios.md); not normal product intake.
 

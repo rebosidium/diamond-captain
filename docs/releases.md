@@ -1,6 +1,6 @@
 # Releases, updates and rollback
 
-Core releases use `vX.Y.Z` tags matching SKILL.md metadata. Host packages use independent `<service>-vX.Y.Z` tags and pin the exact core version/hash. Current versions are core 0.4.1 and host packages 0.3.1, accompanying the agent-installation guide update.
+Core releases use `vX.Y.Z` tags matching SKILL.md metadata. Host packages use independent `<service>-vX.Y.Z` tags and pin the exact core version/hash. Current core is 0.5.0. Host packages 0.3.1 remain pinned to core 0.4.1 until their separate package update.
 
 Download the archive and checksums from the selected [release](https://github.com/rebosidium/diamond-captain/releases). Verify SHA-256, extract to a new directory, and follow its setup guide. Public archives and receipts identify their public source revision. Keep a saved complete working installation before replacement.
 

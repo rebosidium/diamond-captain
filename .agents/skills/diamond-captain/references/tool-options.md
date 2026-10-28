@@ -6,6 +6,8 @@
 
 Start from the task, question and available evidence. Use the index to open only one or two relevant category files when tool choice is unresolved; skip catalogs when known files/tools suffice. Prefer the team's existing tools and discover actual authorized connector/MCP operations and scopes first. MCP is a [protocol](https://modelcontextprotocol.io/), not an analytics or research product.
 
+If the procedure itself is unclear, choose it from the [phase method menus](methods/README.md) before comparing tools. A diary study, journey synthesis or operational rehearsal can use existing files and tools.
+
 Without a connector, investigate current official API documentation and credentials only if needed, or use an authorized app/browser or compatible file. Do not build an integration merely because it is listed. Before execution verify capability, account permission, data handling, cost and required output; a product page does not prove tenant access or success. Recommend a few suitable paths with reasons and a lightweight fallback; ask about existing workflow only when it changes the decision, while independent work continues.
 
 Route legend: `B` = browser/native app; `F` = compatible files/exports; `L` = installed local runtime; `A?` = API route to investigate in current official documentation. No row proves installation, endpoint availability, plan, scope or export rights. Connector discovery and exact operation checks apply to every entry.

@@ -1,5 +1,7 @@
 Choose research from the decision it needs to inform. Scale depth to uncertainty, consequences and reversibility, and reuse credible existing evidence first.
 
+Need a concrete procedure? Open the [current phase's method menu](../../.agents/skills/diamond-captain/references/methods/README.md). It links 20 qualitative, 20 quantitative and 20 design/delivery methods, each with situations, steps, outputs and limits. For example, diaries suit experiences spread over time; a queue analysis separates waiting from handling. Select only what can change the decision.
+
 For a concrete study, use the relevant part of the [UXR guide](../../.agents/skills/diamond-captain/references/uxr.md). If choosing a tool is still necessary, open the [category index](../../.agents/skills/diamond-captain/references/tool-options.md) and the linked category. An [office workflow](../../.agents/skills/diamond-captain/references/office-tools.md) may help prepare a readout or handoff; it does not establish research evidence or authority to send invitations.
 
 ## Plan the smallest useful investigation

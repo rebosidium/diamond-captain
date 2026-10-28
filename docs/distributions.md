@@ -2,7 +2,7 @@
 
 The canonical product is `.agents/skills/diamond-captain/`. Host adapters contain metadata and installation instructions; the builder bundles the complete pinned core without maintaining a second authored SKILL.md.
 
-Current core: **0.4.1**. OpenAI, Claude Code and OpenCode packages: **0.3.1** each. Core and service versions are independent. Each service pins both the core version and its aggregate SHA-256; mismatched source fails the build.
+Current core: **0.5.0**. OpenAI, Claude Code and OpenCode packages: **0.3.1** each, still pinned to core **0.4.1** until their separate package update. Core and service versions are independent. Each service pins both the core version and its aggregate SHA-256; mismatched source fails the build.
 
 The [Perplexity import candidate](../distributions/perplexity/README.md) reuses a separately pinned, unchanged Claude Code archive rather than introducing another version or skill. Offline preparation is checked; real-client compatibility for the Diamond Captain identity is pending. [Historical test limits](perplexity-compatibility.md) remain explicit.
 
