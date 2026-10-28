@@ -1,9 +1,11 @@
 # Security and trust
 
-Diamond Captain distributes readable skill instructions, host packaging and installation helpers. [MIT licensing](../LICENSE) and third-party notices are included. Report vulnerabilities through the [private reporting channel](../.github/SECURITY.md); do not disclose private reproduction data in a public issue.
+Readable skill instructions, host packages and Python helpers use [MIT](../LICENSE), with third-party notices. [Report vulnerabilities privately](../.github/SECURITY.md); omit sensitive reproduction data from public issues.
 
-The product repository uses read-only pull-request checks, SHA-pinned workflow dependencies, disabled persisted checkout credentials, public-content inspection and automated package tests. Protected main changes require a PR and successful checks. Secret scanning, dependency alerts and source scanning complement these checks where enabled in repository settings.
+Protected main requires PRs and passing package, source and public-content checks. Actions are SHA-pinned; checkout credentials are not persisted. [Installer fuzzing](../fuzz/README.md) uses bounded synthetic inputs without raw-evidence uploads. Secret scanning/dependency alerts apply where enabled.
 
-Inspect actual [Actions](https://github.com/rebosidium/diamond-captain/actions), [Security](https://github.com/rebosidium/diamond-captain/security) and [repository rules](https://github.com/rebosidium/diamond-captain/rules). A passing result is limited to its checked revision and scope; it is not independent security certification or proof that every agent action is safe.
+[Future-tag provenance](release-provenance.md) uses separate signing with short-lived GitHub identity: Actions artifacts/attestations only, no release uploads or contents-write permission. Existing downloads remain unchanged and are not retroactively signed.
 
-Diamond Captain has earned [OpenSSF Best Practices Passing](https://www.bestpractices.dev/en/projects/16014/passing) through a project-maintained self-assessment of its published criteria. The separate [OpenSSF Scorecard](https://scorecard.dev/viewer/?uri=github.com/rebosidium/diamond-captain) reports automated repository-practice checks and their remaining findings. These assessments belong to this repository; they do not certify every agent action or constitute an independent security audit. No OpenSSF Baseline achievement is claimed.
+[OpenSSF Passing](https://www.bestpractices.dev/en/projects/16014/passing) is project-maintained self-assessment; [Scorecard](https://scorecard.dev/viewer/?uri=github.com/rebosidium/diamond-captain) lists automated checks/findings. Neither is an independent audit or agent-safety guarantee. No OpenSSF Baseline achievement is claimed.
+
+Check [Actions](https://github.com/rebosidium/diamond-captain/actions), [Security](https://github.com/rebosidium/diamond-captain/security) and [rules](https://github.com/rebosidium/diamond-captain/rules). Results cover only the checked revision and scope.
