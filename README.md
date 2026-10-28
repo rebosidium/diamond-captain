@@ -59,7 +59,9 @@ These are thinking modes, not mandatory timeboxes. Prepared work, a released cha
 - [Compatibility and checks](docs/validation.md), [security](docs/security.md), [release and rollback](docs/releases.md).
 - [Changelog](CHANGELOG.md), [migration from the previous skill name](docs/migration.md), [contributing](CONTRIBUTING.md).
 
-This repository distributes the product and reproducible checks. Internal development records and execution logs are not included. No third-party security certificate is claimed for this new repository.
+## Security
+
+See [security controls and assessment limits](docs/security.md) or [report a vulnerability privately](.github/SECURITY.md). Internal development records and execution logs are excluded.
 
 ## License
 
