@@ -1,24 +1,28 @@
 # Security Policy
 
-## Report a vulnerability privately
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16014/badge)](https://www.bestpractices.dev/projects/16014)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/rebosidium/diamond-captain/badge)](https://scorecard.dev/viewer/?uri=github.com/rebosidium/diamond-captain)
 
-Use [GitHub private vulnerability reporting](https://github.com/rebosidium/diamond-captain/security/advisories/new) to contact the maintainer. Sign in to GitHub and choose **Report a vulnerability** on the repository's Security advisories page.
+## Checks and limits
 
-Do not publish vulnerability details, credentials or private project data in a public issue or pull request.
+CI checks packages, source, public content and installer fuzzing. [Future-tag attestations](../docs/release-provenance.md) produce Actions artifacts; existing downloads are not retroactively signed. [Controls and limits](../docs/security.md).
 
-Include:
+Passing is self-assessed; Scorecard is automated. Neither is an independent audit or agent-safety guarantee. No OpenSSF Baseline achievement is claimed.
 
-- The affected release tag or commit, and your agent/app/model or automation environment.
-- A description of the security impact and the authorization or data boundary involved.
-- Minimal reproduction steps, expected and actual behavior, and redacted evidence.
-- Other affected releases or a possible fix, if known.
+## Report privately
 
-Use synthetic data and resources you control when reproducing an issue. Coordinate disclosure with the maintainer while the report is assessed and a fix is prepared. There is no guaranteed response or resolution deadline.
+[Report a vulnerability](https://github.com/rebosidium/diamond-captain/security/advisories/new) (GitHub sign-in required). Keep vulnerability details, credentials and private project data out of public issues/PRs. Include:
 
-## Project scope and versions
+- Affected tag/commit and agent/app/model or automation environment.
+- Relevant files, security impact and authorization/data boundary.
+- Minimal reproduction, expected/actual behavior and redacted evidence; other affected versions or a possible fix, if known.
 
-Diamond Captain distributes an agent skill, documentation and repository automation. Reports may concern unauthorized actions or disclosure caused by the distributed instructions, unsafe handling of untrusted source material, or compromised package/automation behavior. Identify the relevant project files and demonstrate the impact.
+Use synthetic data and resources you control. Coordinate disclosure with the maintainer during assessment and fixes; response/resolution deadlines are not guaranteed.
 
-Start with the [latest release](https://github.com/rebosidium/diamond-captain/releases/latest), and include older affected versions when known. Fixes are published in a new version with the affected versions and verification limits recorded; existing published tags and release assets are preserved. See [releases and rollback](../docs/releases.md).
+## Scope and versions
 
-For ordinary usage questions, design feedback and non-security bugs, use [GitHub Issues](https://github.com/rebosidium/diamond-captain/issues).
+Covers skill instructions, documentation and repository automation: unauthorized actions/disclosure, unsafe handling of untrusted inputs and package/automation compromise. Demonstrate the impact.
+
+Start with the [latest release](https://github.com/rebosidium/diamond-captain/releases/latest) and identify older affected versions. Fixes use new versions with affected versions and verification limits recorded; published tags/assets are preserved. [Releases and rollback](../docs/releases.md).
+
+Use [Issues](https://github.com/rebosidium/diamond-captain/issues) for usage questions, design feedback and non-security bugs.
