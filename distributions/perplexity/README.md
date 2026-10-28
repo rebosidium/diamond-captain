@@ -1,18 +1,18 @@
 # Perplexity Computer import candidate
 
-This route reuses the complete, unchanged [Diamond Captain Claude Code 0.3.0 archive](https://github.com/rebosidium/diamond-captain/releases/download/claude-code-v0.3.0/diamond-captain-claude-code-0.3.0-core-0.4.0.zip), containing canonical core **0.4.0**. The [import pin](import.json) records its published archive digest, public build commit and core dependency. No separate Perplexity version or authored copy of the skill is introduced.
+This route reuses the complete, unchanged [Diamond Captain Claude Code 0.3.1 archive](https://github.com/rebosidium/diamond-captain/releases/download/claude-code-v0.3.1/diamond-captain-claude-code-0.3.1-core-0.4.1.zip), containing canonical core **0.4.1**. The [import pin](import.json) records its published archive digest, public build commit and core dependency. No separate Perplexity version or authored copy of the skill is introduced.
 
-ZIP SHA-256: `adf3222eee410257ea6c8ef94fb4aa02e83c42e5b05e2e0d52c8475a81c33b2a`.
+ZIP SHA-256: `403bbbb959d3b02a6d4a099aa867360c8a7d1463c3b9d501ca172f8ea6e8d86d`.
 
 **The renamed Diamond Captain package has not been imported or executed in the real Perplexity client.** Offline verification and earlier tests under another package identity do not establish that compatibility. See the [compatibility summary](../../docs/perplexity-compatibility.md).
 
 ## Prepare locally
 
-Download the pinned archive and its published checksums, verify them, then run from this repository with its local `v0.4.0` tag available:
+Download the pinned archive and its published checksums, verify them, then run from this repository with its local `v0.4.1` tag available:
 
 ```sh
 python3 scripts/prepare_perplexity.py \
-  --archive 'PRIVATE_ARCHIVE/diamond-captain-claude-code-0.3.0-core-0.4.0.zip' \
+  --archive 'PRIVATE_ARCHIVE/diamond-captain-claude-code-0.3.1-core-0.4.1.zip' \
   --output 'PRIVATE_ARCHIVE/perplexity-import'
 ```
 
@@ -31,7 +31,7 @@ Keep prompts, responses, cloud paths, snapshots, screenshots and detailed test r
 
 The pinned release above stays unchanged.
 
-Core 0.4.0 tool indexes link to category files under `references/tools/`. Keep the complete preview skill tree and verify those links after import; uploading only SKILL.md or an index omits instructions. Successful import of the pinned release does not verify a later source snapshot.
+Core 0.4.1 tool indexes link to category files under `references/tools/`. Keep the complete preview skill tree and verify those links after import; uploading only SKILL.md or an index omits instructions. Successful import of the pinned release does not verify a later source snapshot.
 
 To export committed core edits for a separate private test without assigning a release version:
 
