@@ -3,7 +3,7 @@ name: diamond-captain
 description: Run product and service design from intake to outcome review. Start or resume a task, locate its Triple Diamond phase, assess readiness and execute the next useful step. Load the full skill and recover or initialize state before task guidance or substantive work, respecting mandatory host prerequisites. Supports UI and non-UI work; excludes skill maintenance and unrelated code or documentation edits.
 license: MIT
 metadata:
-  version: "0.3.0"
+  version: "0.4.0"
 ---
 
 # Diamond Captain
