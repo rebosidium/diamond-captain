@@ -1,5 +1,10 @@
 # Host package changes
 
+## OpenAI, Claude Code and OpenCode 0.3.2
+
+- Pin complete core 0.5.0 with its exact SHA-256 dependency, including the optional method library and startup and human framing fixes.
+- Preserve skill identity, host invocations, installation behavior and Markdown task state. Previous releases remain unchanged.
+
 ## OpenAI, Claude Code and OpenCode 0.3.1
 
 - Pin the complete core 0.4.1 dependency and refresh installation/rollback links.

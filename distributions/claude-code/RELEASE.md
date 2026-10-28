@@ -1,5 +1,5 @@
-# Claude Code plugin 0.3.1
+# Claude Code plugin 0.3.2
 
-Bundle complete core 0.4.1 with its exact dependency hash. Preserve Triple Diamond, skill identity, host invocation and Markdown task state. The compact agent-installation guide and focused setup references are available in the product repository.
+Bundle complete pinned core 0.5.0, including the optional method library and startup and human framing fixes. Preserve Triple Diamond, skill identity, host invocation and Markdown task state. Previous releases remain unchanged.
 
 Preserve the previous complete installation and project state before updating. Follow the [installation guide](README.md) and [rollback instructions](../../docs/releases.md).
