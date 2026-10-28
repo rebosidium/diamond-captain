@@ -16,7 +16,7 @@ Use the [migration guide](../migration.md). The previous installation does not b
 
 ## Why does setup report SOURCE_TREE in a QA project?
 
-The agent identified maintained source or a pinned comparison fixture. Setup preserves its skill files, task state and evidence, including receipts and routing notes. Use a separate product workspace. A temporary directory, bundled tests or a receipt alone does not make an ordinary installation a protected fixture.
+The agent identified maintained source or a pinned comparison fixture. Setup preserves its skill files, task state and evidence, including receipts and routing notes. If you already supplied a separate safe authorized product workspace, setup continues there; otherwise the agent asks for the missing target once. A temporary directory, bundled tests or a receipt alone does not make an ordinary installation protected. See [role and target decisions](../installation-decisions.md#establish-workspace-role). Disabling a host plugin does not authorize deleting this fixture's tracked payload.
 
 ## Where can I check what was installed?
 

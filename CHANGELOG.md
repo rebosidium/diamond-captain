@@ -4,6 +4,10 @@
 
 No changes pending.
 
+## 0.4.1
+
+- Shorten the agent installation entrypoint and route detailed installation decisions, verification and receipts to focused guides. Preserve source/fixture protections and continue in an already authorized safe target; distinguish host removal from deleting versioned payloads.
+
 ## 0.4.0
 
 - Consolidate shared operating instructions and link tool indexes to individual categories, preserving candidate entries and previous category anchors. Keep the Markdown task-state format and host identities unchanged.

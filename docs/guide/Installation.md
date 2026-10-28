@@ -23,7 +23,7 @@ The agent checks the workspace, active profile and existing installations before
 
 | Detected state | What to expect |
 | --- | --- |
-| `SOURCE_TREE` | A maintained source tree or pinned QA fixture is protected; setup leaves it unchanged and requests a separate product workspace. |
+| `SOURCE_TREE` | Source/fixture stays unchanged. Setup continues in an already supplied safe authorized product workspace, or requests the missing target. |
 | `CONFLICT` | Multiple active copies or an unrelated occupied target need a choice of installation route. |
 | `UNVERIFIED` | Missing provenance or modified/incomplete files are reported; the agent preserves the copy. |
 | `ABSENT` | The agent installs in the requested workspace. |
@@ -31,7 +31,7 @@ The agent checks the workspace, active profile and existing installations before
 | `OUTDATED` | The agent reports the available update and keeps the existing copy until an update is authorized. |
 | `BLOCKED` | A host permission/capability is missing; the agent uses the normal permission mechanism or explains the supported fallback. |
 
-An install request permits a new workspace installation; an existing copy needs explicit update authority before replacement. Files in another inactive profile are not automatically an active duplicate. A fallback loading route is reported separately from a persistent native installation. See [Install for agents](https://github.com/rebosidium/diamond-captain/blob/main/INSTALL-FOR-AGENTS.md) for the full decision rules.
+An install request permits a new workspace installation; an existing copy needs update authority before replacement. Reuse authority already given. Files in another inactive profile are not automatically an active duplicate. A fallback loading route is reported separately from a persistent native installation. [Install for agents](../../INSTALL-FOR-AGENTS.md) routes to the relevant [decision rules](../installation-decisions.md) and [verification/receipt details](../installation-verification.md).
 
 ## Preserve the complete package
 

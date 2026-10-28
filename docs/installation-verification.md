@@ -1,0 +1,45 @@
+# Verify installation and record provenance
+
+Read when checking an installation or recording a new copy. [Agent setup](../INSTALL-FOR-AGENTS.md) and relevant [decision rules](installation-decisions.md) establish role, scope and authority first. Setup authority does not grant publication, marketplace submissions, sharing private records, connectors, credentials or background jobs.
+
+## Install or replace safely
+
+Follow the selected [host procedure](host-installation-routes.md). Verify a downloaded archive against its matching published SHA-256 before use; stop on mismatch. For pinned Git source, resolve the selected published tag/commit and compare the complete payload with that tree. An archive hash identifies the archive, not an extracted folder.
+
+Copy the entire skill tree, including nested references, scripts, templates, tests and license. A lone SKILL.md is incomplete. During authorized replacement, preserve the complete previous installation and receipt outside discovery roots, replace the intended directory wholesale, then verify. Preserve `.product-task/`, artifacts, unrelated skills and settings. Keep backups private and outside tracked project files and public attachments; being outside discovery roots alone does not prevent publication. See [update/rollback](releases.md#update-or-roll-back-an-installation).
+
+If copying, receipt recording or verification fails, report `INCOMPLETE` with actual remaining files and restore the prior installation when possible. Do not claim success or overwrite newer task state during recovery. Preserve unrequested files and unfinished work.
+
+## Check actual results
+
+Check complete membership and every payload byte against selected published source, read the installed name/version, and inspect actual host discovery where available. Verify supporting reference/template access and the selected source/cache in a fresh relevant session. Existing conversations can retain previously loaded instructions.
+
+Keep checks distinct:
+
+- `tests/check_package.py` checks Markdown links, not completeness, provenance or discovery.
+- Payload hashes establish identity/integrity. A receipt records provenance but cannot prove current files unchanged.
+- Discovery establishes that the host finds the selected skill; it does not prove activation, task execution or live outcomes.
+
+Label unavailable checks unverified. Report `INSTALLED`, `UPDATED`, `UNCHANGED`, `FALLBACK` or `INCOMPLETE` according to what happened; a link/attachment fallback is not persistent native installation. Include detected state, host/surface/profile, route/scope, active path, core and host-package versions separately, source tag/commit, receipt or why none, actual checks/limits, next step and invocation. If no installation changed, create no receipt implying a new installation or invented earlier time.
+
+## Manual workspace receipt
+
+For a successful new manual workspace copy, save `.diamond-captain-installations/<host-id>/manual.json`, using a lowercase host ID such as `codex` or `claude-code`. Keep it outside the payload and discovery roots. For explicitly authorized non-workspace installs, use that route's receipt convention and report its location.
+
+This runtime receipt contains private installation details. Keep it local and outside tracked files, shared archives and public attachments, even when the skill itself is public. Do not modify or relocate existing receipts without authority. Public `DISTRIBUTION.json` supplied with a service release is different: retain service packages' distribution and installer-generated formats. Legacy fixture receipts are historical records, not templates to normalize or rewrite.
+
+Record actual values:
+
+| JSON field | Value |
+| --- | --- |
+| `schema_version`, `route`, `host` | Integer `1`, string `manual-copy`, actual host identifier |
+| `target`, `resolved_target` | Workspace-relative install path and resolved absolute path |
+| `source_repository`, `source_tag`, `source_commit` | Repository URL, selected published tag and resolved full commit SHA |
+| `core_version` | Version read from installed SKILL.md |
+| `artifact_url`, `artifact_sha256` | Downloaded archive URL and verified SHA-256; JSON `null` for both when copied from a pinned Git tree |
+| `files_sha256` | Every payload-relative file and verified SHA-256, compared with pinned source, not only itself |
+| `installed_at_utc` | Actual successful-copy time in ISO 8601 UTC |
+
+Do not substitute moving `main` for the selected release commit. For unchanged legacy copies without receipts, report verified provenance and unknowns rather than inventing history. Current usable installations keep their receipts and original times unchanged.
+
+After usable setup, invite the user's task. If one was supplied, load the installed skill and recover its state or initialize it in the actual product workspace. Setup alone creates no product task and requires no six-phase execution.
