@@ -19,11 +19,13 @@ Use [host installation routes](../host-installation-routes.md) for Cursor, Gemin
 
 ## Understand the setup result
 
-The agent checks the workspace, active profile and existing installations before writing. It reports what it found and what actually happened:
+The agent checks the workspace and relevant installation, then gives a short result: what changed, the version, where it is available and how to invoke it. If a decision is missing, expect one concrete question, such as the actual project-folder path. Technical details stay in private installation records; material errors and unavailable checks remain explicit.
+
+The following labels explain possible states; a normal setup reply does not need to print the table or an environment audit:
 
 | Detected state | What to expect |
 | --- | --- |
-| `SOURCE_TREE` | Source/fixture stays unchanged. Setup continues in an already supplied safe authorized product workspace, or requests the missing target. |
+| `SOURCE_TREE` | Source/fixture stays unchanged. Setup continues in an already supplied safe authorized product workspace, or asks for its actual path and stops further diagnosis. |
 | `CONFLICT` | Multiple active copies or an unrelated occupied target need a choice of installation route. |
 | `UNVERIFIED` | Missing provenance or modified/incomplete files are reported; the agent preserves the copy. |
 | `ABSENT` | The agent installs in the requested workspace. |

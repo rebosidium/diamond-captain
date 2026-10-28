@@ -2,6 +2,8 @@
 
 Use one active installation and verify its scope, path, version and supporting files. Official host support does not by itself establish that this renamed package was runtime-tested on that host.
 
+For all seven hosts, follow [shared agent setup](../INSTALL-FOR-AGENTS.md): settle the safe target first, inspect only the relevant installation, verify the selected package and give a short result. Ask one actionable question when a target or consequential choice is missing; keep technical diagnostics private unless needed to explain a failure. The route-specific checks below still apply.
+
 | Host | Route | Verify |
 | --- | --- | --- |
 | Codex | Native `.agents/skills/diamond-captain/`, or the [OpenAI plugin](../distributions/openai/README.md) | Request `$diamond-captain` for native use, or the namespaced plugin skill; inspect the selected source |
@@ -11,8 +13,6 @@ Use one active installation and verify its scope, path, version and supporting f
 | Gemini CLI | Its supported workspace/user native-skill install mechanism | Verify its skill inventory and the selected source; do not assume Codex precedence |
 | Grok Build | A [Claude-compatible package route](../distributions/grok-build/README.md), where supported | Validate/install/discover this exact new archive before claiming runtime compatibility |
 | Perplexity Computer | [Pinned Claude ZIP import candidate](../distributions/perplexity/README.md), where supported | Offline verification preserves the complete released core; real-client tests for Diamond Captain remain pending. Confirm supporting files, account scope and the actual selected source. |
-
-When a previous skill identity is already active, use the [migration procedure](migration.md) rather than adding a second copy. Verify project/user scope and the actual selected source; a local path or invocation valid for one host does not establish another host's installation.
 
 When a previous skill identity is already active, use the [migration procedure](migration.md) rather than adding a second copy. Verify project/user scope and the actual selected source; a local path or invocation valid for one host does not establish another host's installation.
 

@@ -4,25 +4,25 @@ Use the sections relevant to what [agent setup](../INSTALL-FOR-AGENTS.md) found.
 
 ## Establish workspace role
 
-Identify the actual host/product surface, active profile and product workspace; read applicable project instructions and resolve source/target symlinks before writes. CLI, desktop, cloud and ordinary chat can expose different installation mechanisms even with the same model.
+Identify the actual host/surface, profile and requested scope; read applicable project instructions and resolve source/target symlinks before writes. Different surfaces can expose different installation mechanisms.
 
-Establish a source/fixture role from origin, authoring/build metadata or fixture documentation. Useful evidence includes a marketplace registered to this workspace's authored plugin payload, or comparison records pinning a baseline/rubric. A normal product project can contain Git, tests, an installed skill and a receipt; these alone do not make it protected source. Inspect the role, not just filenames. An unresolved role needs clarification before dependent writes.
+Use enough relevant origin, authoring/build metadata or fixture documentation to establish the role. Git, tests, a receipt or a temporary path alone do not prove protected source. Stop once the evidence settles the action; no history reconstruction, old-payload hashing or raw experiment records are needed to reinforce it. Clarify an unresolved role before dependent writes.
 
-For `SOURCE_TREE`, protect the identified source/fixture, including unfinished edits, evidence, receipts and routing notes. A proposed target resolving into it is protected too. An install/update request does not authorize rewriting that material. Report the path, role evidence and any known pin without inventing one. Continue in an already supplied, authorized separate product workspace after inspecting it. If none was supplied, ask for the folder once. Do not escape into a global/profile installation without scope authority.
+For `SOURCE_TREE`, preserve source/fixture, unfinished edits, evidence, receipts and routing. A target resolving into it is protected too; ordinary install/update authority does not permit rewriting it. Continue in a supplied safe authorized workspace, or briefly explain protection, ask for its actual path and wait. No release lookup/downloads or further fixture diagnosis is needed before that answer. Keep role evidence and any already known pin private. Do not offer fixture migration as routine setup or switch to global/profile scope without authority.
 
 ## Find the active installation
 
-Inspect actual native discovery, plugin registrations, scope/profile, disabled entries, host precedence and resolved paths. Check `diamond-captain` and `design-process-dr`. A copy in an inactive profile is not automatically a duplicate. Do not modify another tool's shared skill or configuration to resolve a conflict.
+Inspect native discovery, registrations, disabled entries, precedence and resolved paths relevant to the selected host/profile for both skill names. Old-name source payloads or inactive copies do not by themselves require migration. Avoid unrelated host/profile audits and changes to another tool's shared configuration.
 
 For Claude Code, inspect project `.claude/settings.json` and relevant user/profile settings: `extraKnownMarketplaces` identifies sources and `enabledPlugins` identifies enabled entries. An empty personal `installed_plugins.json` does not negate a project-local registration. Establish the selected payload before calling a plugin absent, current or upgraded. For hosts using installed caches, changing a marketplace source alone does not prove the active cached installation changed.
 
-Preserve a usable route. Otherwise prefer a native workspace skill for one project, a supported published plugin for managed/versioned distribution, or an honest import/link fallback. A session-only plugin flag is not permanent installation. Native managers may default to user scope; honor existing authorization or obtain it for that scope before writing.
+Preserve a usable route. Otherwise recommend native workspace setup for one project, a supported published plugin for managed distribution, or an honest import/link fallback. Ask only about a material scope/behavior/access choice. Session loading is not permanent installation; user-scope defaults still need authority. Reuse successful checks for unchanged source/files/profile/target.
 
 ## Choose an action
 
 | Detected state | Action |
 | --- | --- |
-| `SOURCE_TREE` | Protect source/fixture; continue in a supplied safe authorized target, or ask for it. |
+| `SOURCE_TREE` | Protect source/fixture; continue in a supplied safe authorized target, or ask for its actual path and stop further diagnosis. |
 | `CONFLICT` | Multiple active routes or an unrelated occupied target need a choice; do not delete, disable, overwrite or add another copy without that decision. |
 | `UNVERIFIED` | Preserve modified/incomplete copies or unresolved provenance; report the gap without replacing them or inventing a source. |
 | `ABSENT` | Install into the verified vacant target within the requested scope. |
@@ -31,6 +31,8 @@ Preserve a usable route. Otherwise prefer a native workspace skill for one proje
 | `BLOCKED` | Use the host's normal permission mechanism where supported; otherwise report a supported fallback and limits. Never bypass restrictions. |
 
 Migrating the predecessor name is an update, not a fresh absent-name install. Follow [migration](migration.md), preserve the complete old package, routing and state until replacement is verified, and avoid leaving both names active in the same discovery scope. Do not silently rewrite unrelated routing or task records. Reuse authority already given.
+
+Keep state labels in diagnostics; use a [short result and one actionable question](../INSTALL-FOR-AGENTS.md#one-useful-question-only-when-needed). Explain material failures or unavailable checks, without an unrelated-history report.
 
 ## Disable or uninstall a host integration
 
