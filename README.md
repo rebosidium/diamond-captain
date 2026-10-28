@@ -36,7 +36,7 @@ Choose one active installation to avoid duplicate skill entries. Download the ZI
 
 The packages contain the complete pinned core, including references and templates. Downloadable archives do not imply a marketplace listing or that every host/import surface has been runtime-tested.
 
-Core 0.4.0 and host packages 0.3.0 include the modular architecture described in the [changelog](CHANGELOG.md#040). Published downloads retain their pinned core; later development edits do not update an installed release. See [development previews](distributions/perplexity/README.md#unreleased-core-preview) for testing a committed source snapshot separately.
+Core 0.4.0 and host packages 0.3.0 include the modular architecture described in the [changelog](CHANGELOG.md#040). Published downloads retain their pinned core; later development edits do not update an installed release. See [development previews](distributions/perplexity/README.md#development-core-preview) for testing a committed source snapshot separately.
 
 ## Three diamonds, six thinking modes
 
