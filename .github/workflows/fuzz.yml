@@ -1,0 +1,46 @@
+name: Installer fuzzing
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "41 5 * * 2"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  installer:
+    name: Atheris installer properties
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Install the pinned development fuzzer
+        run: |
+          python3 -m pip install --require-hashes --only-binary=:all: --no-deps -r fuzz/requirements.txt
+      - name: Fuzz synthetic packages with a clean environment
+        shell: bash
+        run: |
+          set -eu
+          mkdir -p "$RUNNER_TEMP/fuzz-corpus" "$RUNNER_TEMP/fuzz-tmp" "$RUNNER_TEMP/fuzz-crashes"
+          if env -i PATH="$PATH" TMPDIR="$RUNNER_TEMP/fuzz-tmp" PYTHONHASHSEED=0 \
+            python3 -B fuzz/installer_fuzzer.py "$RUNNER_TEMP/fuzz-corpus" \
+            -seed=1 -max_total_time=120 -timeout=5 -rss_limit_mb=512 -max_len=4096 \
+            -artifact_prefix="$RUNNER_TEMP/fuzz-crashes/" > "$RUNNER_TEMP/fuzz-run.txt" 2>&1; then
+            echo "Installer fuzzing passed. No raw inputs or execution records were uploaded."
+          else
+            echo "::error::Installer fuzzing failed. Reproduce locally at this revision using the documented command."
+            exit 1
+          fi

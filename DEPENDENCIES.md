@@ -9,3 +9,5 @@ The optional `scripts/prepare_perplexity.py` verifies and copies an explicitly d
 Workflow dependencies are declared in `.github/workflows/` and pinned to exact commits of their upstream Actions. Dependabot proposes updates; they are reviewed through PRs. Optional tools linked by the skill are candidates selected for the user's task, not installed runtime dependencies.
 
 The product and core are MIT licensed. Stage icons have their separate included MIT notice. Third-party host clients and linked documentation retain their own terms.
+
+Optional installer fuzzing uses the version/hash-pinned Atheris development dependency in [fuzz/requirements.txt](fuzz/requirements.txt), with its own [scope and execution instructions](fuzz/README.md). It is not a skill runtime or packaging dependency. Release provenance uses the SHA-pinned GitHub Actions declared in its workflow and the runner's GitHub CLI; no personal signing key or stored personal access token is required.

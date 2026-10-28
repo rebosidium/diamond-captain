@@ -1,0 +1,94 @@
+name: Verified release provenance
+
+on:
+  push:
+    tags: ["v*.*.*", "openai-v*.*.*", "claude-code-v*.*.*", "opencode-v*.*.*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: provenance-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  RELEASE_TAG: ${{ github.ref_name }}
+
+jobs:
+  build:
+    if: github.repository == 'rebosidium/diamond-captain'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      stem: ${{ steps.package.outputs.stem }}
+      artifact-id: ${{ steps.archive.outputs.artifact-id }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.13"
+      - name: Check the complete tagged product
+        run: |
+          python3 -B scripts/check_public_content.py --history HEAD
+          python3 -B .agents/skills/diamond-captain/tests/check_package.py
+          python3 -B scripts/check_docs.py
+          python3 -B -Wall -Werror -m unittest discover -s tests
+      - name: Build only an accepted future tag
+        id: package
+        shell: bash
+        run: |
+          set -eu
+          test "$GITHUB_REF" = "refs/tags/$RELEASE_TAG" || { echo "Select the exact future release tag."; exit 1; }
+          python3 -B scripts/prepare_release.py --tag "$RELEASE_TAG" --output "$RUNNER_TEMP/release-assets"
+          python3 -B - <<'PY'
+          import os
+          from pathlib import Path
+          archive, = (Path(os.environ['RUNNER_TEMP']) / 'release-assets').glob('*.zip')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as handle:
+              handle.write('stem=' + archive.stem + '\n')
+          PY
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        id: archive
+        with:
+          name: release-build-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/release-assets/*
+          if-no-files-found: error
+          retention-days: 7
+
+  attest:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          artifact-ids: ${{ needs.build.outputs.artifact-id }}
+          merge-multiple: true
+          path: release-assets
+      - name: Attest the exact archive, receipt and checksums
+        id: provenance
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-path: release-assets/*
+          show-summary: false
+      - name: Include the public verification bundle
+        env:
+          SIGNED_BUNDLE: ${{ steps.provenance.outputs.bundle-path }}
+          ASSET_STEM: ${{ needs.build.outputs.stem }}
+        run: cp -- "$SIGNED_BUNDLE" "release-assets/$ASSET_STEM.sigstore.json"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        id: archive
+        with:
+          name: attested-release-${{ github.run_id }}-${{ github.run_attempt }}
+          path: release-assets/*
+          if-no-files-found: error
+          retention-days: 7
