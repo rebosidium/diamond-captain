@@ -5,7 +5,11 @@
 **Your Triple Diamond needs a captain!**
 
 [![Repository checks](https://github.com/rebosidium/diamond-captain/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/rebosidium/diamond-captain/actions/workflows/checks.yml)
-[MIT license](LICENSE)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16014/badge)](https://www.bestpractices.dev/projects/16014)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/rebosidium/diamond-captain/badge)](https://scorecard.dev/viewer/?uri=github.com/rebosidium/diamond-captain)
+[![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/rebosidium/diamond-captain)](https://github.com/rebosidium/diamond-captain/releases/latest)
+[![GitHub stars](https://img.shields.io/github/stars/rebosidium/diamond-captain?style=flat)](https://github.com/rebosidium/diamond-captain/stargazers)
 
 Diamond Captain is an open-source skill that guides your AI agent through product and service design — from problem discovery to solution delivery and outcome review. You choose the direction and keep control of decisions.
 
