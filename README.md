@@ -28,6 +28,8 @@ Start at any phase, skip ahead or loop back. The agent keeps a checkpoint and di
 
 ## Start with your agent
 
+For agents with access to your project files, including **Gemini CLI**:
+
 ```text
 Set up Diamond Captain for this workspace:
 https://github.com/rebosidium/diamond-captain/blob/main/INSTALL-FOR-AGENTS.md
@@ -54,7 +56,9 @@ Choose one active installation to avoid duplicate skill entries. Download the ZI
 | Codex / compatible OpenAI plugin tooling | [OpenAI 0.3.1](https://github.com/rebosidium/diamond-captain/releases/tag/openai-v0.3.1) · [Guide](distributions/openai/README.md) | `diamond-captain:diamond-captain`, or `$diamond-captain` for a native skill |
 | Claude Code | [Claude Code 0.3.1](https://github.com/rebosidium/diamond-captain/releases/tag/claude-code-v0.3.1) · [Guide](distributions/claude-code/README.md) | `/diamond-captain:diamond-captain` |
 | OpenCode | [OpenCode 0.3.1](https://github.com/rebosidium/diamond-captain/releases/tag/opencode-v0.3.1) · [Guide](distributions/opencode/README.md) | Ask the agent to use `diamond-captain` |
-| Cursor, Gemini CLI, Grok Build, Perplexity Computer | [Host installation routes](docs/host-installation-routes.md) | Use the host's supported native/plugin/import route and verify discovery |
+| Gemini CLI (terminal) | Install the complete native skill in your workspace. [Setup guide](docs/host-installation-routes.md) | Request `diamond-captain`; verify with `/skills list` |
+| Web-Gemini (browser) | Add this repository through **+ → Import code → GitHub**, where available. [Google's import guide](https://support.google.com/gemini/answer/14903178?hl=en) | Ask Gemini to use Diamond Captain for your task. This provides chat context; it does not install a CLI skill. |
+| Cursor, Grok Build, Perplexity Computer | [Host installation routes](docs/host-installation-routes.md) | Use the host's supported native/plugin/import route and verify discovery |
 | Manual | [Core 0.4.1](https://github.com/rebosidium/diamond-captain/releases/tag/v0.4.1) or the [complete core folder at v0.4.1](https://github.com/rebosidium/diamond-captain/tree/v0.4.1/.agents/skills/diamond-captain) | Follow the selected host's skill mechanism |
 
 The packages contain the complete pinned core, including references and templates. Downloadable archives do not imply a marketplace listing or that every host/import surface has been runtime-tested.
