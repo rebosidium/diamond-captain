@@ -11,6 +11,12 @@ Use this **only for the current or adjacent phase** rather than rereading all de
 | **5 Deploy ↗** · Outcome | Observe the launched change in varied real contexts | Implemented change, instrumentation, rollout context | Usage/operations/feedback evidence, anomalies and issues | Adequate observation window and data quality for the evaluation question; major incidents escalate immediately |
 | **6 Digest ↘** · Outcome | Interpret impact and decide what to do next | Usage evidence + original brief | Outcome assessment, limitations, next decision(s), owner, loop target | Findings and uncertainty support a keep/improve/rollback/research/stop decision |
 
+- **Co-create options where useful.** In Develop/Deliver, involve affected users or frontline staff in generating or refining options when their experience could change the choice. An existing conversation or sketch can suffice; proposals remain hypotheses until tested.
+- **Make service dependencies visible when needed.** Sketch the relevant journey and touchpoints → frontstage/backstage work → dependencies, owners and failure points. Ground current-state claims in evidence and label proposed changes. Reuse an existing artifact; a full blueprint is optional.
+- **Check viability when framing or selecting a direction.** Compare user value, feasibility and the resources, running/support costs and ownership needed to sustain the solution. Keep decision-critical unknowns in the existing brief; no canvas, workshop or new document is required.
+
+These task-scaled practices draw on Design Council's [collaboration principles](https://www.designcouncil.org.uk/resources/framework-for-innovation/) and [service-design methods](https://www.designcouncil.org.uk/fileadmin/uploads/dc/Documents/DesignCouncil_Design%2520methods%2520for%2520developing%2520services.pdf).
+
 ## Entry readiness (Design DoR)
 
 | Phase | Minimum basis to start useful work; clarify a missing critical input before dependent work |
