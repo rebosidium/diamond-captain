@@ -24,7 +24,7 @@
 
 Diamond Captain is an open-source skill that guides your AI agent through product and service design — from problem discovery to solution delivery and outcome review. You choose the direction and keep control of decisions.
 
-Start at any phase, skip ahead or loop back. The agent keeps a checkpoint, distinguishes evidence from assumptions and asks whether to accept, revise or reopen a handoff. It works with UI and non-UI tasks, using the tools and evidence you actually have.
+Start at any phase, skip ahead or loop back. The agent keeps a checkpoint and distinguishes evidence from assumptions. It works with UI and non-UI tasks, using the tools and evidence you actually have.
 
 ## Start with your agent
 
@@ -36,6 +36,12 @@ https://github.com/rebosidium/diamond-captain/blob/main/INSTALL-FOR-AGENTS.md
 Then describe your task. [Install for agents](INSTALL-FOR-AGENTS.md) · [Manual installation](START-HERE.md) · [User guide](docs/guide/README.md)
 
 Already using the previous skill name? Follow the [migration guide](docs/migration.md) before adding another installation. Existing installations and project state are not automatically migrated.
+
+## How you work together
+
+You set the goal, scope and decision authority; the agent investigates, compares options and creates usable artifacts. At a handoff, you accept, revise or reopen the result separately from choosing the next phase. [Working with the agent](docs/guide/Working-with-the-agent.md).
+
+[Resume a task](docs/guide/Task-continuity.md#resume-in-a-new-chat) — continue in a new chat from the saved checkpoint.
 
 ## Install
 
