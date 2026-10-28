@@ -6,6 +6,6 @@ Package validation, skill discovery, UI import, actual agent execution and verif
 
 For a source refactor, check both complete package contents and the agent's actual reference reads. A file in an archive is not proof that its rules were applied. Compare process behavior on the same task inputs and settings; document size alone does not establish token or time savings. Development-source previews and released-package checks have separate source identities.
 
-This renamed release updates product identity, source links and wrapper metadata. Prior host checks from another product identity are not presented as certification of these exact new bytes. Use the current host guides and actual release notes for the scope checked. Internal execution records are not distributed.
+Core 0.4.0 releases the modular operating instructions, linked tool categories and intake-only initializer; host packages 0.3.0 pin those complete core bytes. Prior host checks from another product identity are not presented as certification of these exact new bytes. Use the current host guides and actual release notes for the scope checked. Internal execution records are not distributed.
 
 See [host routes](host-installation-routes.md), [security](security.md) and the public repository's CI status. No new third-party security certificate is claimed for Diamond Captain at launch.
