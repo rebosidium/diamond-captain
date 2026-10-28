@@ -14,7 +14,13 @@
 [![Install route: Cursor](https://img.shields.io/badge/Install_route-Cursor-64748B?logo=cursor&logoColor=white)](docs/host-installation-routes.md)
 [![Install route: Gemini CLI](https://img.shields.io/badge/Install_route-Gemini_CLI-64748B?logo=googlegemini&logoColor=white)](docs/host-installation-routes.md)
 [![Compatibility route: Grok Build](https://img.shields.io/badge/Compatibility_route-Grok_Build-64748B?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMzk1LjQ3OSA2MzMuODI4TDczNS45MSAzODEuMTA1Qzc1Mi41OTkgMzY4LjcxNSA3NzYuNDU0IDM3My41NDggNzg0LjQwNiAzOTIuNzkyQzgyNi4yNiA0OTQuMjg1IDgwNy41NjEgNjE2LjI1MyA3MjQuMjg4IDY5OS45OTZDNjQxLjAxNiA3ODMuNzM5IDUyNS4xNTEgODAyLjEwNCA0MTkuMjQ3IDc2MC4yNzdMMzAzLjU1NiA4MTQuMTQzQzQ2OS40OSA5MjguMjAyIDY3MC45ODcgODk5Ljk5NSA3OTYuOTAxIDc3My4yODJDODk2Ljc3NiA2NzIuODQzIDkyNy43MDggNTM1LjkzNyA4OTguNzg1IDQxMi40NzZMODk5LjA0NyA0MTIuNzM5Qzg1Ny4xMDUgMjMxLjM3IDkwOS4zNTggMTU4Ljg3NCAxMDE2LjQgMTAuNjMyNkMxMDE4LjkzIDcuMTE3NzEgMTAyMS40NyAzLjYwMjc5IDEwMjQgMEw4ODMuMTQ0IDE0MS42NTFWMTQxLjIxMkwzOTUuMzkyIDYzMy45MTYiIGZpbGw9IndoaXRlIi8%2BCjxwYXRoIGQ9Ik0zMjUuMjI2IDY5NS4yNTFDMjA2LjEyOCA1ODAuODQgMjI2LjY2MiA0MDMuNzc2IDMyOC4yODUgMzAxLjY2OEM0MDMuNDMxIDIyNi4wOTcgNTI2LjU0OSAxOTUuMjU0IDYzNC4wMjYgMjQwLjU5Nkw3NDkuNDU0IDE4Ni45OTRDNzI4LjY1NyAxNzEuODggNzAyLjAwNyAxNTUuNjIzIDY3MS40MjQgMTQ0LjJDNTMzLjE5IDg2Ljk5NDIgMzY3LjY5MyAxMTUuNDY1IDI1NS4zMjMgMjI4LjM4MkMxNDcuMjM0IDMzNy4wODEgMTEzLjI0NCA1MDQuMjE1IDE3MS42MTMgNjQ2LjgzM0MyMTUuMjE2IDc1My40MjMgMTQzLjczOSA4MjguODE4IDcxLjczODUgOTA0LjkxNkM0Ni4yMjM3IDkzMS44OTMgMjAuNjIxNiA5NTguODcgMCA5ODcuNDI5TDMyNS4xMzkgNjk1LjMzOSIgZmlsbD0id2hpdGUiLz4KPC9zdmc%2BCg%3D%3D)](distributions/grok-build/README.md)
-[![Import candidate: Perplexity Computer](https://img.shields.io/badge/Import_candidate-Perplexity_Computer-D97706?logo=perplexity&logoColor=white)](distributions/perplexity/README.md)
+[![Import candidate: Perplexity Computer](https://img.shields.io/badge/Import_candidate-Perplexity_Computer-D97706?logo=perplexity&logoColor=white)](distributions/perplexity/README.md)<br>
+[![Process: Triple Diamond](https://img.shields.io/badge/Process-Triple_Diamond-8B5CF6)](docs/process.md)
+[![Product and Service Design](https://img.shields.io/badge/Product_%26_Service-Design-2563EB)](docs/guide/README.md)
+[![Human in the loop](https://img.shields.io/badge/Human-in_the_loop-16A34A)](docs/guide/Working-with-the-agent.md)
+[![UX Research](https://img.shields.io/badge/UX-Research-8B5CF6)](.agents/skills/diamond-captain/references/uxr.md)
+[![Docs: Read the guide](https://img.shields.io/badge/Docs-Read_the_guide-2563EB)](docs/guide/README.md)
+[![GitHub release asset downloads](https://img.shields.io/github/downloads/rebosidium/diamond-captain/total?label=Downloads)](https://github.com/rebosidium/diamond-captain/releases)
 
 Diamond Captain is an open-source skill that guides your AI agent through product and service design — from problem discovery to solution delivery and outcome review. You choose the direction and keep control of decisions.
 
@@ -51,13 +57,18 @@ Core 0.4.1 and host packages 0.3.1 include the modular architecture described in
 
 ## Three diamonds, six thinking modes
 
-| Diamond | Broaden | Focus |
-| --- | --- | --- |
-| Problem | Discover needs, context and alternative causes | Define the problem, scope and expected change |
-| Solution | Develop materially different approaches | Deliver a selected, verified solution or handoff |
-| Outcome | Deploy and observe actual use | Digest evidence and decide the next iteration |
+Each diamond broadens the question **↗**, then focuses the decision **↘**. Start where useful, skip ahead or loop back as evidence changes; these are thinking modes, not mandatory timeboxes.
 
-These are thinking modes, not mandatory timeboxes. Prepared work, a released change and a verified live outcome are distinct results. No specific model, design app or integration is required.
+| Phase | Diamond | Work toward |
+| --- | --- | --- |
+| <img src="assets/icons/discover.svg" width="20" height="20" alt=""> **1 · Discover ↗** | Problem | Understand needs, context and alternative causes. |
+| <img src="assets/icons/define.svg" width="20" height="20" alt=""> **2 · Define ↘** | Problem | Agree on the problem, scope and expected change. |
+| <img src="assets/icons/develop.svg" width="20" height="20" alt=""> **3 · Develop ↗** | Solution | Compare different ways to help, including non-UI changes. |
+| <img src="assets/icons/deliver.svg" width="20" height="20" alt=""> **4 · Deliver ↘** | Solution | Select, validate and realize a usable solution. |
+| <img src="assets/icons/deploy.svg" width="20" height="20" alt=""> **5 · Deploy ↗** | Outcome | Observe real use, feedback and unexpected effects. |
+| <img src="assets/icons/digest.svg" width="20" height="20" alt=""> **6 · Digest ↘** | Outcome | Assess evidence and decide what to keep, improve or revisit. |
+
+Prepared work, a released change and a verified live outcome are distinct results. No specific model, design app or integration is required. [Read the full process](docs/process.md).
 
 ## Learn and verify
 
