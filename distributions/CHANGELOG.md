@@ -1,5 +1,11 @@
 # Host package changes
 
+## OpenAI, Claude Code and OpenCode 0.3.0
+
+- Bundle the complete modular core 0.4.0 with its exact SHA-256 dependency pin.
+- Preserve skill identity, host invocations and Markdown task state; include every supporting category, template and script.
+- Refresh release/install links and keep package verification distinct from runtime and outcome claims.
+
 ## OpenAI, Claude Code and OpenCode 0.2.0
 
 - Package Diamond Captain core 0.3.0 under the new native/plugin identity.

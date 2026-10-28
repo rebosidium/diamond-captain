@@ -1,7 +1,7 @@
-# OpenAI plugin 0.2.0
+# OpenAI plugin 0.3.0
 
-First Diamond Captain package, pinned to complete core 0.3.0. Product name, source links and invocation identity are refreshed. The six-mode operating workflow is retained.
+Bundle the complete modular Diamond Captain core 0.4.0 with its exact dependency hash. Shared operating rules route to phase, research and tool guidance; the complete supporting tree, intake-only initializer and manual fallback are included. Triple Diamond, the skill identity, host invocation and Markdown task state remain unchanged.
 
-The archive includes the complete canonical core, generated wrapper metadata and a public source receipt. Verify the included checksum asset before installation. Automated package tests cover identity, deterministic packaging and safe installation; no blanket native-host, UI-import or model-task certification is claimed.
+Package integrity, reproducibility, links and safe-installation regressions are checked. Package validation does not establish every host/model's runtime compatibility, full six-phase execution or live outcomes. No marketplace listing or automatic upgrade is implied.
 
 Read the [installation guide](README.md), [verification scope](../../docs/validation.md) and [rollback guide](../../docs/releases.md). Preserve the saved prior complete installation and project task state when switching packages.

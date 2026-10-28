@@ -44,7 +44,7 @@ class PerplexityTests(unittest.TestCase):
         temporary = tempfile.TemporaryDirectory()
         cls.addClassCleanup(temporary.cleanup)
         repository = Path(temporary.name)
-        pinned_repository(repository, "claude-code")
+        cls.core = pinned_repository(repository, "claude-code")
         _, receipt, archive = builder.build(repository, "claude-code")
         with zipfile.ZipFile(io.BytesIO(archive)) as z:
             cls.files = {name: z.read(name) for name in z.namelist()}
@@ -63,7 +63,7 @@ class PerplexityTests(unittest.TestCase):
     def test_complete_canonical_payload(self):
         archive, pin = self.fixture()
         report = preflight.verify(archive, pin)
-        self.assertEqual(12, report["core_files_verified"])
+        self.assertEqual(len(self.core), report["core_files_verified"])
         self.assertFalse(report["archive_changed"])
         self.assertFalse(report["client_import_verified"])
 

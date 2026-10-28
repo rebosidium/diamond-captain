@@ -1,8 +1,8 @@
 {
   "service": "openai",
-  "version": "0.2.0",
-  "core_version": "0.3.0",
-  "core_sha256": "19dcae76459f5b9bc393edb527105e88c388a24ea52bf111607fd1f5ff0c7126",
+  "version": "0.3.0",
+  "core_version": "0.4.0",
+  "core_sha256": "9bbfdb3eb01ba3f6dd6bfb4ea79a6da1833063736f4c04710361fd7c0dfe06d0",
   "kind": "agent-plugin",
   "skill_root": "skills/diamond-captain",
   "documentation": "https://developers.openai.com/plugins/build/plugins"
