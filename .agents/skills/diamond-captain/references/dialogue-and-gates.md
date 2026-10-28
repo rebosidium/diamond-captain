@@ -10,7 +10,7 @@ Then onboard the actual task using the steps below. Reuse answers already suppli
 
 ## A task has just arrived
 
-1. Read supplied material and existing state first. For a new execution task, create its project file immediately from the state template before substantive work, even while intake answers are pending; record the request and initial phase entry with unknowns explicit. Reflect back the requested result in a sentence; separate the requested solution from the problem hypothesis. Identify the phase provisionally from evidence, with the reason.
+1. Recover existing task state first. For a new execution task, create an intake-only checkpoint from the state template before reading task materials and conditional references, even while intake answers are pending; record the request and initial phase entry with unknowns explicit. Follow SKILL.md's initialization order, manual fallback and mandatory host prerequisites. Then read the relevant supplied material. Reflect back the requested result in a sentence; separate the requested solution from the problem hypothesis. Identify the phase provisionally from evidence, with the reason.
 2. Start a brief dialogue, not a long questionnaire. Ask the highest-value 1–3 unanswered questions in the first round. For example:
    - Free text: “What result should this work produce, for whom, and what prompted it now?”
    - Choice: “What should we deliver in this scope: a problem brief, a tested solution and handoff, or implementation plus outcome review?” Give a recommendation based on the request; allow a custom answer.

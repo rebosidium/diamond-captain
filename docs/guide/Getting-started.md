@@ -16,10 +16,12 @@ For a browsing or file-capable agent without a native install:
 
 ```text
 Use Diamond Captain from https://github.com/rebosidium/diamond-captain.
-Read .agents/skills/diamond-captain/SKILL.md, then only the references
-needed for this task. Resolve supporting links against the skill folder.
-Confirm you could read it. Recover existing task state, or create it
-before substantive work. Keep me involved in decisions.
+Read .agents/skills/diamond-captain/SKILL.md, or use the complete instructions
+already loaded by the host. Recover existing task state, or create an
+intake-only checkpoint using its template or manual fallback. Then read
+task materials and only the references needed for the next decision.
+Resolve supporting links against the skill folder and confirm access.
+Keep me involved in decisions.
 
 My task: ...
 Available evidence: ...
