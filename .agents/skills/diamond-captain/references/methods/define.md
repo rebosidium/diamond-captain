@@ -19,4 +19,10 @@ Choose the problem worth solving, its scope and the change that would count as u
 
 A useful handoff is a supported problem, affected roles, intended outcome, boundaries, baseline or measurement gap, and owner/decision. Do not convert a convenient survey into a population estimate or a diagram into observed evidence. Keep rejected framings and unresolved assumptions in the existing checkpoint; method completion does not accept the brief.
 
+For several problems competing for capacity, use [cross-task priorities](../portfolio-and-priority.md); the human chooses which task proceeds.
+
+For conflicting interests or required sign-off, use the [stakeholder map and decision path](../stakeholders.md).
+
+When a change can shift harm or effort to others, use the [harm and risk review](../harm-and-risk.md); mandatory controls still apply.
+
 [Methods index](README.md) · [Phase readiness and checkpoints](../phases.md) · [Optional tools](../tool-options.md)

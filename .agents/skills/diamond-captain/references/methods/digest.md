@@ -19,4 +19,6 @@ Judge the original goal and decide what to keep, improve, roll back, research or
 
 Prefer descriptive conclusions when the design cannot support attribution. Do not invent a past experiment or force a causal model onto inadequate data. Record contradictory evidence, alternative explanations, limitations and the next decision. On a loop preserve prior findings and superseded decisions, name the earliest affected phase and reopen its criteria; a new study is optional unless it can change the decision.
 
+For prediction-versus-outcome learning, use [DS-20 calibration](design-and-delivery.md#ds-20) and retain the linked records in [product memory](../product-memory.md).
+
 [Methods index](README.md) · [Phase readiness and checkpoints](../phases.md) · [Optional tools](../tool-options.md)

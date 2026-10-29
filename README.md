@@ -67,6 +67,8 @@ Choose one active installation to avoid duplicate skill entries. Download the ZI
 
 The packages contain the complete pinned core, including references and templates. Downloadable archives do not imply a marketplace listing or that every host/import surface has been runtime-tested.
 
+Development source **0.6.0** adds product memory, cross-task priorities, stakeholder/craft guidance, timeboxed work and calibration, with a compact path for eligible small tasks. Published downloads below remain pinned to their released versions.
+
 Core 0.5.0 and host packages 0.3.2 include the optional method library and startup and human framing fixes; see the [changelog](CHANGELOG.md#050). Previous releases remain unchanged. Published downloads retain their pinned core; later development edits do not update an installed release. See [development previews](distributions/perplexity/README.md#development-core-preview) for testing a committed source snapshot separately.
 
 ## Three diamonds, six thinking modes
@@ -83,6 +85,8 @@ Each diamond broadens the question **↗**, then focuses the decision **↘**. S
 | <img src="assets/icons/digest.svg" width="20" height="20" alt=""> **6 · Digest ↘** | Outcome | Assess evidence and decide what to keep, improve or revisit. |
 
 Prepared work, a released change and a verified live outcome are distinct results. No specific model, design app or integration is required. [Read the full process](docs/process.md).
+
+What a small task looks like: [a constructed end-to-end non-UI example](.agents/skills/diamond-captain/references/examples/worked-small-task.md), with evidence limits, human decisions and checkpoints.
 
 ## Learn and verify
 

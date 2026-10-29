@@ -19,4 +19,6 @@ Explore materially different mechanisms for the agreed need. Ask: what else coul
 
 Retain distinct solution hypotheses, their mechanisms, trade-offs and next probes. Reuse evidence from the problem diamond. A convincing storyboard, popular idea or finished prototype is not validation. Choose only the probes that could change selection, then record their actual results and limits in the existing checkpoint.
 
+When making or refining the artifact itself, use the [craft quality bar](../craft-quality.md) for applicable states, copy and rationale; inspection is not user validation.
+
 [Methods index](README.md) · [Phase readiness and checkpoints](../phases.md) · [Optional tools](../tool-options.md)

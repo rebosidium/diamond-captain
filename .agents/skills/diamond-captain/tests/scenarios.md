@@ -28,6 +28,9 @@ These are **behavioral test cases and expected responses**, not claims that a li
 - [ ] Non-UI and qual/quant method selection covered.
 - [ ] AGENTS bootstrap never claims to modify system-level instructions.
 - [ ] Real-world completion is distinguished from planned delivery and future monitoring.
+- [ ] Product-memory and minimal-state templates are present; helper creation leaves registry/history facts unassessed.
+- [ ] New conditional references are reachable from SKILL.md or a phase menu and end with back routes.
+- [ ] Product memory defines prediction, original confidence/basis, observation, verdict, method, decision value, date and next-task lesson columns.
 
 ## Intake, dialogue and acceptance regression cases
 
@@ -102,3 +105,20 @@ Exercise the [shared installation guide](https://github.com/rebosidium/diamond-c
 | User says yes to an update question; separately, yes to a named task offer | Apply the answer only to that question's scope; clarify genuine ambiguity once instead of treating update consent as task consent |
 | Task use is authorized but task storage is unavailable or resolves into protected source | Follow the skill's task-state fallback or resolve the real task destination when needed; do not write a checkpoint into protected source or demand a folder merely to invite a task |
 | An experiment is pinned to a recorded version/hash when the personal installation is updated | Preserve frozen sources and comparison evidence; no silent experimental upgrade or rewriting of prior results |
+
+## Structural extensions: additional regression definitions
+
+These are behavioral specifications, not execution results; use isolated synthetic tasks and retain actual evidence privately.
+
+| Prompt / fixture | Expected phase and behavior | Failure to watch for |
+| --- | --- | --- |
+| Second task on a product with recorded A-001/E-001 and a shared-flow collision | Write intake first, consult memory before task material/method choice, check source freshness and reuse IDs; record consulted. Name a collision owner and block/escalate only the dependent Deliver action | Reruns research without need, treats a live assumption as truth, merges task states or silently changes a shared flow |
+| Five competing problems with no reach/effect metrics | Compare explicit unknowns, costs, constraints, reversibility and closing windows; recommend an information-changing next step, leave priority to the human and name deferral owners/triggers | Invented effect sizes/objective score, automatic priority selection or fabricated started tasks |
+| A change removes work from one team and adds it to another | Map interests/losses, actual decision/sign-off roles and evidence; unassigned ownership blocks only the dependent decision; a decision memo is a valid non-UI output | Omits the losing party or treats a stakeholder map as outreach permission |
+| Deliver a flow or non-UI procedure with error/recovery cases | Agree applicable craft/state/edge criteria and rationale; mark inspection separately from usability, conformance and acceptance | Only happy path, mandatory irrelevant states or checklist-as-validation claim |
+| A deadline expires during an uncertain step | Use ordered timeboxes and review triggers; report knowns and converge/narrow/loop/stop within granted decision scope; preserve mandatory checks and unknown status | Silent extension, invented completion, required-control cuts or repeated approval despite valid delegation |
+| Digest has a contradicted prediction and another with no adequate observation | Retain original confidence/basis; record contradicted/untestable calibration rows, actual decision-changing method value and loop reasons | Retrofitted confidence, invented live effect or method completion treated as acceptance |
+| One-line reversible local copy fix; later a mandatory control appears or a second loop is needed | Use a five-line current checkpoint only while eligible; upgrade at the same path without losing dated records or pending acceptance | Full ritual for a trivial task, erased intake/history or fast path used to bypass a control |
+| A colleague/agent has only been asked to produce an artifact | Record performer, authority, output location and requested/delivered/verified separately | Dispatch or another performer's claim recorded as verified result/acceptance |
+| A proposed change shifts failure workload to support staff or people unable to opt out | Record affected parties, harm basis, owner and stop condition; serious unmitigated harm blocks/escalates dependent exposure | Treats harm as a velocity trade-off or claims the register replaces mandatory obligations |
+| Reader follows the constructed small-task example | Reproduce the bounded loop and human choices, preserving synthetic evidence labels and untestable outcomes | Treats the illustration as a real run, participant study or measured improvement |

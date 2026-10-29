@@ -42,7 +42,7 @@ At the start of an exploration, specify:
 2. **Question:** What needs answering?
 3. **Known:** Which credible data already exists?
 4. **Method:** What is the smallest credible method?
-5. **Review point:** When/how will we assess sufficiency?
+5. **Review point:** When/how will we assess sufficiency? State a clock/session budget and review date/trigger, not only a condition.
 6. **Failure condition:** Which contradictory finding or serious risk warrants reopening?
 
 At review:
@@ -58,6 +58,8 @@ Do not equate "time ran out" with "hypothesis confirmed"; document uncertainty h
 ## Unknowns and discoveries
 
 For each material item record `in scope`, `deferred`, `rejected`, or `blocking`. Deferred items need an **owner and trigger**. Note significant out-of-scope discoveries without hijacking the current task.
+
+State each material confidence label with its basis and what would falsify the claim, so Digest can compare the original prediction with observations rather than rewrite it.
 
 Always distinguish **observed data**, **interpretation**, **hypothesis** and **decision**. Support causal claims with an appropriate design; otherwise describe association/observed change.
 

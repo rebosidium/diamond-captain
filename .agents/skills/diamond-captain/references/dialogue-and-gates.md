@@ -74,3 +74,17 @@ Record each outstanding question with its reason, whether it blocks a decision, 
 ## Dialogue versus tool permission
 
 A product decision is not blanket authorization for external writes. Preserve already granted permission and task boundaries. Read/inspect with available authorized sources; local reversible work can proceed within scope. Sending a message, scheduling participants, changing a live design, publishing, spending or releasing needs authority for that concrete action under governing rules. Prepare reviewable artifacts while that authority is missing. Tool availability, authentication, read access, write access, and user authorization are different facts; record only those verified. Tool catalogs suggest candidates, not dependencies.
+
+## Time, timeboxes and deadline triage
+
+Give each planned next action a timebox (clock time or session budget) and a review date/trigger; mark an unagreed estimate as proposed. A timebox is a decision point, not a completion promise. Intake may leave the plan unknown until evidence is read.
+For multi-step work, sequence the next 2–5 useful actions by what they unblock; identify dependent work and independent work that can run in parallel. Do not invent extra actions for a one-step task.
+At expiry, report what is known, what changed and the choice to converge, narrow, loop or stop. Follow existing scoped delegation; otherwise leave that choice to the human rather than silently extending work.
+When a deadline forces cuts, propose reducing research breadth/optional artifacts first, then the number of compared mechanisms, then non-mandatory evaluation depth. Explain the evidence lost; retain adequate alternatives for the actual decision.
+Never cut mandatory privacy, accessibility, legal, safety or release controls or honesty of status. Time running out is not evidence; an unfinished check stays unmet/unknown.
+
+## Multiple performers
+
+For a real handoff, record who does what (human, this agent, another agent/team), their authorized actions, expected output and where it lands. Do not create a roster ceremony for solo work.
+Distinguish requested, delivered and verified: dispatch is not delivery, and another performer's report is evidence to check, not acceptance. Preserve their source/version/limits and reference their state/output instead of merging task histories.
+Define the receiving performer's next decision and verification owner; unknown ownership remains unassigned and blocks only work that depends on it. Existing contact, sharing and external-action permissions still apply.
