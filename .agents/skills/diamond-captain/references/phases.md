@@ -30,6 +30,10 @@ These task-scaled practices draw on Design Council's [collaboration principles](
 | 5 Deploy | Verified live exposure of the change/pilot, a usable observation plan and actual access; rollout preparation has phase-4 evidence maturity even if the user selects phase 5 for planning |
 | 6 Digest | Adequate usage evidence and original goal/baseline, or an explicit decision about why evidence is insufficient |
 
+For a multi-candidate intake, record the human's selection rationale and deferred alternatives before Define exit; a comparison alone is not a selected priority.
+
+For a Deliver handoff, agree applicable [artifact quality and rationale criteria](craft-quality.md) for the actual result; a checklist inspection alone does not satisfy DoD or acceptance.
+
 At each exit, compare output and readiness with agreed DoD, then ask for the transition decision unless already chosen or delegated. `READY` can coexist with `decision: pending`. Users can select any work phase after a concrete gap warning; record that choice without declaring missing prerequisites met. A prepared rollout has phase-4 evidence maturity until exposure is verified; choosing phase 5 for planning does not prove deployment. An insufficient observation window limits outcome claims even if the user selects phase 6 for a gap assessment.
 
 ## Reorientation rules

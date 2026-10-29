@@ -66,6 +66,7 @@ Choose for the decision, not to complete a checklist. Reuse existing artifacts; 
 **Do:** Trace each critical handoff to its input, provider, recipient, constraint and fallback; mark confirmed commitments versus unresolved dependencies.
 **Output:** Dependency decisions with owners and triggers.
 **Needs/limits:** Existing agreements or permitted access; a named owner is not their commitment. [Whole-service dependencies][alpha].
+See also [stakeholders and decision paths](../stakeholders.md) when ownership or sign-off is unresolved.
 
 ## DS-07
 
@@ -164,6 +165,7 @@ Choose for the decision, not to complete a checklist. Reuse existing artifacts; 
 **Do:** Compare outcomes, baseline and guardrails; examine alternative explanations, segments and costs; choose keep, improve, rollback, research or stop; name the earliest reopened mode.
 **Output:** Evidence-linked decision, owner and next action.
 **Needs/limits:** Adequate window and trustworthy data; association is not causation. Otherwise record insufficient evidence. [Evaluation][success].
+**Calibrate:** Retain each material prediction and its original confidence/basis; compare with actual observations as confirmed, partly confirmed, contradicted or untestable. In [product memory](../product-memory.md), link the evidence and method that changed a decision or produced no decision value; use unknown when that attribution is unsupported. Record each loop and its reason from retained transitions, with an honest count. Do not retrofit confidence or invent an outcome to fill the log. The human decides the next direction.
 
 [framework]: https://www.designcouncil.org.uk/resources/framework-for-innovation/
 [service-methods]: https://www.designcouncil.org.uk/fileadmin/uploads/dc/Documents/DesignCouncil_Design%2520methods%2520for%2520developing%2520services.pdf

@@ -19,4 +19,6 @@ Observe the exposed change in varied real contexts. Ask: who actually encountere
 
 Keep exposure/version, observation window, coverage, anomalies and action owners in the checkpoint. Escalate actual harm using the applicable process; do not wait for a research cadence. Missing signals are not success, and return behaviour is not necessarily user benefit. Without verified exposure/access, retain `AWAITING LIVE EVIDENCE` for outcome claims and complete only permitted preparation.
 
+When a change can shift harm or effort to others, use the [harm and risk review](../harm-and-risk.md); mandatory controls still apply.
+
 [Methods index](README.md) · [Phase readiness and checkpoints](../phases.md) · [Optional tools](../tool-options.md)

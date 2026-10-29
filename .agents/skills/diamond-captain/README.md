@@ -64,6 +64,11 @@ The skill **does not modify the model's system prompt**. It cannot run asynchron
 - [references/methods/README.md](references/methods/README.md) — six phase menus and 60 optional method cards: when, procedure, output and limits
 - [references/tool-options.md](references/tool-options.md) — ten *optional* tool candidates per category across an expanded task catalog
 - [references/office-tools.md](references/office-tools.md) — email, calendars, files, presentations, approvals and connector/MCP limits
+- [references/product-memory.md](references/product-memory.md) and [memory template](assets/PRODUCT-MEMORY.md) — product-scope evidence/decision index; each task keeps its own history
+- [references/portfolio-and-priority.md](references/portfolio-and-priority.md), [stakeholders](references/stakeholders.md) and [craft quality](references/craft-quality.md) — conditional task choice, decision path and artifact criteria
+- [references/harm-and-risk.md](references/harm-and-risk.md) — indirect effects, affected parties and stop conditions
+- [references/fast-path.md](references/fast-path.md) and [minimal template](assets/TASK-STATE-MINIMAL.md) — bounded reversible work, with history-preserving upgrade
+- [scripts/init_product_memory.py](scripts/init_product_memory.py) — header-only memory initialization; task initializer also supports `--minimal`
 - [assets/TASK-STATE.md](assets/TASK-STATE.md) — persistent task state template
 - [assets/AGENTS-snippet.md](assets/AGENTS-snippet.md) — copy/paste project bootstrap
 - [tests/scenarios.md](tests/scenarios.md) — behavioral acceptance scenarios

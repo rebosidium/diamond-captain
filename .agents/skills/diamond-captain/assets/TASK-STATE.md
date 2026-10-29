@@ -7,22 +7,26 @@
 - Task / request; affected users; problem hypothesis:
 - Agreed result / scope / non-goals; constraints:
 - Task ID / state path; updated at (date/time + timezone):
+- Product memory path; consulted: yes | absent | not accessible; reconciled at:
 - Selected phase (1–6, diamond, ↗/↘); chosen by / source / date:
 - Evidence-supported maturity / gaps if different from selected phase:
 - Readiness: READY | NOT READY | LOOP BACK | BLOCKED | AWAITING LIVE EVIDENCE | COMPLETE; why:
 - Latest accepted decision + record ID; current decision to unlock:
 - Next smallest action / responsible party; review date or trigger:
+- Timebox for next action; sequence of next 2–5 actions (independent vs dependent):
 
 ## Working agreement and open decisions
 
 - Onboarding: shown | already familiar | unnecessary; agreement: proposed | accepted | delegated + source:
 - Decision owner / collaborators (mark proposed or unassigned honestly):
+- Stakeholder map / decision path record ID; required sign-offs (named or unassigned):
 - Question cadence: frequent | phase boundaries | delegated; delegation scope / source:
 - Answers already given (question → answer + source/date):
 - Phase decision: pending | accepted | delegated | rejected; who / source / date / scope:
 - Pending question / options / recommendation; which decision it blocks:
 - Independent work while waiting:
 - Tool permissions: action/surface/scope granted; verified access; restrictions:
+- Performer roster (who / authorized actions / output location); delivered vs verified:
 
 ## Design DoR / DoD
 

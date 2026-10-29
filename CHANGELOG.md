@@ -2,7 +2,13 @@
 
 ## Unreleased
 
-No changes pending.
+Development core **0.6.0** (not yet a published release):
+
+- Add a conditional product-memory index with evidence freshness, assumptions, task collisions and prediction/outcome calibration; preserve separate task histories and human decisions.
+- Add focused guidance for competing tasks, stakeholder losses/sign-off, artifact craft, indirect harm and bounded multi-performer handoffs; preserve the six phases and 60 method IDs.
+- Add optional five-line current checkpoints for eligible reversible local tasks, retaining history and explicit upgrade conditions; keep full-state and overwrite protections.
+- Add header-only product-memory initialization and regression checks; bound planned actions by review points without weakening mandatory controls.
+- Clarify the short context-aware transition after setup; keep source text in English and preserve published packages, hashes and installed copies.
 
 ## 0.5.0
 

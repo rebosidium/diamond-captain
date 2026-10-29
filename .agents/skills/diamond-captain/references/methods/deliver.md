@@ -19,4 +19,10 @@ Select, refine and realise a supported solution. Ask: can relevant people comple
 
 Record the selected approach, actual checks/defects, residual risks, operational ownership and release conditions. A quick accessibility review is not full conformance; a rehearsal is not deployment. Existing viability and mandatory reviews remain applicable. Preserve the checkpoint and ask for the appropriate handoff/transition decision; completing a method does not grant release authority.
 
+For ownership, required sign-off or a decision readout, use the [stakeholder map and decision path](../stakeholders.md).
+
+When making or refining the artifact itself, use the [craft quality bar](../craft-quality.md) for applicable states, copy and rationale; inspection is not user validation.
+
+When a change can shift harm or effort to others, use the [harm and risk review](../harm-and-risk.md); mandatory controls still apply.
+
 [Methods index](README.md) · [Phase readiness and checkpoints](../phases.md) · [Optional tools](../tool-options.md)

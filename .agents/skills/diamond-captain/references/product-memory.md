@@ -1,0 +1,17 @@
+# Product memory across tasks
+
+Use when tasks share a product/service, evidence, assumptions or a changed surface. Reuse an existing team index rather than creating a competing store. This is a local index of recorded work, not a claim that its contents are current or complete.
+
+1. **Locate the product boundary.** Use `.product-task/PRODUCT-MEMORY.md` in the actual product workspace, one per product/service, not per task. Resolve scope and access before writes; never use the skill source, a protected fixture or a personal installation as product storage. Each task state remains authoritative for its own history.
+2. **Consult after intake.** After the task intake checkpoint, before task-material reads or method selection, read memory if present in the known product scope. Record its path and consulted/absent/not accessible in task state. An unknown scope is an explicit access/scope gap, not proof of absence. Do not search unrelated tasks or profiles.
+3. **Reuse by ID, with limits.** Reference a recorded assumption/evidence/result ID and its source task instead of copying raw content or rerunning a study by default. A live assumption remains an assumption. Check whether source system, population, version, policy and decision still match; retain original date, sample and limits. Reverify a failed freshness check or record the gap before relying on it. Follow source links only as needed and within access/authority.
+4. **Initialize only useful shared storage.** When persistent shared history is needed and local writes are authorized, use the [template](../assets/PRODUCT-MEMORY.md) or `scripts/init_product_memory.py --memory <path> --product <name>` from this installed skill. The helper fills header facts only and refuses existing files. Preserve an existing index; reconcile rather than replace it. Without write access, provide an explicitly unsaved update for the owner.
+5. **Write back actual changes.** Index the task/result links. Define adds the actual decision and assumptions; Develop/Deliver adds evidence, rejected mechanisms and their reasons; Deploy/Digest adds observations and calibration. Do not create empty phase records just to fill the index. Mark superseded/retired rows and link replacements; never erase the prior decision or evidence.
+6. **Check collisions before dependent delivery.** Before Deliver work changes a surface/flow, compare indexed tasks and shared dependencies. Distinguish mere overlap from contradictory changes, duplicated research or an incompatible dependency. Record the collision and a named resolution owner, or explicitly unassigned ownership to resolve. Block the affected change or escalate the decision; continue independent authorized work. Do not silently reconcile another task's scope or accept a resolution for its owner.
+7. **Keep task boundaries.** Update shared registers only; never rewrite another task's state, decisions or acceptance. Another task's result is evidence to assess, not inherited authority. An empty register means nothing recorded, not nothing exists. Keep private evidence local; sharing an index does not authorize publishing its linked records.
+
+Completing a method does not complete a phase or establish human acceptance.
+Available tools do not establish access or authority for cross-task changes.
+Proposed assumptions and plans remain distinct from verified observations.
+
+[Skill entry and checkpoints](../SKILL.md) · [Memory template](../assets/PRODUCT-MEMORY.md) · [Phase readiness](phases.md)
