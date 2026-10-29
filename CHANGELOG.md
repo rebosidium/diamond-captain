@@ -2,7 +2,9 @@
 
 ## Unreleased
 
-Development core **0.6.0** (not yet a published release):
+No changes pending.
+
+## 0.6.0
 
 - Add a conditional product-memory index with evidence freshness, assumptions, task collisions and prediction/outcome calibration; preserve separate task histories and human decisions.
 - Add focused guidance for competing tasks, stakeholder losses/sign-off, artifact craft, indirect harm and bounded multi-performer handoffs; preserve the six phases and 60 method IDs.
