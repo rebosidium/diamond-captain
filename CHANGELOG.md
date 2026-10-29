@@ -4,6 +4,11 @@
 
 No changes pending.
 
+## 0.6.1
+
+- Add capability-based AI tool navigation, replaceable MCP/skill/agent discovery and provider fallbacks; preserve human choices and checkpoints.
+- Keep applicable guidance reachable when method/tool catalogs are skipped; link harm/risk review directly from the skill.
+
 ## 0.6.0
 
 - Add a conditional product-memory index with evidence freshness, assumptions, task collisions and prediction/outcome calibration; preserve separate task histories and human decisions.

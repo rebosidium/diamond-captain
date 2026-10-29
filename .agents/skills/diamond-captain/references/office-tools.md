@@ -10,6 +10,8 @@ Routes use the [main catalog legend and boundaries](tool-options.md#read-only-wh
 
 Read the [workspace connector routes and their limits](tools/office-connectors.md) when choosing a cloud workspace or API/MCP route. Keep actual capability, tenant access and concrete action authority separate.
 
+See [AI tool navigation and MCP/agent discovery](tool-options.md#ai-tool-navigation) for broader routes.
+
 ## Office task index
 
 | Category | Useful around | Decision/action |
