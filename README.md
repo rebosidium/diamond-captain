@@ -63,11 +63,11 @@ Choose one active installation to avoid duplicate skill entries. Download the ZI
 | Gemini CLI (terminal) | Install the complete native skill for your user account (all local projects). [Setup guide](docs/host-installation-routes.md) | Request `diamond-captain`; verify with `/skills list` |
 | Web-Gemini (browser) | Add this repository through **+ → Import code → GitHub**, where available. [Google's import guide](https://support.google.com/gemini/answer/14903178?hl=en) | Ask Gemini to use Diamond Captain for your task. This provides chat context; it does not install a CLI skill. |
 | Cursor, Grok Build, Perplexity Computer | [Host installation routes](docs/host-installation-routes.md) | Use the host's supported native/plugin/import route and verify discovery |
-| Manual | [Core 0.6.0](https://github.com/rebosidium/diamond-captain/releases/tag/v0.6.0) or the [complete core folder at v0.6.0](https://github.com/rebosidium/diamond-captain/tree/v0.6.0/.agents/skills/diamond-captain) | Follow the selected host's skill mechanism |
+| Manual | [Core 0.6.1](https://github.com/rebosidium/diamond-captain/releases/tag/v0.6.1) or the [complete core folder at v0.6.1](https://github.com/rebosidium/diamond-captain/tree/v0.6.1/.agents/skills/diamond-captain) | Follow the selected host's skill mechanism |
 
 The packages contain the complete pinned core, including references and templates. Downloadable archives do not imply a marketplace listing or that every host/import surface has been runtime-tested.
 
-Core **0.6.0** adds product memory, cross-task priorities, stakeholder/craft guidance, timeboxed work and calibration, with a compact path for eligible small tasks. See the [changelog](CHANGELOG.md#060).
+Core **0.6.1** adds capability-based AI/tool discovery, provider fallbacks and conditional risk routing. See the [changelog](CHANGELOG.md#061).
 
 Host packages 0.3.3 contain complete pinned core 0.6.0, including its references, templates and helpers. Previous releases remain unchanged. Published downloads retain their pinned core; later development edits do not update an installed release. See [development previews](distributions/perplexity/README.md#development-core-preview) for testing a committed source snapshot separately.
 
@@ -91,7 +91,7 @@ What a small task looks like: [a constructed end-to-end non-UI example](.agents/
 ## Learn and verify
 
 - [User guide](docs/guide/README.md), [skill guide](.agents/skills/diamond-captain/README.md), [full process](docs/process.md).
-- [UXR methods and handoff](.agents/skills/diamond-captain/references/uxr.md), [office tools and MCP routes](.agents/skills/diamond-captain/references/office-tools.md) — optional references for the task at hand.
+- [UXR methods and handoff](.agents/skills/diamond-captain/references/uxr.md), [office tools](.agents/skills/diamond-captain/references/office-tools.md), [AI tools, MCP and agent discovery](.agents/skills/diamond-captain/references/tool-options.md#ai-tool-navigation) — optional references for the task at hand.
 - [Compatibility and checks](docs/validation.md), [security](docs/security.md), [release and rollback](docs/releases.md).
 - [Changelog](CHANGELOG.md), [migration from the previous skill name](docs/migration.md), [contributing](CONTRIBUTING.md).
 

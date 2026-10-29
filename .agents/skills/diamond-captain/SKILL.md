@@ -3,7 +3,7 @@ name: diamond-captain
 description: Run product and service design from intake to outcome review. Start or resume a task, locate its Triple Diamond phase, assess readiness and execute the next useful step. Finish loading this full skill in a separate call; recover or initialize state before reading task files or guidance. Respect mandatory host prerequisites. Supports UI and non-UI work; excludes skill maintenance and unrelated code or documentation edits.
 license: MIT
 metadata:
-  version: "0.6.0"
+  version: "0.6.1"
 ---
 
 # Diamond Captain
@@ -49,7 +49,7 @@ The human owns problem framing, priorities, solution selection and acceptance. A
 
 ## Apply only the detail needed
 
-Open relevant sections when their decision arises; reuse unchanged guidance still in context:
+Open relevant sections as needed; reuse unchanged guidance in context. A settled method/tool skips its catalog, not other applicable guidance:
 
 - **Phase/readiness/loop:** [phases](references/phases.md). Compare relevant DoR/DoD with evidence as met/unmet/unknown/not applicable. Gates support a decision, not a checklist count. Preserve upstream evidence; record what a contradiction invalidates, retains and reopens, target phase, revised criteria and next action/owner.
 - **Research/data/uncertain claims:** [research](references/research.md), then relevant UXR guidance if needed. Scale work to uncertainty, consequences and reversibility. Discover compares causes; Develop compares mechanisms, including non-UI. Qual/quant can serve either mode; interviews do not prove prevalence and metric changes do not prove causality. Broaden only while evidence could change the decision; bounded research, pilot, stop or loop are valid.
@@ -59,6 +59,7 @@ Open relevant sections when their decision arises; reuse unchanged guidance stil
 - **Several problems competing for capacity:** [portfolio and priority](references/portfolio-and-priority.md); compare and recommend without choosing for the human.
 - **Conflicting interests or required sign-off:** [stakeholders and decision path](references/stakeholders.md); map the actual decision and contact authority.
 - **Creating or refining a handoff artifact:** [craft quality](references/craft-quality.md); apply relevant criteria and label inspection separately from validation.
+- **Material cost, risk or control may shift to others:** [harm and risk](references/harm-and-risk.md); inspect affected people and stop conditions during framing, handoff or rollout.
 - **Skill revision only:** [evaluation scenarios](tests/scenarios.md); not normal product intake.
 - **Shared product history, reusable evidence or cross-task collisions:** [product memory](references/product-memory.md); consult after intake, preserving each task's own history.
 
