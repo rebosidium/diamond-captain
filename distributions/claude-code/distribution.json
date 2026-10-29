@@ -1,8 +1,8 @@
 {
   "service": "claude-code",
-  "version": "0.3.3",
-  "core_version": "0.6.0",
-  "core_sha256": "3ce029bf571c77b2526840ba852f4682856447f1d1cd4f92b77867fa11da486a",
+  "version": "0.3.4",
+  "core_version": "0.6.1",
+  "core_sha256": "a3d3e4545c1546238d68f1520491d323610884ea4ab5dec6514fa41ff28fa763",
   "kind": "claude-plugin",
   "skill_root": "skills/diamond-captain",
   "documentation": "https://code.claude.com/docs/en/plugins/create"
