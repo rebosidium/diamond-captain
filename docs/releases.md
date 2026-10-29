@@ -1,6 +1,6 @@
 # Releases, updates and rollback
 
-Core releases use `vX.Y.Z` tags matching SKILL.md metadata. Host packages use independent `<service>-vX.Y.Z` tags and pin the exact core version/hash. Current core is 0.6.0; OpenAI, Claude Code and OpenCode packages 0.3.2 remain pinned to complete core 0.5.0 and its exact hash.
+Core releases use `vX.Y.Z` tags matching SKILL.md metadata. Host packages use independent `<service>-vX.Y.Z` tags and pin the exact core version/hash. Current core is 0.6.0; OpenAI, Claude Code and OpenCode packages 0.3.3 pin complete core 0.6.0 and its exact hash.
 
 Download the archive and checksums from the selected [release](https://github.com/rebosidium/diamond-captain/releases). Verify SHA-256, extract to a new directory, and follow its setup guide. Public archives and receipts identify their public source revision. Keep a saved complete working installation before replacement.
 

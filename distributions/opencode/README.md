@@ -1,10 +1,10 @@
 # Diamond Captain — OpenCode native skill
 
-Distribution **0.3.2**, containing complete core **0.5.0**.
+Distribution **0.3.3**, containing complete core **0.6.0**.
 
 Keep the complete packaged skill tree, including any nested references and scripts. See [package contents and source versions](https://github.com/rebosidium/diamond-captain/blob/main/docs/distributions.md); current development source does not update an installed release.
 
-Download the ZIP, JSON receipt and matching checksums from [opencode-v0.3.2](https://github.com/rebosidium/diamond-captain/releases/tag/opencode-v0.3.2). Verify SHA-256 and extract into a new version-specific directory.
+Download the ZIP, JSON receipt and matching checksums from [opencode-v0.3.3](https://github.com/rebosidium/diamond-captain/releases/tag/opencode-v0.3.3). Verify SHA-256 and extract into a new version-specific directory.
 
 ## Install for all your local projects
 
