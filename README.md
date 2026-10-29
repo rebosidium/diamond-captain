@@ -1,6 +1,8 @@
-<p align="center"><img src="assets/mark.svg" width="156" height="64" alt="Three diamonds: Problem, Solution, Outcome"></p>
+<p align="center"><img src="assets/logo.png" width="240" alt="Diamond Captain logo: a cartoon pirate captain with a parrot wearing an AI medallion"></p>
 
-# Diamond Captain — Your Triple Diamond needs a captain!
+<h1 align="center">Diamond Captain — Your Triple Diamond needs a captain!</h1>
+
+<div align="center">
 
 [![Repository checks](https://github.com/rebosidium/diamond-captain/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/rebosidium/diamond-captain/actions/workflows/checks.yml)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16014/badge)](https://www.bestpractices.dev/projects/16014)
@@ -21,6 +23,8 @@
 [![UX Research](https://img.shields.io/badge/UX-Research-8B5CF6)](.agents/skills/diamond-captain/references/uxr.md)
 [![Docs: Read the guide](https://img.shields.io/badge/Docs-Read_the_guide-2563EB)](docs/guide/README.md)
 [![GitHub release asset downloads](https://img.shields.io/github/downloads/rebosidium/diamond-captain/total?label=Downloads)](https://github.com/rebosidium/diamond-captain/releases)
+
+</div>
 
 Diamond Captain is an open-source skill that guides your AI agent through product and service design — from problem discovery to solution delivery and outcome review. You choose the direction and keep control of decisions.
 
