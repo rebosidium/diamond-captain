@@ -61,14 +61,14 @@ Use authorized tools within scope. A product decision or available account does 
 
 During active design work, in material replies use `<Diamond> / <Phase> <↗/↘> · <n>/6 | <status>` with relevant evidence, critical gap, next action and decision basis. Derive diamond/arrow from phase number, including on resume; translate labels consistently:
 
-| Phase | Diamond (English / Russian) |
+| Phase | Diamond |
 | --- | --- |
-| 1 Discover ↗ | Problem / Проблема |
-| 2 Define ↘ | Problem / Проблема |
-| 3 Develop ↗ | Solution / Решение |
-| 4 Deliver ↘ | Solution / Решение |
-| 5 Deploy ↗ | Outcome / Результат |
-| 6 Digest ↘ | Outcome / Результат |
+| 1 Discover ↗ | Problem |
+| 2 Define ↘ | Problem |
+| 3 Develop ↗ | Solution |
+| 4 Deliver ↘ | Solution |
+| 5 Deploy ↗ | Outcome |
+| 6 Digest ↘ | Outcome |
 
 Use phase-guide statuses `READY`, `NOT READY`, `LOOP BACK`, `BLOCKED`, `AWAITING LIVE EVIDENCE`, `COMPLETE`. Check phase/diamond/arrow agreement; correct a conflicting stored label when edits are permitted, retaining history. Topic, artifacts, readiness and evidence maturity do not determine that mapping.
 
