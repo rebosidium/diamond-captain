@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/logo.png" width="600" alt="Diamond Captain logo: a cartoon pirate captain with a parrot wearing an AI medallion"></p>
+<p align="center"><img src="assets/logo.png" width="360" alt="Diamond Captain logo: a cartoon pirate captain with a parrot wearing an AI medallion"></p>
 
 <h1 align="center">Diamond Captain — Your Triple Diamond needs a captain!</h1>
 
