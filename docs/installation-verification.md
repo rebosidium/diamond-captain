@@ -42,4 +42,4 @@ Record actual values:
 
 Do not substitute moving `main` for the selected release commit. For unchanged legacy copies without receipts, report verified provenance and unknowns rather than inventing history. Current usable installations keep their receipts and original times unchanged.
 
-After usable setup, invite the user's task. If one was supplied, load the installed skill and recover its state or initialize it in the actual task project. Setup alone creates no product task and requires no six-phase execution.
+After checking setup, follow [Continue after setup](../INSTALL-FOR-AGENTS.md#continue-after-setup) for the short invitation, authorized continuation or recovery step. Setup alone creates no product task.
