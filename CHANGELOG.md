@@ -4,6 +4,11 @@
 
 No changes pending.
 
+## 0.6.2
+
+- Add conditional guidance for model-dependent features: evaluation cases and repeated trials, grader calibration, human usability, operating costs and configuration-aware recovery.
+- Link the existing benchmark, prototype, viability, rehearsal, rollout and outcome methods; preserve the six phases, 60 method IDs, human decisions and checkpoints.
+
 ## 0.6.1
 
 - Add capability-based AI tool navigation, replaceable MCP/skill/agent discovery and provider fallbacks; preserve human choices and checkpoints.

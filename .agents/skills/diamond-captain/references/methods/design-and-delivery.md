@@ -103,6 +103,8 @@ See also [stakeholders and decision paths](../stakeholders.md) when ownership or
 **Output:** Versioned prototype and next evaluation question.
 **Needs/limits:** Safe materials/access; making is not validation, and prototype code is not production readiness. [Prototypes][prototypes], [experience prototypes][service-methods].
 
+For model-dependent prototypes, label live versus simulated behavior and test [variable responses and user recovery](../research.md#ai-dependent-product-behavior).
+
 ## DS-12
 
 **Method:** Criteria-based option choice. **Prefer when:** Plausible options require a deliberate trade-off.
@@ -116,6 +118,8 @@ See also [stakeholders and decision paths](../stakeholders.md) when ownership or
 **Do:** Trace demand to staffing, partners, funding and running/support costs; compare plausible volume/cost ranges; identify capacity limits and ongoing ownership.
 **Output:** Viable conditions, resource gaps and no-go triggers.
 **Needs/limits:** Grounded estimates; a filled canvas is not a funded business case. [Business model questions][viability].
+
+For model-dependent services, include [inference, retries, review workload, latency, quotas and provider dependency](../research.md#ai-dependent-product-behavior).
 
 ## DS-14
 
@@ -145,12 +149,16 @@ See also [stakeholders and decision paths](../stakeholders.md) when ownership or
 **Output:** Verified paths, defects and readiness decision.
 **Needs/limits:** Safe environment and relevant roles; rehearsal is not live adoption or production-scale reliability. [Quality assurance][quality].
 
+For model-dependent paths, exercise [wrong answers, refusals, unavailable dependencies and human escalation capacity](../research.md#ai-dependent-product-behavior).
+
 ## DS-18
 
 **Method:** Staged rollout and rollback plan. **Prefer when:** Exposure can grow reversibly.
 **Do:** Define initial cohort/channel, version, checks, observation window and expansion thresholds; assign pause authority; rehearse restoring the prior service, including data and communications.
 **Output:** Executable release, monitoring and recovery plan.
 **Needs/limits:** Actual release authority; planning is not deployment, and some consequences cannot be rolled back. [Deployment][deployment].
+
+For model-dependent releases, preserve the [tested model/prompt/retrieval/tool configuration and feasible fallback](../research.md#ai-dependent-product-behavior).
 
 ## DS-19
 
@@ -166,6 +174,8 @@ See also [stakeholders and decision paths](../stakeholders.md) when ownership or
 **Output:** Evidence-linked decision, owner and next action.
 **Needs/limits:** Adequate window and trustworthy data; association is not causation. Otherwise record insufficient evidence. [Evaluation][success].
 **Calibrate:** Retain each material prediction and its original confidence/basis; compare with actual observations as confirmed, partly confirmed, contradicted or untestable. In [product memory](../product-memory.md), link the evidence and method that changed a decision or produced no decision value; use unknown when that attribution is unsupported. Record each loop and its reason from retained transitions, with an honest count. Do not retrofit confidence or invent an outcome to fill the log. The human decides the next direction.
+
+For model-dependent outcomes, compare [output quality, cost and latency by configuration/context](../research.md#ai-dependent-product-behavior); retain the distinction between offline scores and live user benefit.
 
 [framework]: https://www.designcouncil.org.uk/resources/framework-for-innovation/
 [service-methods]: https://www.designcouncil.org.uk/fileadmin/uploads/dc/Documents/DesignCouncil_Design%2520methods%2520for%2520developing%2520services.pdf

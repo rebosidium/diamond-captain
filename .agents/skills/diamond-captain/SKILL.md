@@ -3,7 +3,7 @@ name: diamond-captain
 description: Run product and service design from intake to outcome review. Start or resume a task, locate its Triple Diamond phase, assess readiness and execute the next useful step. Finish loading this full skill in a separate call; recover or initialize state before reading task files or guidance. Respect mandatory host prerequisites. Supports UI and non-UI work; excludes skill maintenance and unrelated code or documentation edits.
 license: MIT
 metadata:
-  version: "0.6.1"
+  version: "0.6.2"
 ---
 
 # Diamond Captain
@@ -53,6 +53,7 @@ Open relevant sections as needed; reuse unchanged guidance in context. A settled
 
 - **Phase/readiness/loop:** [phases](references/phases.md). Compare relevant DoR/DoD with evidence as met/unmet/unknown/not applicable. Gates support a decision, not a checklist count. Preserve upstream evidence; record what a contradiction invalidates, retains and reopens, target phase, revised criteria and next action/owner.
 - **Research/data/uncertain claims:** [research](references/research.md), then relevant UXR guidance if needed. Scale work to uncertainty, consequences and reversibility. Discover compares causes; Develop compares mechanisms, including non-UI. Qual/quant can serve either mode; interviews do not prove prevalence and metric changes do not prove causality. Broaden only while evidence could change the decision; bounded research, pilot, stop or loop are valid.
+- **Product behavior depends on a model:** [AI feature evaluation](references/research.md#ai-dependent-product-behavior), even with a settled method/tool. Apply relevant checks to the feature; using an AI assistant for ordinary work alone does not trigger this route.
 - **Unresolved method choice:** [methods by phase](references/methods/README.md), then the current phase menu and selected method cards. Use when a concrete research, synthesis, design or delivery procedure would resolve the next uncertainty; skip the catalog when the method is already clear. Read only relevant cards, with their inputs and limits; the menu is not a quota or an additional phase gate.
 - **Unresolved tool choice:** [tool index](references/tool-options.md), then only the relevant linked category. Skip catalogs when supplied files or known local tools suffice. Discover actual capabilities/access first; named providers are candidates, not dependencies or proof of integration. Without access, use files, a protocol or honest handoff.
 - **Small, low-risk reversible local task:** [fast path](references/fast-path.md); compact current state preserves intake, history, controls and acceptance.
