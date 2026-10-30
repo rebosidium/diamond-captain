@@ -6,6 +6,8 @@ UXR can expand or narrow **any** diamond: investigate alternative causes in Disc
 
 For concrete procedures beyond interviews, use the [method menus](methods/README.md): [qualitative cards](methods/qualitative.md) include diaries, contextual observation, comprehension and collaborative-use studies; [quantitative cards](methods/quantitative.md) cover measurement, sampling, benchmarks and effect estimation. Read the cards relevant to the decision, then adapt the protocol below.
 
+For a model-dependent product, pair the relevant study with [AI feature evaluation](research.md#ai-dependent-product-behavior), keeping model-output checks and human usability findings distinct.
+
 ## Frame the study and its decision
 
 Reuse the brief, state and existing evidence. Make the smallest study plan that names:

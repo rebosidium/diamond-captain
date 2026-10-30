@@ -65,6 +65,8 @@ Use the shared [research rules](../research.md) and [UXR protocol, consent and p
 
 **Quantitative task benchmark.** Prefer for comparable task performance across versions. **Do:** freeze realistic tasks and independent-success rules; recruit relevant users; standardize assistance; counterbalance repeated comparisons; measure completion, errors and duration. **Output:** task-level counts/rates and time distributions with intervals. **Needs/limits:** comparable samples, tasks and versions; separate assisted completions, failures and timeouts. Rehearsal, learning and prototype fidelity affect transfer. [UX benchmarking](https://www.nngroup.com/articles/benchmarking-ux/).
 
+For model-dependent features, keep this human task benchmark separate from [model-output evaluation and repeated trials](../research.md#ai-dependent-product-behavior).
+
 ## QT-11
 
 **Tree testing.** Prefer to isolate hierarchy and labels from visual styling. **Do:** present a text hierarchy; give realistic findability tasks; define acceptable destinations; record final selection, directness, paths and seconds. **Output:** success/directness counts and confusion branches. **Needs/limits:** relevant task coverage and users; randomize task order when appropriate. Results exclude page layout, search and end-to-end service performance. [Tree-test interpretation](https://www.nngroup.com/articles/interpreting-tree-test-results/).

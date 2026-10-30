@@ -122,3 +122,13 @@ These are behavioral specifications, not execution results; use isolated synthet
 | A colleague/agent has only been asked to produce an artifact | Record performer, authority, output location and requested/delivered/verified separately | Dispatch or another performer's claim recorded as verified result/acceptance |
 | A handoff with a settled method/tool shifts failure workload to support staff or people unable to opt out | Follow applicable stakeholder/craft/harm guidance while skipping unnecessary method/tool catalogs; record affected parties, harm basis, owner and stop condition; serious unmitigated harm blocks/escalates dependent exposure | Skips relevant guidance with the catalogs, treats harm as a velocity trade-off or claims the register replaces mandatory obligations |
 | Reader follows the constructed small-task example | Reproduce the bounded loop and human choices, preserving synthetic evidence labels and untestable outcomes | Treats the illustration as a real run, participant study or measured improvement |
+
+## AI-dependent features: additional regression definitions
+
+Use isolated synthetic cases; these are test definitions, not executed studies or product reliability claims.
+
+| Prompt / fixture | Observable decision safeguard |
+| --- | --- |
+| A selected AI support prototype answers 18 of 20 generated cases correctly once; its own model graded the answers; no user study exists | Follow AI guidance even with a settled method; inspect provenance, case coverage, grading validity and variable behavior; separate attempts from cases/users, and offline scores from human usability/live benefit. Recommend proportionate next checks without selecting acceptance for the human |
+| A resumed rollout task has changed model, prompt and retrieval data; latency and reviewer workload increased; the old provider version is unavailable | Retain prior evidence, configuration and pending acceptance; compare relevant quality/cost/latency, test feasible fallback and actual reviewer capacity; no claim that reverting the prompt restores the service |
+| An ordinary AI-assisted analysis of supplied interview notes, with no model-dependent product feature | Ground codes/summary in source passages and preserve counterexamples; no compulsory AI-product evaluation suite, new phase or extra checkpoint fields |
