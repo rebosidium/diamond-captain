@@ -1,5 +1,10 @@
 # Host package changes
 
+## OpenAI, Claude Code and OpenCode 0.3.6
+
+- Pin complete core 0.6.3 and its exact SHA-256, including phase-aware course selection and evidence limits for outcome-led tasks.
+- Preserve explicit requests, human decisions, six phases and checkpoint history. Previous releases remain unchanged.
+
 ## OpenAI, Claude Code and OpenCode 0.3.5
 
 - Pin complete core 0.6.2 and its exact SHA-256, including conditional AI-feature evaluation and recovery guidance.

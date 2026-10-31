@@ -1,5 +1,5 @@
-# OpenAI plugin 0.3.5
+# OpenAI plugin 0.3.6
 
-Bundle complete pinned core 0.6.2, including conditional AI-feature evaluation, human usability, operating costs and configuration-aware recovery. Preserve Triple Diamond, skill identity, host invocation and Markdown task state. Previous releases remain unchanged.
+Bundle complete pinned core 0.6.3, including phase-aware course selection and evidence limits for outcome-led tasks. Preserve explicit requests, human decisions, six phases and checkpoint history. Previous releases remain unchanged.
 
 Preserve the previous complete installation and project state before updating. Follow the [installation guide](README.md) and [rollback instructions](../../docs/releases.md).
