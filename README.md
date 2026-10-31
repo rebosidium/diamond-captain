@@ -63,11 +63,11 @@ Choose one active installation to avoid duplicate skill entries. Download the ZI
 | Gemini CLI (terminal) | Install the complete native skill for your user account (all local projects). [Setup guide](docs/host-installation-routes.md) | Request `diamond-captain`; verify with `/skills list` |
 | Web-Gemini (browser) | Add this repository through **+ → Import code → GitHub**, where available. [Google's import guide](https://support.google.com/gemini/answer/14903178?hl=en) | Ask Gemini to use Diamond Captain for your task. This provides chat context; it does not install a CLI skill. |
 | Cursor, Grok Build, Perplexity Computer | [Host installation routes](docs/host-installation-routes.md) | Use the host's supported native/plugin/import route and verify discovery |
-| Manual | [Core 0.6.3](https://github.com/rebosidium/diamond-captain/releases/tag/v0.6.3) or the [complete core folder at v0.6.3](https://github.com/rebosidium/diamond-captain/tree/v0.6.3/.agents/skills/diamond-captain) | Follow the selected host's skill mechanism |
+| Manual | [Core 0.6.4](https://github.com/rebosidium/diamond-captain/releases/tag/v0.6.4) or the [complete core folder at v0.6.4](https://github.com/rebosidium/diamond-captain/tree/v0.6.4/.agents/skills/diamond-captain) | Follow the selected host's skill mechanism |
 
 The packages contain the complete pinned core, including references and templates. Downloadable archives do not imply a marketplace listing or that every host/import surface has been runtime-tested.
 
-Core **0.6.3** keeps outcome-led work tied to evidence, the current phase and human course decisions. See the [changelog](CHANGELOG.md#063).
+Core **0.6.4** makes concrete method and execution-tool choices visible before dependent work. See the [changelog](CHANGELOG.md#064).
 
 Host packages 0.3.6 contain complete pinned core 0.6.3, including its references, templates and helpers. Previous releases remain unchanged. Published downloads retain their pinned core; later development edits do not update an installed release. See [development previews](distributions/perplexity/README.md#development-core-preview) for testing a committed source snapshot separately.
 

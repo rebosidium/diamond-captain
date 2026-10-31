@@ -1,6 +1,6 @@
 # Methods by decision and phase
 
-Use this menu when the next decision needs a concrete method. If an existing analysis or known procedure already answers it, continue without loading the catalog. The entries are options, not required activities or a maturity score.
+Use this menu when the next decision needs a concrete method. Reuse an established analysis or specified/settled procedure instead of repeating lookup. Keep the [skill's method and execution explanation](../../SKILL.md#apply-only-the-detail-needed) visible before dependent work; do not repeat it unchanged. The entries are options, not required activities or a maturity score.
 
 ## Open the relevant phase
 
@@ -30,8 +30,8 @@ Families describe the main purpose, not an exclusive classification. An open-res
 ## Select and execute a method
 
 1. Name the pending human decision and the uncertainty that could change it. Reuse credible existing sources and the active task checkpoint. An unsettled problem may need [alternative framing](design-and-delivery.md#ds-02) before evaluating a proposed solution; keep options and a recommendation separate from the human's choice. Preserve an already agreed framing and scope.
-2. Choose a method whose inputs and access are available, or prepare its protocol if collection is not authorized. Pair methods only when they answer complementary uncertainties. No participant access means no claimed participant findings.
+2. Choose a method whose inputs and access fit the task. Explain materially different alternatives only when they could change the choice; no method quota. Pair methods only for complementary uncertainties. If no card fits, name the library gap and justify an adapted procedure without inventing an ID. Missing collection authority permits preparation only within the already chosen course; a method proposal cannot expand that course. No participant access means no claimed participant findings.
 3. Adapt the small procedure on the card to the task. Follow shared [research guardrails](../research.md) and [UXR planning, consent and analysis](../uxr.md), including data quality, actual authority, privacy and sampling rationale. Advanced causal designs require their stated assumptions and competent analysis; descriptive findings are a valid result when those conditions fail.
-4. Record method ID, question, source/sample/version, what actually happened, result, limitations and next decision in the existing journal or linked artifact. Label a proposed study, synthetic rehearsal, expert prediction and observed user evidence accurately. Preserve original evidence and superseded conclusions on a loop.
+4. Record method/ID or adaptation, tool route, selection rationale, question, source/sample/version, actual result, limitations and next decision in the existing journal or linked artifact. Keep proposed, performed and checked statuses distinct. An artifact inspection supplies observations and expert hypotheses; only real participants supply observations of their understanding or behaviour. Label a proposed study and synthetic rehearsal accurately; AI personas are not participants. Preserve original evidence and superseded conclusions on a loop.
 
 The method card's output is not automatic phase completion or user acceptance. Keep [phase readiness and handoffs](../phases.md) separate. Use [tools](../tool-options.md) or [office workflows](../office-tools.md) only after deciding what evidence/artifact the method needs; no named platform or new workshop is required.
