@@ -57,9 +57,9 @@ Choose one active installation to avoid duplicate skill entries. Download the ZI
 
 | Host | Package and instructions | Invocation |
 | --- | --- | --- |
-| Codex / compatible OpenAI plugin tooling | [OpenAI 0.3.6](https://github.com/rebosidium/diamond-captain/releases/tag/openai-v0.3.6) · [Guide](distributions/openai/README.md) | `diamond-captain:diamond-captain`, or `$diamond-captain` for a native skill |
-| Claude Code | [Claude Code 0.3.6](https://github.com/rebosidium/diamond-captain/releases/tag/claude-code-v0.3.6) · [Guide](distributions/claude-code/README.md) | `/diamond-captain` for a native skill, or `/diamond-captain:diamond-captain` for the plugin |
-| OpenCode | [OpenCode 0.3.6](https://github.com/rebosidium/diamond-captain/releases/tag/opencode-v0.3.6) · [Guide](distributions/opencode/README.md) | Ask the agent to use `diamond-captain` |
+| Codex / compatible OpenAI plugin tooling | [OpenAI 0.3.7](https://github.com/rebosidium/diamond-captain/releases/tag/openai-v0.3.7) · [Guide](distributions/openai/README.md) | `diamond-captain:diamond-captain`, or `$diamond-captain` for a native skill |
+| Claude Code | [Claude Code 0.3.7](https://github.com/rebosidium/diamond-captain/releases/tag/claude-code-v0.3.7) · [Guide](distributions/claude-code/README.md) | `/diamond-captain` for a native skill, or `/diamond-captain:diamond-captain` for the plugin |
+| OpenCode | [OpenCode 0.3.7](https://github.com/rebosidium/diamond-captain/releases/tag/opencode-v0.3.7) · [Guide](distributions/opencode/README.md) | Ask the agent to use `diamond-captain` |
 | Gemini CLI (terminal) | Install the complete native skill for your user account (all local projects). [Setup guide](docs/host-installation-routes.md) | Request `diamond-captain`; verify with `/skills list` |
 | Web-Gemini (browser) | Add this repository through **+ → Import code → GitHub**, where available. [Google's import guide](https://support.google.com/gemini/answer/14903178?hl=en) | Ask Gemini to use Diamond Captain for your task. This provides chat context; it does not install a CLI skill. |
 | Cursor, Grok Build, Perplexity Computer | [Host installation routes](docs/host-installation-routes.md) | Use the host's supported native/plugin/import route and verify discovery |
@@ -69,7 +69,7 @@ The packages contain the complete pinned core, including references and template
 
 Core **0.6.4** makes concrete method and execution-tool choices visible before dependent work. See the [changelog](CHANGELOG.md#064).
 
-Host packages 0.3.6 contain complete pinned core 0.6.3, including its references, templates and helpers. Previous releases remain unchanged. Published downloads retain their pinned core; later development edits do not update an installed release. See [development previews](distributions/perplexity/README.md#development-core-preview) for testing a committed source snapshot separately.
+Host packages 0.3.7 contain complete pinned core 0.6.4, including its references, templates and helpers. Previous releases remain unchanged. Published downloads retain their pinned core; later development edits do not update an installed release. See [development previews](distributions/perplexity/README.md#development-core-preview) for testing a committed source snapshot separately.
 
 ## Three diamonds, six thinking modes
 
