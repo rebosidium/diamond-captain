@@ -4,6 +4,10 @@
 
 No changes pending.
 
+## 0.6.4
+
+- Make concrete method and execution-tool choices visible before dependent work; preserve settled approaches, course decisions, proportionate tasks and evidence limits.
+
 ## 0.6.3
 
 - Bind initial action selection and phase navigation to the task question, evidence and human-owned course; preserve explicit requests, scoped delegation and checkpoints.

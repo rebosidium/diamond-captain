@@ -4,7 +4,7 @@
 
 ## Read only what the next decision needs
 
-Start from the task, question and available evidence. Use the index to open only one or two relevant category files when tool choice is unresolved; skip catalogs when known files/tools suffice. Prefer the team's existing tools and discover actual authorized connector/MCP operations and scopes first. MCP is a [protocol](https://modelcontextprotocol.io/), not an analytics or research product.
+Start from the task, question and available evidence. Use the index to open only one or two relevant category files when tool choice is unresolved; reuse known files/tools without lookup, while retaining the [method and execution explanation](../SKILL.md#apply-only-the-detail-needed). Prefer the team's existing tools and discover actual authorized connector/MCP operations and scopes first. MCP is a [protocol](https://modelcontextprotocol.io/), not an analytics or research product.
 
 If the procedure itself is unclear, choose it from the [phase method menus](methods/README.md) before comparing tools. A diary study, journey synthesis or operational rehearsal can use existing files and tools.
 
