@@ -1,10 +1,10 @@
 # Diamond Captain — OpenAI plugin
 
-Distribution **0.3.6**, containing complete core **0.6.3**.
+Distribution **0.3.7**, containing complete core **0.6.4**.
 
 Keep the complete packaged skill tree, including any nested references and scripts. See [package contents and source versions](https://github.com/rebosidium/diamond-captain/blob/main/docs/distributions.md); current development source does not update an installed release.
 
-Download the ZIP, JSON receipt and matching checksums from [openai-v0.3.6](https://github.com/rebosidium/diamond-captain/releases/tag/openai-v0.3.6). Verify SHA-256 and extract into a new version-specific directory. Keep that directory as the local marketplace source.
+Download the ZIP, JSON receipt and matching checksums from [openai-v0.3.7](https://github.com/rebosidium/diamond-captain/releases/tag/openai-v0.3.7). Verify SHA-256 and extract into a new version-specific directory. Keep that directory as the local marketplace source.
 
 ## Register and install
 
