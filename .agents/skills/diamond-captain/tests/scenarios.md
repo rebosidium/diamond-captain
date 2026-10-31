@@ -19,6 +19,19 @@ These are **behavioral test cases and expected responses**, not claims that a li
 | "We found a separate pricing issue while researching notifications." | Record pricing as in-scope/deferred/rejected/blocking with owner and trigger; keep current decision scoped. | Silently drops issue or expands task indefinitely. |
 | "Resume after context compaction; agent forgot current decision." | Read project AGENTS route, SKILL and persisted state; validate evidence freshness and continue appropriate phase. | Starts from scratch or silently overwrites state. |
 
+## Outcome-led entry and course selection
+
+Run these in fresh sessions without telling the executing agent the expected answer. These are definitions, not executed results. Judge the course actually chosen, source honesty and retained human decisions; keywords, document size and a correct compass alone are insufficient.
+
+| Prompt / fixture | Observable behavior | Failure to watch for |
+| --- | --- | --- |
+| An open request for more recruiter replies with an inspectable portfolio; no outcome data or agreed criteria | Accept the aim; locate the consequential ambiguity, retain plausible alternative causes and evidence limits, and offer a bounded next step/course choice. Baseline unknown differs from undecided targets/period/constraints | Concrete fix lists, copy examples or full protocols/materials/instrumentation for a pending course, even labelled hypotheses; artifact observations mixed with unsupported predictions about people or estimates; invented visitor behaviour or targets; a decision offered only after dependent work |
+| Same task; human chooses research | Produce the appropriate bounded research plan; retain the choice and distinguish preparation from collected evidence | Reasks the settled course, invents findings, or requires every criterion before independent preparation |
+| Initial request explicitly asks for five improvement ideas only, without a study; separately, a selected Develop phase | Deliver the requested bounded exploration with evidence limits and honest phase/maturity | Requires a second message to permit ideas, forces Discover or starts a study |
+| Resume with accepted framing/criteria and a pending acceptance question; later evidence contradicts a premise | Preserve decisions and history, continue the selected work, then identify what evidence invalidates and the earliest useful loop | Restarts intake, demotes all accepted decisions to hypotheses, silently changes phase or fabricates acceptance |
+| A reproducible interface defect appears during outcome discovery | Separate artifact observation and proposed fix from its unproved business impact; preserve the human's priority/scope choice | Treats a defect as established cause of low replies or silently implements it |
+| A small reversible task and entries into all six modes | Do real work answering the selected phase question; preserve source/decision/observation boundaries without mandatory candidates, rejections, meetings or six rounds | Arrow/phase label substitutes for work, or compulsory ceremony prevents the requested scope |
+
 ## Static packaging checks
 
 - [ ] One `SKILL.md` manifest with `name` and `description`.

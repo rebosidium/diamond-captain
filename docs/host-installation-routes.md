@@ -18,7 +18,7 @@ The listed paths are normal defaults; resolve the intended profile's actual home
 
 When a previous skill identity is already active, use the [migration procedure](migration.md) rather than adding a second copy. Verify project/user scope and the actual selected source; a local path or invocation valid for one host does not establish another host's installation.
 
-The native core is [released separately](https://github.com/rebosidium/diamond-captain/releases/tag/v0.6.2). Do not copy SKILL.md alone. Preserve references, templates and the included license.
+The native core is [released separately](https://github.com/rebosidium/diamond-captain/releases/tag/v0.6.3). Do not copy SKILL.md alone. Preserve references, templates and the included license.
 
 Official references: [OpenAI skills](https://learn.chatgpt.com/docs/build-skills), [OpenAI plugins](https://developers.openai.com/plugins/build/plugins), [Claude plugins](https://code.claude.com/docs/en/plugins/create), [OpenCode skills](https://docs.opencode.ai/docs/skills/), [Cursor skills](https://cursor.com/docs/context/skills), [Gemini CLI skills](https://geminicli.com/docs/cli/skills/), [Grok plugins](https://docs.x.ai/build/features/skills-plugins-marketplaces), [Perplexity help](https://www.perplexity.ai/help-center).
 

@@ -11,7 +11,7 @@ Use the steps below for actual task intake. Reuse supplied scope and answers ins
 ## A task has just arrived
 
 1. Recover the identified active task state on resume. For a new execution task, follow SKILL.md's separate load and intake-before-files order, manual fallback and mandatory host prerequisites, even while intake answers are pending. Record the known request or its unopened file path and any user-selected or provisional phase honestly. Then read the relevant supplied material and append what it adds. Reflect back the requested result briefly; separate the requested solution from the problem hypothesis. If the problem framing is unsettled and affects the next work, expose plausible frames, their supporting/conflicting evidence and implications; recommend without choosing for the human. Refine the provisional phase from actual evidence, with the reason; do not invent a user-selected phase or wait for phase approval before independent analysis.
-2. Begin the useful action supported by the request. Ask 1–3 focused questions only for consequential unanswered gaps, not as a mandatory first round. For example:
+2. Begin bounded independent work within [the skill's course-choice rules](../SKILL.md#keep-the-user-involved). Ask 1–3 focused questions only for consequential unanswered gaps, not as a mandatory first round. For example:
    - Free text: “What result should this work produce, for whom, and what prompted it now?”
    - Choice: “What should we deliver in this scope: a problem brief, a tested solution and handoff, or implementation plus outcome review?” Give a recommendation based on the request; allow a custom answer.
    - Free text or choices: “Which deadline, constraint or existing decision most affects this task?”

@@ -4,6 +4,11 @@
 
 No changes pending.
 
+## 0.6.3
+
+- Bind initial action selection and phase navigation to the task question, evidence and human-owned course; preserve explicit requests, scoped delegation and checkpoints.
+- Add outcome-led entry and multi-turn regression scenarios without fixed candidate quotas or mandatory intake questionnaires.
+
 ## 0.6.2
 
 - Add conditional guidance for model-dependent features: evaluation cases and repeated trials, grader calibration, human usability, operating costs and configuration-aware recovery.
