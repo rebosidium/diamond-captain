@@ -1,6 +1,6 @@
 # Methods by decision and phase
 
-Use this menu when the next decision needs a concrete method. Reuse an established analysis or specified/settled procedure instead of repeating lookup. Keep the [skill's method and execution explanation](../../SKILL.md#apply-only-the-detail-needed) visible before dependent work; do not repeat it unchanged. The entries are options, not required activities or a maturity score.
+Use this menu to select a method for the next decision; reuse settled procedures without repeating lookup. Send the [method statement](../../SKILL.md#apply-only-the-detail-needed) before first application; then record the actual procedure, evidence and result. Entries are options, not required activities or a maturity score.
 
 ## Open the relevant phase
 

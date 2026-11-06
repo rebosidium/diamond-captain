@@ -78,8 +78,8 @@ See also [stakeholders and decision paths](../stakeholders.md) when ownership or
 ## DS-08
 
 **Method:** Mechanism divergence. **Prefer when:** Options differ only cosmetically.
-**Do:** Keep the need fixed; vary who acts, timing, channel and degree of automation; include a service/process option and doing less; explain each mechanism and downside.
-**Output:** Materially different solution hypotheses.
+**Do:** Keep the need fixed; vary actor, timing, channel and automation, including a service/process option; explain mechanisms and trade-offs.
+**Output:** Different mechanisms, comparing added help with reducing existing work or retaining the current flow; explain constraints ruling those alternatives out.
 **Needs/limits:** A bounded problem; novelty and votes are not effectiveness evidence. [Develop][framework].
 
 ## DS-09
