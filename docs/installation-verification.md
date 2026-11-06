@@ -6,13 +6,13 @@ Read after the target and action are settled, when checking an installation or r
 
 Follow the selected [host procedure](host-installation-routes.md). Verify a downloaded archive against its matching published SHA-256 before use; stop on mismatch. For pinned Git source, resolve the selected published tag/commit and compare the complete payload with that tree. An archive hash identifies the archive, not an extracted folder.
 
-Copy the entire skill tree, including nested references, scripts, templates, tests and license. A lone SKILL.md is incomplete. During authorized replacement, preserve the complete previous installation and receipt outside discovery roots, replace the intended directory wholesale, then verify. Preserve `.product-task/`, artifacts, unrelated skills and settings. Keep backups private and outside tracked project files and public attachments; being outside discovery roots alone does not prevent publication. See [update/rollback](releases.md#update-or-roll-back-an-installation).
+Copy the entire skill tree, including nested references, scripts, templates, tests and license. A lone SKILL.md is incomplete. During authorized replacement, preserve the complete previous installation, receipt and existing backups outside discovery roots, replace the intended directory wholesale, then verify. Preserve `.product-task/`, artifacts, unrelated skills and settings. Keep backups private and outside tracked project files and public attachments; being outside discovery roots alone does not prevent publication. See [update/rollback](releases.md#update-or-roll-back-an-installation).
 
 If copying, receipt recording or verification fails, report `INCOMPLETE` with actual remaining files and restore the prior installation when possible. Do not claim success or overwrite newer task state during recovery. Preserve unrequested files and unfinished work.
 
 ## Check actual results
 
-Check complete membership and every payload byte against selected published source, read the installed name/version, and inspect actual host discovery where available. Verify supporting reference/template access and the selected source/cache in a fresh relevant session. Existing conversations can retain previously loaded instructions. Reuse successful checks for unchanged source/files/profile/target; recheck affected inputs if freshness is uncertain. Setup needs no unrelated-fixture audit or design-task experiment.
+Check complete membership and every payload byte against selected published source, read the installed name/version, and inspect actual host discovery where available. Verify supporting reference/template access and the selected source/cache after a supported reload or in a fresh session; changed files alone do not prove activation, as conversations can keep loaded content. Reuse successful checks for unchanged source/files/profile/target; recheck affected inputs if freshness is uncertain. Setup needs no unrelated-fixture audit or design-task experiment.
 
 Keep checks distinct:
 
@@ -20,13 +20,13 @@ Keep checks distinct:
 - Payload hashes establish identity/integrity. A receipt records provenance but cannot prove current files unchanged.
 - Discovery establishes that the host finds the selected skill; it does not prove activation, task execution or live outcomes.
 
-Record the actual result: `INSTALLED`, `UPDATED`, `UNCHANGED`, `FALLBACK` or `INCOMPLETE`. Keep provenance/check details private; give a short result in the user's language: action, relevant version(s), availability (all local projects / one project / this session), invocation and material limits/next step. Use exact paths only when useful; explain blocking failures without manifest, hash or registry dumps. Unavailable checks stay unverified, and a fallback is not persistent installation. No changed installation means no new receipt or invented time.
+Record the actual result: `INSTALLED`, `UPDATED`, `UNCHANGED`, `FALLBACK` or `INCOMPLETE`. Give the [short result](../INSTALL-FOR-AGENTS.md#choose-the-next-action) in the user's language; explain blocking failures without manifest, hash or registry dumps. Unavailable checks stay unverified, and a fallback is not persistent installation. No changed installation means no new receipt or invented time.
 
 ## Manual installation receipt
 
 For a successful new manual personal copy, save `~/.diamond-captain-installations/<host-id>/manual.json` in the same user profile, using a lowercase host ID such as `codex` or `claude-code`. For an explicitly project-only copy, use `.diamond-captain-installations/<host-id>/manual.json` in that project. Keep receipts outside payload/discovery roots. Use a managed route's existing receipt convention when it provides one; do not put a global installation receipt into an arbitrary project.
 
-This runtime receipt contains private installation details. Keep it local and outside tracked files, shared archives and public attachments, even when the skill itself is public. Do not modify or relocate existing receipts without authority. Public `DISTRIBUTION.json` supplied with a service release is different: retain service packages' distribution and installer-generated formats. Legacy fixture receipts are historical records, not templates to normalize or rewrite.
+This runtime receipt contains private installation details. Keep it local and outside tracked files, shared archives and public attachments, even when the skill itself is public. Do not modify or relocate existing receipts without authority; an authorized update changes only affected values and keeps other fields, scope and extensions. Public `DISTRIBUTION.json` supplied with a service release is different: retain service packages' distribution and installer-generated formats. Legacy fixture receipts are historical records, not templates to normalize or rewrite.
 
 Record actual values:
 
@@ -42,4 +42,4 @@ Record actual values:
 
 Do not substitute moving `main` for the selected release commit. For unchanged legacy copies without receipts, report verified provenance and unknowns rather than inventing history. Current usable installations keep their receipts and original times unchanged.
 
-After checking setup, follow [Continue after setup](../INSTALL-FOR-AGENTS.md#continue-after-setup) for the short invitation, authorized continuation or recovery step. Setup alone creates no product task.
+Then follow [Continue after setup](../INSTALL-FOR-AGENTS.md#continue-after-setup); setup alone creates no product task.

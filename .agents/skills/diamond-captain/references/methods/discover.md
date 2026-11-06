@@ -1,6 +1,6 @@
 # Discover ↗ · Problem
 
-Understand needs, contexts and competing causes before committing to a problem. Ask: what actually happens, for whom, and which explanation could change the decision? Start with credible existing evidence; select a method only for a consequential gap.
+Understand needs, contexts and competing causes before committing to a problem. Ask: what actually happens, for whom, and which explanation could change the decision? Start with credible existing evidence; name the inspection method before using it. Add further research only for a consequential gap.
 
 | Question or gap | Candidate | Prefer when… |
 | --- | --- | --- |

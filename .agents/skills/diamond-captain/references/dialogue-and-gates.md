@@ -1,28 +1,26 @@
 # Onboarding, collaboration and Design DoR / DoD
 
-Read at first intake, when the user's next decision is unclear, or when agreeing/revising phase criteria. Work in the user's language. These are local working definitions; use an existing team definition if supplied.
+Read when the user's next decision is unclear or when agreeing/revising phase criteria. Work in the user's language. These are local working definitions; use an existing team definition if supplied.
 
 ## Onboarding: make the collaboration understandable
 
-Only activating the skill without a task follows SKILL.md's greeting-and-one-question branch; it is not task intake. Once a task is supplied, keep any orientation to one or two ordinary-language sentences relevant to that task and begin useful work. Introduce phase navigation, checkpoint location, tools and handoff details when they help the next decision or the user asks; do not front-load a process lecture. Tools are optional, and a smaller task does not require six rounds.
-
-Use the steps below for actual task intake. Reuse supplied scope and answers instead of a mandatory welcome or questionnaire; leave only consequential unresolved choices for the user. Record whether orientation was shown or unnecessary and whether the agreement is proposed, accepted or delegated. Do not confuse this with passing Design DoR or permission to publish. On resume, read state and briefly restate the agreed result, what changed and the next decision; do not restart the welcome or repeat settled questions.
+Follow SKILL.md's taskless greeting or task intake/resume route. Keep orientation to what helps the next decision; introduce navigation, storage and handoff details when useful or requested. Reuse supplied scope and answers, leaving consequential unresolved choices to the human. Record actual orientation and agreement status separately from readiness and action permission. On resume, recover state and briefly identify the agreed result, what changed and the next decision.
 
 ## A task has just arrived
 
-1. Recover the identified active task state on resume. For a new execution task, follow SKILL.md's separate load and intake-before-files order, manual fallback and mandatory host prerequisites, even while intake answers are pending. Record the known request or its unopened file path and any user-selected or provisional phase honestly. Then read the relevant supplied material and append what it adds. Reflect back the requested result briefly; separate the requested solution from the problem hypothesis. If the problem framing is unsettled and affects the next work, expose plausible frames, their supporting/conflicting evidence and implications; recommend without choosing for the human. Refine the provisional phase from actual evidence, with the reason; do not invent a user-selected phase or wait for phase approval before independent analysis.
+1. Follow [start/resume ordering and fallbacks](../SKILL.md#start-resume-and-act), including intake before supplied-file reads. Recover the active state on resume; for new work record the known request or unopened path, then append what the material adds. Briefly reflect the requested result. Refine a provisional phase from evidence with the reason; do not invent a user-selected phase or delay independent analysis for its approval.
 2. Begin bounded independent work within [the skill's course-choice rules](../SKILL.md#keep-the-user-involved). Ask 1–3 focused questions only for consequential unanswered gaps, not as a mandatory first round. For example:
    - Free text: “What result should this work produce, for whom, and what prompted it now?”
    - Choice: “What should we deliver in this scope: a problem brief, a tested solution and handoff, or implementation plus outcome review?” Give a recommendation based on the request; allow a custom answer.
    - Free text or choices: “Which deadline, constraint or existing decision most affects this task?”
 3. Follow up only on unresolved decisions: existing evidence and its freshness; owner; success measure; available files/tools and permitted actions. Do not make users fill every template field. Unknowns can stay explicitly unknown if they do not block the next action.
 4. Propose a compact working agreement: task/outcome, users, scope and non-goals, constraints, current phase, depth, Design DoR, Design DoD, next action and decision owner. Ask the user to accept or adjust the consequential choices. Their original request or subsequent delegation can already settle these choices; do not ask them again.
-5. Default to frequent decision questions, particularly phase boundaries. Let the user choose guided collaboration, questions only at phase boundaries, or delegated phase decisions if they want a different cadence. This is a preference, not a repeated setup requirement.
-6. Record the working agreement in the project file and perform the independent first action: inspect files, calculate a baseline, synthesize supplied notes, reproduce a problem, or draft the usable artifact. A proposed interview is not a conducted interview; a research guide is a deliverable, not research evidence.
+5. Ask at consequential unresolved choices, particularly phase boundaries; follow the user's cadence and delegation. Do not repeatedly offer collaboration modes or ask settled questions.
+6. Record the agreement, then follow [explain → perform → assess](../SKILL.md#start-resume-and-act) for the first action within scope. Record preparation as preparation and collected evidence as evidence.
 
-An example after initializing intake for a new, vague task:
+For a vague task, initialise intake, select/read the card, then explain the next action before work:
 
-> Problem / Discover ↗ · 1/6 | NOT READY: the cause of manual approval delays is still a hypothesis. I've saved the intake checkpoint and will map the supplied workflow first. Is there a deadline that changes how narrowly we should scope the diagnosis?
+> Problem / Discover ↗ · 1/6 | NOT READY. I’ll use DS-05, Service blueprint, to locate handoffs that might explain delays. I’ll use this host’s file reader and editor to map the supplied workflow in Markdown; this exposes candidate bottlenecks, not measured causes. Is there a deadline that changes the scope?
 
 If the user answers “make reasonable decisions and finish locally,” record the delegation and continue within that scope. If they request “only explain,” answer without creating product artifacts or changing external systems.
 

@@ -7,7 +7,7 @@ Use this **only for the current or adjacent phase** rather than rereading all de
 | **1 Discover ↗** · Problem | Understand needs, context and alternative causes | Request, opportunity, feedback or earlier cycle | Relevant discovery evidence, candidate problems and key unknowns | Enough context to choose or refine a problem; material missing evidence is addressed or clearly managed |
 | **2 Define ↘** · Problem | Decide what is worth solving and why | Discovery evidence | Focused problem, users/roles, value, product user/job story where relevant, scope, baseline/goal and owner | Decision to proceed/reframe/stop is justified; material assumptions and metrics plan are recorded |
 | **3 Develop ↗** · Solution | Explore materially different ways to help | Agreed brief and retained research | Solution hypotheses, trade-offs, small probes, evidence and risks | Enough viable alternatives and evidence to make a deliberate selection; not just cosmetic variants |
-| **4 Deliver ↘** · Solution | Select, validate, refine and realize a viable solution | Options and earlier brief | Chosen approach, usability/feasibility rationale, implementation or service change, quality and measurement plan | A real-use-ready solution/pilot is verified; required reviews, ownership and rollout/rollback plans are handled |
+| **4 Deliver ↘** · Solution | Support the human's selection; validate, refine and realize the approach | Options and earlier brief | Chosen approach, usability/feasibility rationale, implementation or service change, quality and measurement plan | A real-use-ready solution/pilot is verified; required reviews, ownership and rollout/rollback plans are handled |
 | **5 Deploy ↗** · Outcome | Observe the launched change in varied real contexts | Implemented change, instrumentation, rollout context | Usage/operations/feedback evidence, anomalies and issues | Adequate observation window and data quality for the evaluation question; major incidents escalate immediately |
 | **6 Digest ↘** · Outcome | Interpret impact and decide what to do next | Usage evidence + original brief | Outcome assessment, limitations, next decision(s), owner, loop target | Findings and uncertainty support a keep/improve/rollback/research/stop decision |
 
@@ -36,16 +36,16 @@ For a multi-candidate intake, record the human's selection rationale and deferre
 
 For a Deliver handoff, agree applicable [artifact quality and rationale criteria](craft-quality.md) for the actual result; a checklist inspection alone does not satisfy DoD or acceptance.
 
-At each exit, compare output and readiness with agreed DoD, then ask for the transition decision unless already chosen or delegated. `READY` can coexist with `decision: pending`. Users can select any work phase after a concrete gap warning; record that choice without declaring missing prerequisites met. A prepared rollout has phase-4 evidence maturity until exposure is verified; choosing phase 5 for planning does not prove deployment. An insufficient observation window limits outcome claims even if the user selects phase 6 for a gap assessment.
+At each exit, compare output and readiness with agreed DoD, then ask for the transition decision unless already chosen or delegated. `READY` can coexist with `decision: pending`. Users can select any work phase after one concrete gap warning; record the choice separately from evidence maturity. Planning cannot prove live exposure; an inadequate observation window limits outcome claims, including a user-selected Digest gap assessment.
 
 ## Reorientation rules
 
 - **No brief yet, but explored users and constraints?** Usually Discover → Define.
 - **Clear problem, but no concrete alternatives?** Develop even if a stakeholder already supplied a design; test whether the desired solution is an assumption.
 - **Options already compared, ready to detail and implement?** Deliver.
-- **Solution exists but not deployed?** Recommend Deliver; if the user selects Deploy, do permitted preparation with exposure unverified, never fabricate live observations.
+- **Solution exists but not deployed?** Recommend Deliver; a user-selected Deploy can do permitted preparation with exposure unverified.
 - **Product live with raw telemetry but no synthesis?** Deploy → Digest.
-- **Findings challenge problem framing?** Go to Discover or Define with explanation; do not march forward.
+- **Findings challenge problem framing?** Recommend the earliest affected phase; follow the human's choice or recorded delegation.
 - **Small, routine, reversible task?** Compress phases with explicit evidence. Do not force six meetings or research studies.
 - **Non-UI work?** A service policy, customer communication, operational workflow or training change is a valid Deliver output.
 
@@ -55,7 +55,7 @@ At each exit, compare output and readiness with agreed DoD, then ask for the tra
 - `NOT READY`: one or more decision-critical gaps with a targeted next method/action.
 - `LOOP BACK`: newly learned evidence invalidates or meaningfully changes an earlier assumption; name target phase.
 - `BLOCKED`: necessary access, authorization, safety/launch requirement or external input prevents progress; do all independent work first.
-- `AWAITING LIVE EVIDENCE`: needed live exposure or adequate observation is unverified/unavailable. A prepared but unshipped change has phase-4 evidence maturity regardless of the selected work phase; do not imply launch.
+- `AWAITING LIVE EVIDENCE`: needed live exposure or adequate observation is unverified/unavailable; preparation is not launch.
 - `COMPLETE`: agreed task scope accepted with its DoD evidenced. Say whether this is design/handoff completion or a reviewed live outcome; an outcome task needs outcome evidence and a documented next decision.
 
 **Never apply these as universal hard stage gates.** They are prompts for a defendable decision. Optional checklists remain optional; security, legal, accessibility, privacy and release requirements are not made optional by the process.

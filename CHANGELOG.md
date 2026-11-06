@@ -4,6 +4,12 @@
 
 No changes pending.
 
+## 0.6.5
+
+- Tighten phase-guided work with concise affirmative instructions, explicit method names and concrete tool roles before execution.
+- Keep reduced-work alternatives and evidence limits visible; preserve human decisions, six phases, checkpoint updates and return history.
+- Shorten installation reporting while keeping integrity checks, existing-copy protection and the context-aware transition into work.
+
 ## 0.6.4
 
 - Make concrete method and execution-tool choices visible before dependent work; preserve settled approaches, course decisions, proportionate tasks and evidence limits.
